@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!--1. 문서인코딩 안정성 확보-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--2. 뷰포트 및 호환성 설정: 모바일 대응과 IE호환성-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--3. SEO 및 문서정보; 구글에서 이제는 keywords 사용 안한다함.-->
+    <meta name="description" content="페이지설명" />
+    <meta name="keywords" content="HTML, CSS, javascript" />
+    <meta name="author" content="Lee Deokho" />
+
+    <!--4. 타이틀-->
+    <title>공공정책 스튜디오 퍼블리크</title>
+
+    <!--5. 외부 스타일시트 및 폰트-->
+    <!--5.1. Docsify 기본 스타일-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css"
+    />
+    <!--5.2. Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--5.3. Private CSS-->
+    <link rel="stylesheet" href="/css/private.css" />
+
+    <!--6. 파바콘-->
+    <link rel="icon" type="image/svg+xml" href="/imgages/public-favicon.svg" />
+
+    <!--7. 외부 스크립트-->
+    <!--7.1. defer 인자를 붙여야 dom생성후 Script 실행-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      defer
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--7.2. Private JavaScript-->
+    <script src="/js/private.js" defer></script>
+  </head>
+  <body>
+    <!-- Docsify가 렌더링할 영역 -->
+    <div id="app">Loading...</div>
+
+    <script>
+      window.$docsify = {
+        name: "My Docsify Site",
+        repo: "https://github.com/leedeokho76/repo", // 깃허브 리포지토리 주소
+        loadSidebar: true, // _sidebar.md 사용
+        loadNavbar: true, // _navbar.md 사용
+        subMaxLevel: 3, // 목차 깊이
+        coverpage: true, // coverpage.md 사용
+        search: {
+          maxAge: 86400000, // 캐시 기간 (1일)
+          paths: "auto",
+          placeholder: "검색...",
+          noData: "검색 결과가 없습니다",
+        },
+      };
+    </script>
+
+    <!-- Docsify 본체 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- 검색 플러그인 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 외부 링크 아이콘 플러그인 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+    <!-- 페이지 스크롤 상단 버튼 -->
+    <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+  </body>
+</html>
