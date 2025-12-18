@@ -54,7 +54,7 @@
     <script>
       window.$docsify = {
         name: "My Docsify Site",
-        repo: "https://github.com/leedeokho76/www", // 깃허브 리포지토리 주소
+        repo: "https://github.com/leedeokho76/repo", // 깃허브 리포지토리 주소
         loadSidebar: true, // _sidebar.md 사용
         loadNavbar: true, // _navbar.md 사용
         subMaxLevel: 3, // 목차 깊이
