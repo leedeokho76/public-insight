@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    퍼블리크 콘텐츠 작성 규칙 - Policy Atelier 퍼블리크
+  
+</title>
+<meta name="description" content="사이트 운영에 필요한 콘텐츠의 작성 및 데이터 구조화 규칙">
+
+
+<link rel="stylesheet" href="/scss/style.min.eb7272dc6670d68b73999880852e0d6204abba0415f4549e1336a53290bb1b45.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Policy Atelier 퍼블리크" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Policy Atelier 퍼블리크" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Policy Atelier 퍼블리크</div>
+          
+            <div class="logo__subtitle">정책과 기술, 어제 오늘 내일로 디자인하다</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Insights</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Portal★</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">퍼블리크 콘텐츠 작성 규칙</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="웹사이트 스타일 가이드를 상징하는 이미지">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-12-26T14:50:12&#43;09:00">2025-12-26</time>
+	<time class="meta__text" datetime="2026-02-26T15:28:34&#43;09:00">(Last updated: 2026-02-26)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	</span>
+</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/public.re.kr/" rel="tag">public.re.kr</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-category">1. Category</a>
+      <ul>
+        <li><a href="#11-메뉴구성상단">1.1. 메뉴구성(상단)</a></li>
+        <li><a href="#12-세부내용">1.2. 세부내용</a></li>
+        <li><a href="#13-콘텐츠-특성">1.3. 콘텐츠 특성</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-tag-list">2. Tag List</a></li>
+    <li><a href="#3-front-matter-규칙">3. Front Matter 규칙</a></li>
+    <li><a href="#4-네레이션-구성">4. 네레이션 구성</a></li>
+    <li><a href="#5">5.</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h1 id="웹사이트-콘텐츠-작성-규칙">웹사이트 콘텐츠 작성 규칙</h1>
+<h2 id="1-category">1. Category</h2>
+<blockquote>
+<p>카테고리의 경우 형식적 특성을, 태그의 경우 내용적 특성을 반영</p>
+</blockquote>
+<h3 id="11-메뉴구성상단">1.1. 메뉴구성(상단)</h3>
+<pre tabindex="0"><code>Home
+├─Essay
+├─Guide
+├─Note
+├─Planning
+├─Report
+├─Review
+└─About (Tag)
+</code></pre><h3 id="12-세부내용">1.2. 세부내용</h3>
+<ol>
+<li>
+<p>Essay</p>
+<ul>
+<li>(목적) 감상 의견</li>
+<li>(키워드) 주관성 느낌 감정 상념 내레이션</li>
+</ul>
+</li>
+<li>
+<p>Guide</p>
+<ul>
+<li>(목적) 실용적 도움</li>
+<li>(키워드) 방법 과정 절차 안내 제공, 미래 활용 목적</li>
+</ul>
+</li>
+<li>
+<p>Note</p>
+<ul>
+<li>(목적) 기록과 요약</li>
+<li>(키워드) 짧은 기록, 비공식적 메모 성격</li>
+</ul>
+</li>
+<li>
+<p>Planning</p>
+<ul>
+<li>(목적) 계획 과정</li>
+<li>(키워드) 계획을 세우는 과정과 그 산출물(전략 분석, 계획서 등)</li>
+</ul>
+</li>
+<li>
+<p>Report</p>
+<ul>
+<li>(목적) 공식적 기록</li>
+<li>(키워드) 사례 성과 결과 구조적 공식적 객관적 결과·성과 케이스연구 포함</li>
+</ul>
+</li>
+<li>
+<p>Review</p>
+<ul>
+<li>(목적) 평가와 피드백</li>
+<li>(키워드) 어떤느낌 의견 비평 공유 주객관혼재</li>
+</ul>
+</li>
+<li>
+<p>About (tag)</p>
+<ul>
+<li>(목적) 사이트 및 Lab 소개</li>
+<li>(키워드) 소개 규정 공지</li>
+</ul>
+</li>
+</ol>
+<h3 id="13-콘텐츠-특성">1.3. 콘텐츠 특성</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">구분</th>
+          <th style="text-align: center">기록/전달</th>
+          <th style="text-align: center">분석/평가</th>
+          <th style="text-align: center">설계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">비/반형식성</td>
+          <td style="text-align: center">Note(現) Guide(未)</td>
+          <td style="text-align: center">Essay(過) Review(過)</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">고형식성</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">Report(過)</td>
+          <td style="text-align: center">Planning(未)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="2-tag-list">2. Tag List</h2>
+<ul>
+<li>(일반적 기준) 주제어</li>
+<li>(특별한 기준) 프로젝트명, 어플명, 도메인 등</li>
+</ul>
+<!-- /layouts/shortcodes/all-tags.html -->
+
+<ul>
+  
+    <li><a href="/tags/accessibility">accessibility</a></li>
+  
+    <li><a href="/tags/ai">ai</a></li>
+  
+    <li><a href="/tags/applications">applications</a></li>
+  
+    <li><a href="/tags/article">article</a></li>
+  
+    <li><a href="/tags/device">device</a></li>
+  
+    <li><a href="/tags/digitalmedia">digitalmedia</a></li>
+  
+    <li><a href="/tags/fundamentals">fundamentals</a></li>
+  
+    <li><a href="/tags/governance">governance</a></li>
+  
+    <li><a href="/tags/governup">governup</a></li>
+  
+    <li><a href="/tags/iaas">iaas</a></li>
+  
+    <li><a href="/tags/institutions">institutions</a></li>
+  
+    <li><a href="/tags/leedeokho">leedeokho</a></li>
+  
+    <li><a href="/tags/public.re.kr">public.re.kr</a></li>
+  
+    <li><a href="/tags/saas">saas</a></li>
+  
+    <li><a href="/tags/tools">tools</a></li>
+  
+    <li><a href="/tags/webapp">webapp</a></li>
+  
+    <li><a href="/tags/writing">writing</a></li>
+  
+</ul>
+
+
+<h2 id="3-front-matter-규칙">3. Front Matter 규칙</h2>
+<pre tabindex="0"><code>title = &#34;목적 중심으로 개조식 기술&#34;
+date = &#34;YYYY-MM-DDTHH:MM:SS+09:00&#34;  // ISO 8601 표준
+lastmod = &#34;YYYY-MM-DDTHH:MM:SS+09:00&#34;  // ISO 8601 표준
+slug = &#34;영문 4단어 이내로 하이픈으로 연결&#34;
+description = &#34;방법 수단 중심으로 개조식 기술&#34;
+tags = [&#34;카테고리-보조용으로-영문-소문자&#34;]
+keywords = [&#34;한글과-영문소문자-별도작성&#34;]
+categories = [&#34;&#34;]
+archives = [&#34;YYYY/MM&#34;]
+draft = false
+author = &#34;Lee Deokho&#34;
+coverImage = &#34;&#34;
+coverAlt = &#34;&#34;
+</code></pre><h2 id="4-네레이션-구성">4. 네레이션 구성</h2>
+<pre tabindex="0"><code>프로그램명
+에피소드
+주제
+형식
+톤
+세부내용
+</code></pre><h2 id="5">5.</h2>
+<ul>
+<li>rule 규칙</li>
+<li>plan 계획</li>
+<li>tips 요령</li>
+<li>checklist Travel Checklist</li>
+<li>collection 모음</li>
+<li>examples Resume Examples</li>
+<li>ideas Marketing Ideas</li>
+<li>overview 일람</li>
+<li>portfolio 포트폴리오</li>
+<li>proposal (공식성이 강한) 기획안</li>
+<li>Research</li>
+<li>situation 상황</li>
+<li>status 현황</li>
+<li>summary</li>
+<li>introduction 개론</li>
+<li>build 구축</li>
+<li>install 설치</li>
+<li>setup (initial) 구성</li>
+<li>settings (user) 설정</li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+              <li class="related__item"><a href="/report/static-website-migration-result/">퍼블리크 정적웹사이트 전환 결과 보고</a></li>
+            
+          
+            
+          
+            
+              <li class="related__item"><a href="/note/public-or-kr-history/">퍼블리크 사이트 연혁</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/hello/">Hello HUGO~~~!!!</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/note/public-or-kr-history/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">퍼블리크 사이트 연혁</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/note/hugo-bootstrap-namespaced-test/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-custom-scss-lawstyle/">hugo 환경에서 사용자 SCSS 법령형식 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/microsoft-entra-account-mfa/">마이크로소프트 entra 계정 관리 및 MFA 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/nssm-windows-service-manager/">NSSM을 이용한 Windows 응용프로그램 서비스 등록 및 관리</a></li>
+			<li class="widget__item"><a class="widget__link" href="/review/ces2026-transition-physical-ai/">[유튜브 리뷰] CES2026에서 선보인 새로운 피지컬AI 알파마요와 신형아틀라스</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-policy-daily-briefing/">자동화 프로세스를 통한 공공정책 일일브리핑 시범 추진 결과 보고</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/windows-odbc-driver-setup/">DB 연결을 위한 Windows ODBC 구성</a></li>
+			<li class="widget__item"><a class="widget__link" href="/essay/let-me-introduce-myself/">퍼블리크 운영자 소개</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/02">2026/02 (1)</option>
+      
+      <option value="/archives/2026/01">2026/01 (10)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/article/" title="article">article (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digitalmedia/" title="digitalmedia">digitalmedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governup/" title="governup">governup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/leedeokho/" title="leedeokho">leedeokho (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (2)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div class="widget-categories widget">
+	<h2 class="widget__title">Categories</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/essay/">essay</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/guide/">guide</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/note/">note</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/planning/">planning</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/report/">report</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/review/">review</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+		</ul>
+	</div>
+</div>
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>

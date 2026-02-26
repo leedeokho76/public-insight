@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    시작장애인을 위한 MS Windows OS 기반 접근성 - Policy Atelier 퍼블리크
+  
+</title>
+<meta name="description" content="MS Windows OS 환경에서 운영체제 및 시각장애인 전용 어플리케이션 접근성에 대한 설명">
+
+
+<link rel="stylesheet" href="/scss/style.min.eb7272dc6670d68b73999880852e0d6204abba0415f4549e1336a53290bb1b45.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Policy Atelier 퍼블리크" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Policy Atelier 퍼블리크" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Policy Atelier 퍼블리크</div>
+          
+            <div class="logo__subtitle">정책과 기술, 어제 오늘 내일로 디자인하다</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Insights</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Portal★</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">시작장애인을 위한 MS Windows OS 기반 접근성</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2024-08-28T00:04:54&#43;09:00">2024-08-28</time>
+	<time class="meta__text" datetime="2026-02-26T15:28:34&#43;09:00">(Last updated: 2026-02-26)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/guide/" rel="category">Guide</a>
+	</span>
+</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/accessibility/" rel="tag">accessibility</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-windows-11-운영체제-단축키-일람">1. Windows 11 운영체제 단축키 일람</a>
+      <ul>
+        <li><a href="#11-copy-paste-and-other-general-keyboard-shortcuts">1.1. Copy, paste, and other general keyboard shortcuts</a></li>
+        <li><a href="#12-windows-logo-key-keyboard-shortcuts">1.2. Windows logo key keyboard shortcuts</a></li>
+        <li><a href="#13-command-prompt-keyboard-shortcuts">1.3. Command Prompt keyboard shortcuts</a></li>
+        <li><a href="#14-dialog-box-keyboard-shortcuts">1.4. Dialog box keyboard shortcuts</a></li>
+        <li><a href="#15-file-explorer-keyboard-shortcuts">1.5. File Explorer keyboard shortcuts</a></li>
+        <li><a href="#16-virtual-desktops-keyboard-shortcuts">1.6. Virtual desktops keyboard shortcuts</a></li>
+        <li><a href="#17-taskbar-keyboard-shortcuts">1.7. Taskbar keyboard shortcuts</a></li>
+        <li><a href="#18-settings-keyboard-shortcuts">1.8. Settings keyboard shortcuts</a></li>
+        <li><a href="#19-desktop-and-file-explorer">1.9. Desktop and File Explorer</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-chrome-based-browser">2. Chrome-based Browser</a>
+      <ul>
+        <li><a href="#21-about-window">2.1. about Window</a></li>
+        <li><a href="#22-about-tab">2.2. about Tab</a></li>
+        <li><a href="#23-general">2.3. General</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-xvsr-hotkey-on-windows">3. XVSR Hotkey on Windows</a>
+      <ul>
+        <li><a href="#31-program-operation">3.1. Program Operation</a></li>
+        <li><a href="#32-information-indication">3.2. Information Indication</a></li>
+        <li><a href="#33-tab-key-for-web-browsing">3.3. Tab Key for Web Browsing</a></li>
+        <li><a href="#34-browser-tab-key">3.4. Browser Tab Key</a></li>
+        <li><a href="#35-virtual-cursor-tab-key">3.5. Virtual Cursor Tab Key</a></li>
+        <li><a href="#36-etc-key">3.6. ETC Key</a></li>
+        <li><a href="#37-reading-machine">3.7. Reading Machine</a></li>
+        <li><a href="#38-reading">3.8. Reading</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-sorian-thunder-hotkey-on-windows">4. Sorian Thunder Hotkey on Windows</a></li>
+    <li><a href="#5-sense-world">5. Sense World</a>
+      <ul>
+        <li><a href="#51-매뉴-구성">5.1. 매뉴 구성</a></li>
+        <li><a href="#52-단축키">5.2. 단축키</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-accessibility-of-library">6. Accessibility of Library</a>
+      <ul>
+        <li><a href="#61-lg상남도서관">6.1. LG상남도서관</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h1 id="시작장애인을-위한-ms-windows-os-기반-접근성">시작장애인을 위한 MS Windows OS 기반 접근성</h1>
+<h2 id="1-windows-11-운영체제-단축키-일람">1. Windows 11 운영체제 단축키 일람</h2>
+<h3 id="11-copy-paste-and-other-general-keyboard-shortcuts">1.1. Copy, paste, and other general keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Cut the selected item</td>
+          <td style="text-align: left">Ctrl + X</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Copy the selected item</td>
+          <td style="text-align: left">Ctrl + C (or Ctrl + Insert)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Paste the selected item</td>
+          <td style="text-align: left">Ctrl + V (or Shift + Insert)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Paste as plain text</td>
+          <td style="text-align: left">Ctrl + Shift + V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Undo an action</td>
+          <td style="text-align: left">Ctrl + Z</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch between open apps</td>
+          <td style="text-align: left">Alt + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Close the active item, or exit the active app</td>
+          <td style="text-align: left">Alt + F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Lock your PC</td>
+          <td style="text-align: left">Windows logo key + L</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display and hide the desktop</td>
+          <td style="text-align: left">Windows logo key + D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Rename the selected item</td>
+          <td style="text-align: left">F2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Search for a file or folder in File Explorer</td>
+          <td style="text-align: left">F3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the address bar list in File Explorer</td>
+          <td style="text-align: left">F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Refresh the active window</td>
+          <td style="text-align: left">F5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cycle through screen elements in a window or on the desktop</td>
+          <td style="text-align: left">F6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Activate the Menu bar in the active app</td>
+          <td style="text-align: left">F10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Set focus to the first icon in the Suggested actions menu</td>
+          <td style="text-align: left">Alt + A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Show your password on the sign-in screen</td>
+          <td style="text-align: left">Alt + F8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cycle through items in the order in which they were opened</td>
+          <td style="text-align: left">Alt + Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Perform the command for that letter</td>
+          <td style="text-align: left">Alt + underlined letter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display properties for the selected item</td>
+          <td style="text-align: left">Alt + Enter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the shortcut menu for the active window</td>
+          <td style="text-align: left">Alt + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Go back</td>
+          <td style="text-align: left">Alt + ←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Go forward</td>
+          <td style="text-align: left">Alt + →</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move up one screen</td>
+          <td style="text-align: left">Alt + Page Up</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move down one screen</td>
+          <td style="text-align: left">Alt + Page Down</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Close the active document (in apps that are full-screen and let you have multiple documents open at the same time)</td>
+          <td style="text-align: left">Ctrl + F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select all items in a document or window</td>
+          <td style="text-align: left">Ctrl + A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Delete the selected item and move it to the Recycle Bin</td>
+          <td style="text-align: left">Ctrl + D (or Delete)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Search (in most apps)</td>
+          <td style="text-align: left">Ctrl + E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Refresh the active window</td>
+          <td style="text-align: left">Ctrl + R (or F5)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Redo an action</td>
+          <td style="text-align: left">Ctrl + Y</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the beginning of the next word</td>
+          <td style="text-align: left">Ctrl + →</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the beginning of the previous word</td>
+          <td style="text-align: left">Ctrl + ←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the beginning of the next paragraph</td>
+          <td style="text-align: left">Ctrl + ↓</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the beginning of the previous paragraph</td>
+          <td style="text-align: left">Ctrl + ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Use the arrow keys to switch between all open apps</td>
+          <td style="text-align: left">Ctrl + Alt + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">When a group or tile is in focus on the Start menu, move it in the direction specified</td>
+          <td style="text-align: left">Alt + Shift + ↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">When a tile is in focus on the Start menu, move it into another tile to create a folder</td>
+          <td style="text-align: left">Ctrl + Shift + ↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Resize the Start menu when it&rsquo;s open</td>
+          <td style="text-align: left">Ctrl + ↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select multiple individual items in a window or on the desktop</td>
+          <td style="text-align: left">Ctrl + ↑↓←→ (to move to an item) + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select a block of text</td>
+          <td style="text-align: left">Ctrl + Shift with ↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Start</td>
+          <td style="text-align: left">Ctrl + Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Task Manager</td>
+          <td style="text-align: left">Ctrl + Shift + Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch the keyboard layout when multiple keyboard layouts are available</td>
+          <td style="text-align: left">Ctrl + Shift</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Turn the Chinese input method editor (IME) on or off</td>
+          <td style="text-align: left">Ctrl + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the shortcut menu for the selected item</td>
+          <td style="text-align: left">Shift + F10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select more than one item in a window or on the desktop, or select text in a document</td>
+          <td style="text-align: left">Shift with any ↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Delete the selected item without moving it to the Recycle Bin first</td>
+          <td style="text-align: left">Shift + Delete</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the next menu to the right, or open a submenu</td>
+          <td style="text-align: left">→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the next menu to the left, or close a submenu</td>
+          <td style="text-align: left">←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Stop or leave the current task</td>
+          <td style="text-align: left">Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Take a screenshot of your whole screen and copy it to the clipboard</td>
+          <td style="text-align: left">PrtScn</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="12-windows-logo-key-keyboard-shortcuts">1.2. Windows logo key keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Open or close Start</td>
+          <td style="text-align: left">Win</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Quick Settings. Updated in Windows 11</td>
+          <td style="text-align: left">Win + A</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Set focus to the first icon in the Taskbar corner</td>
+          <td style="text-align: left">Win + B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Windows Copilot. Updated in Windows 11</td>
+          <td style="text-align: left">Win + C</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the charms menu</td>
+          <td style="text-align: left">Win + Shift + C</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Turn on color filters (enable this shortcut first in Color Filter settings)</td>
+          <td style="text-align: left">Win + Ctrl + C</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display and hide the desktop</td>
+          <td style="text-align: left">Win + D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open File Explorer</td>
+          <td style="text-align: left">Win + E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Feedback Hub and take a screenshot</td>
+          <td style="text-align: left">Win + F</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Xbox Game Bar when a game is open</td>
+          <td style="text-align: left">Win + G</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Turn HDR on or off</td>
+          <td style="text-align: left">Win + Alt + B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Launch voice typing. Updated in Windows 11</td>
+          <td style="text-align: left">Win + H</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Settings</td>
+          <td style="text-align: left">Win + I</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Set focus to a Windows tip when one is available</td>
+          <td style="text-align: left">Win + J</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Cast from Quick Settings. Updated in Windows 11</td>
+          <td style="text-align: left">Win + K</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Toggle microphone mute in apps that support Call Mute. Available starting in Windows 11, version 22H2</td>
+          <td style="text-align: left">Win + Alt + K</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Lock your PC or switch accounts</td>
+          <td style="text-align: left">Win + L</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Minimize all windows</td>
+          <td style="text-align: left">Win + M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Restore minimized windows on the desktop</td>
+          <td style="text-align: left">Win + Shift + M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open notification center and calendar. Updated in Windows 11</td>
+          <td style="text-align: left">Win + N</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Lock device orientation</td>
+          <td style="text-align: left">Win + O</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Choose a presentation display mode</td>
+          <td style="text-align: left">Win + P</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Quick Assist</td>
+          <td style="text-align: left">Win + Ctrl + Q</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the Run dialog box</td>
+          <td style="text-align: left">Win + R</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Record video of game window in focus (using Xbox Game Bar)</td>
+          <td style="text-align: left">Win + Alt + R</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open search</td>
+          <td style="text-align: left">Win + S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Take a screenshot of part of your screen</td>
+          <td style="text-align: left">Win + Shift + S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cycle through apps on the taskbar</td>
+          <td style="text-align: left">Win + T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Accessibility Settings</td>
+          <td style="text-align: left">Win + U</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the clipboard history</td>
+          <td style="text-align: left">Win + V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Set focus to a notification</td>
+          <td style="text-align: left">Win + Shift + V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Widgets. Updated in Windows 11</td>
+          <td style="text-align: left">Win + W</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the Quick Link menu</td>
+          <td style="text-align: left">Win + X</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch input between Windows Mixed Reality and your desktop</td>
+          <td style="text-align: left">Win + Y</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the snap layouts. Updated in Windows 11</td>
+          <td style="text-align: left">Win + Z</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open emoji panel</td>
+          <td style="text-align: left">Win + period (.) or semicolon (;)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Temporarily peek at the desktop</td>
+          <td style="text-align: left">Win + comma (,)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Opens Start &gt; Settings &gt; System &gt; About</td>
+          <td style="text-align: left">Win + Pause</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Search for PCs (if you&rsquo;re on a network)</td>
+          <td style="text-align: left">Win + Ctrl + F</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the desktop and start the app pinned to the taskbar in the position indicated by the number. If the app is already running, switch to that app</td>
+          <td style="text-align: left">Win + number</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the desktop and start a new instance of the app pinned to the taskbar in the position indicated by the number</td>
+          <td style="text-align: left">Win + Shift + number</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the desktop and switch to the last active window of the app pinned to the taskbar in the position indicated by the number</td>
+          <td style="text-align: left">Win + Ctrl + number</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the desktop and open the Jump List for the app pinned to the taskbar in the position indicated by the number</td>
+          <td style="text-align: left">Win + Alt + number</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the desktop and open a new instance of the app located at the given position on the taskbar as an administrator</td>
+          <td style="text-align: left">Win + Ctrl + Shift + number</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Task view</td>
+          <td style="text-align: left">Win + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximize the window</td>
+          <td style="text-align: left">Win +↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Snap window in focus to top half of screen. New with Windows 11</td>
+          <td style="text-align: left">Win + Alt + ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Remove current app from screen or minimize the desktop window</td>
+          <td style="text-align: left">Win + ↓</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximize the app or desktop window to the left side of the screen</td>
+          <td style="text-align: left">Win + ←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximize the app or desktop window to the right side of the screen</td>
+          <td style="text-align: left">Win + →</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Minimize all except the active desktop window (restores all windows on second stroke)</td>
+          <td style="text-align: left">Win + Home</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Stretch the desktop window to the top and bottom of the screen</td>
+          <td style="text-align: left">Win + Shift + ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Restore/minimize active desktop windows vertically, maintaining width</td>
+          <td style="text-align: left">Win + Shift + ↓</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move an app or window in the desktop from one monitor to another</td>
+          <td style="text-align: left">Win + Shift + ←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cycle backwards through language and keyboard layout</td>
+          <td style="text-align: left">Win + Shift + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch input language and keyboard layout</td>
+          <td style="text-align: left">Win + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Change to a previously selected input</td>
+          <td style="text-align: left">Win + Ctrl + Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Turn on Narrator</td>
+          <td style="text-align: left">Win + Ctrl + Enter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open Magnifier and zoom in</td>
+          <td style="text-align: left">Win + Plus (+)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Zoom out in Magnifier</td>
+          <td style="text-align: left">Win + Minus (-)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Close Magnifier</td>
+          <td style="text-align: left">Win + Esc</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Begin IME reconversion</td>
+          <td style="text-align: left">Win + forward slash (/)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Wake PC from blank or black screen</td>
+          <td style="text-align: left">Win + Ctrl + Shift + B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Save full screen screenshot to file</td>
+          <td style="text-align: left">Win + PrtScn</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Save screenshot of game window in focus to file (using Xbox Game Bar)</td>
+          <td style="text-align: left">Win + Alt + PrtScn</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open taskbar settings</td>
+          <td style="text-align: left">Win + Alt + Enter (on taskbar item focus)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="13-command-prompt-keyboard-shortcuts">1.3. Command Prompt keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Copy the selected text</td>
+          <td style="text-align: left">Ctrl + C (or Ctrl + Insert)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Paste the selected text</td>
+          <td style="text-align: left">Ctrl + V (or Shift + Insert)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Enter Mark mode</td>
+          <td style="text-align: left">Ctrl + M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Begin selection in block mode</td>
+          <td style="text-align: left">Alt + selection key</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor in the direction specified</td>
+          <td style="text-align: left">↑↓←→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor by one page up</td>
+          <td style="text-align: left">Page up</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor by one page down</td>
+          <td style="text-align: left">Page down</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the beginning of the buffer</td>
+          <td style="text-align: left">Ctrl + Home (Mark mode)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move the cursor to the end of the buffer</td>
+          <td style="text-align: left">Ctrl + End (Mark mode)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move up one line in the output history</td>
+          <td style="text-align: left">Ctrl + ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move down one line in the output history</td>
+          <td style="text-align: left">Ctrl + ↓</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">If the command line is empty, move the viewport to the top of the buffer. Otherwise, delete all the characters to the left of the cursor in the command line</td>
+          <td style="text-align: left">Ctrl + Home (History navigation)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">If the command line is empty, move the viewport to the command line. Otherwise, delete all the characters to the right of the cursor in the command line</td>
+          <td style="text-align: left">Ctrl + End (History navigation)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="14-dialog-box-keyboard-shortcuts">1.4. Dialog box keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Display the items in the active list</td>
+          <td style="text-align: left">F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move forward through tabs</td>
+          <td style="text-align: left">Ctrl + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move back through tabs</td>
+          <td style="text-align: left">Ctrl + Shift + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move to that tab number</td>
+          <td style="text-align: left">Ctrl + 1, 2, 3,&hellip;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move forward through options</td>
+          <td style="text-align: left">Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move back through options</td>
+          <td style="text-align: left">Shift + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Perform the command (or select the option) that is used with that letter</td>
+          <td style="text-align: left">Alt + underlined letter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select or clear the check box if the active option is a check box</td>
+          <td style="text-align: left">Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open a folder one level up if a folder is selected in the Save As or Open dialog box</td>
+          <td style="text-align: left">Backspace</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select a button if the active option is a group of option buttons</td>
+          <td style="text-align: left">↑↓←→</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="15-file-explorer-keyboard-shortcuts">1.5. File Explorer keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Select the address bar</td>
+          <td style="text-align: left">Alt + D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select the search box</td>
+          <td style="text-align: left">Ctrl + E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select the search box</td>
+          <td style="text-align: left">Ctrl + F</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open a new window</td>
+          <td style="text-align: left">Ctrl + N</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open a new tab and switch to it</td>
+          <td style="text-align: left">Ctrl + T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Closes the active tab. Closes the window if there&rsquo;s only one tab open</td>
+          <td style="text-align: left">Ctrl + W</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move to the next tab</td>
+          <td style="text-align: left">Ctrl + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move to the previous tab</td>
+          <td style="text-align: left">Ctrl + Shift + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Move to that tab number</td>
+          <td style="text-align: left">Ctrl + 1, 2, 3,…</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Change the size and appearance of file and folder icons</td>
+          <td style="text-align: left">Ctrl + mouse scroll wheel</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display all folders above the selected folder</td>
+          <td style="text-align: left">Ctrl + Shift + E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Create a new folder</td>
+          <td style="text-align: left">Ctrl + Shift + N</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display all subfolders under the selected folder</td>
+          <td style="text-align: left">Num Lock + asterisk (*)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the contents of the selected folder</td>
+          <td style="text-align: left">Num Lock + plus (+)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Collapse the selected folder</td>
+          <td style="text-align: left">Num Lock + minus (-)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the preview panel</td>
+          <td style="text-align: left">Alt + P</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open the Properties dialog box for the selected item</td>
+          <td style="text-align: left">Alt + Enter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">View the next folder</td>
+          <td style="text-align: left">Alt + →</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">View the folder that the folder was in</td>
+          <td style="text-align: left">Alt + ↑</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">View the previous folder</td>
+          <td style="text-align: left">Alt + ←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">View the previous folder</td>
+          <td style="text-align: left">Backspace</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the current selection (if it&rsquo;s collapsed), or select the first subfolder</td>
+          <td style="text-align: left">→</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Collapse the current selection (if it&rsquo;s expanded), or select the folder that the folder was in</td>
+          <td style="text-align: left">←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the bottom of the active window</td>
+          <td style="text-align: left">End</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Display the top of the active window</td>
+          <td style="text-align: left">Home</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximize or minimize the active window</td>
+          <td style="text-align: left">F11</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="16-virtual-desktops-keyboard-shortcuts">1.6. Virtual desktops keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Open Task view</td>
+          <td style="text-align: left">Win + Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Add a virtual desktop</td>
+          <td style="text-align: left">Win + Ctrl + D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch between virtual desktops you’ve created on the right</td>
+          <td style="text-align: left">Win + Ctrl + →</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Switch between virtual desktops you’ve created on the left</td>
+          <td style="text-align: left">Win + Ctrl + Left ←</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Close the virtual desktop you&rsquo;re using</td>
+          <td style="text-align: left">Win + Ctrl + F4</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="17-taskbar-keyboard-shortcuts">1.7. Taskbar keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Open an app or quickly open another instance of an app</td>
+          <td style="text-align: left">Shift + click a taskbar button</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Open an app as an administrator</td>
+          <td style="text-align: left">Ctrl + Shift + click a taskbar button</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Show the window menu for the app</td>
+          <td style="text-align: left">Shift + right-click a taskbar button</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Show the window menu for the group</td>
+          <td style="text-align: left">Shift + right-click a grouped taskbar button</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cycle through the windows of the group</td>
+          <td style="text-align: left">Ctrl + click a grouped taskbar button</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="18-settings-keyboard-shortcuts">1.8. Settings keyboard shortcuts</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Open settings</td>
+          <td style="text-align: left">Win + I</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Go back to the settings home page</td>
+          <td style="text-align: left">Backspace</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Search settings</td>
+          <td style="text-align: left">Type on any page with search box</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="19-desktop-and-file-explorer">1.9. Desktop and File Explorer</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Desktop Main Screen</td>
+          <td style="text-align: left">Win M</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Desktop Task Bar</td>
+          <td style="text-align: left">Win T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Desktop Notification Bar</td>
+          <td style="text-align: left">Win B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Desktop Pop-up Menu</td>
+          <td style="text-align: left">Shift F10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Desktop Focus out</td>
+          <td style="text-align: left">Ctrl Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Window Menu Call</td>
+          <td style="text-align: left">Alt / F10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Window New Folder</td>
+          <td style="text-align: left">Ctrl Shift N</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Moving Objects</td>
+          <td style="text-align: left">Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Address bar</td>
+          <td style="text-align: left">Alt D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">help</td>
+          <td style="text-align: left">F1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">rename</td>
+          <td style="text-align: left">F2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">search</td>
+          <td style="text-align: left">F3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">browser address bar</td>
+          <td style="text-align: left">F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">reload</td>
+          <td style="text-align: left">F5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">interface element sequential access</td>
+          <td style="text-align: left">F6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">cursor browsing</td>
+          <td style="text-align: left">F7</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">F8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">F9</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">menu</td>
+          <td style="text-align: left">F10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">full screen</td>
+          <td style="text-align: left">F11</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">developer tool</td>
+          <td style="text-align: left">F12</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="2-chrome-based-browser">2. Chrome-based Browser</h2>
+<h3 id="21-about-window">2.1. about Window</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ctrl N</td>
+          <td style="text-align: left">New Window</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt Space N</td>
+          <td style="text-align: left">Minimalize</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt Space X</td>
+          <td style="text-align: left">Maximilize</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt Space R</td>
+          <td style="text-align: left">to Previous Size</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt F4</td>
+          <td style="text-align: left">current window Finish</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="22-about-tab">2.2. about Tab</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ctrl T</td>
+          <td style="text-align: left">New Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl (Shift) Tab</td>
+          <td style="text-align: left">moving between tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl 9</td>
+          <td style="text-align: left">last tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl F4</td>
+          <td style="text-align: left">current tab Finish</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Shift PgUp or PgDn</td>
+          <td style="text-align: left">current tab move</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="23-general">2.3. General</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ctrl Home</td>
+          <td style="text-align: left">page top</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl End</td>
+          <td style="text-align: left">page end</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt Home</td>
+          <td style="text-align: left">Homepage open</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="3-xvsr-hotkey-on-windows">3. XVSR Hotkey on Windows</h2>
+<h3 id="31-program-operation">3.1. Program Operation</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Start</td>
+          <td style="text-align: left">Ctrl Alt S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Finish</td>
+          <td style="text-align: left">Ins F4; Ctrl Alt Shift F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pause Toggle</td>
+          <td style="text-align: left">Alt Shift \</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ToolBar</td>
+          <td style="text-align: left">Ctrl ; Ctrl Alt S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Global Setting</td>
+          <td style="text-align: left">General &gt; Environment Open; Ctrl Alt Shift O</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Global Setting</td>
+          <td style="text-align: left">General &gt; Basic Environment Open; Ctrl Alt Shift B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Global Setting</td>
+          <td style="text-align: left">General &gt; Environment Save; Ctrl Alt Shift S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Global Setting</td>
+          <td style="text-align: left">General &gt; Environment Save with Other Name; Ctrl Alt Shift A</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="32-information-indication">3.2. Information Indication</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Inform Title Bar</td>
+          <td style="text-align: left">Ctrl Shift T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inform Status Bar</td>
+          <td style="text-align: left">Ctrl Shift S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inform Window</td>
+          <td style="text-align: left">Ctrl Shift W</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Inform Focus on</td>
+          <td style="text-align: left">Ctrl Shift F</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="33-tab-key-for-web-browsing">3.3. Tab Key for Web Browsing</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Tab Key Selection</td>
+          <td style="text-align: left">Ctrl Shift F9</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Tab Key on/off</td>
+          <td style="text-align: left">Ctrl Shift F11; F12</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="34-browser-tab-key">3.4. Browser Tab Key</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Object</td>
+          <td style="text-align: left">Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Frame</td>
+          <td style="text-align: left">F</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Form Control</td>
+          <td style="text-align: left">N</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Table</td>
+          <td style="text-align: left">T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Text</td>
+          <td style="text-align: left">F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Heading</td>
+          <td style="text-align: left">H, 1~6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">External Object</td>
+          <td style="text-align: left">E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Edit Window</td>
+          <td style="text-align: left">F2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Link</td>
+          <td style="text-align: left">L</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Visited Link</td>
+          <td style="text-align: left">K</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Landmark</td>
+          <td style="text-align: left">J</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Window</td>
+          <td style="text-align: left">Ctrl PgUp/PgDn</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Form</td>
+          <td style="text-align: left">R</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fieldset</td>
+          <td style="text-align: left">D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Previous/Next</td>
+          <td style="text-align: left">S</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Image</td>
+          <td style="text-align: left">.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Body area</td>
+          <td style="text-align: left">Z</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="35-virtual-cursor-tab-key">3.5. Virtual Cursor Tab Key</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Object:</td>
+          <td style="text-align: left">Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Frame:</td>
+          <td style="text-align: left">Ctrl Tab</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Form Control:</td>
+          <td style="text-align: left">Ctrl F2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Table:</td>
+          <td style="text-align: left">Ctrl F3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Text:</td>
+          <td style="text-align: left">Ctrl F4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Heading:</td>
+          <td style="text-align: left">Ctrl F6</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">External Object:</td>
+          <td style="text-align: left">F7</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Edit Window:</td>
+          <td style="text-align: left">Ctrl F8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Link:</td>
+          <td style="text-align: left">Ctrl '</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Visited Link:</td>
+          <td style="text-align: left">Ctrl ;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Window:</td>
+          <td style="text-align: left">Ctrl PgUp/PgDn</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Previous/Next:</td>
+          <td style="text-align: left">Ctrl L, K</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Image:</td>
+          <td style="text-align: left">Insert .</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Body area:</td>
+          <td style="text-align: left">Ctrl Z</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="36-etc-key">3.6. ETC Key</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Punctuation Mark Read</td>
+          <td style="text-align: left">Alt Shift Z</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Special Characters Read</td>
+          <td style="text-align: left">Alt Shift '</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Time</td>
+          <td style="text-align: left">Alt Shift T</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Date</td>
+          <td style="text-align: left">Alt Shift D</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Heading Units</td>
+          <td style="text-align: left">H</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Externel Object Units</td>
+          <td style="text-align: left">E</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Textarea Units</td>
+          <td style="text-align: left">F2</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="37-reading-machine">3.7. Reading Machine</h3>
+<ol>
+<li>Explorer Window</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Move Drive</td>
+          <td style="text-align: left">Shift Drive Name</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Select Folder</td>
+          <td style="text-align: left">Up / Down</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Parent Folder</td>
+          <td style="text-align: left">Backspace</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="2">
+<li>Read Window</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">기능</th>
+          <th style="text-align: left">단축키</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Play / Stop</td>
+          <td style="text-align: left">Enter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pause</td>
+          <td style="text-align: left">Spacebar</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Bookmark</td>
+          <td style="text-align: left">S</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="38-reading">3.8. Reading</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ctrl Shift ,</td>
+          <td style="text-align: left">reading a current letter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Left / Right</td>
+          <td style="text-align: left">moving the previous or next letter</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Shift K</td>
+          <td style="text-align: left">reading a current word</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Left / Right</td>
+          <td style="text-align: left">moving the previous or next word</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Shift L</td>
+          <td style="text-align: left">reading a current Line</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Up / Down</td>
+          <td style="text-align: left">moving the previous or next line</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Home / End</td>
+          <td style="text-align: left">moving the beginning or end of the current line</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">PgUp / PgDn</td>
+          <td style="text-align: left">moving the 25 previous or next line</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Home / End</td>
+          <td style="text-align: left">moving the top or end of the page</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="4-sorian-thunder-hotkey-on-windows">4. Sorian Thunder Hotkey on Windows</h2>
+<ul>
+<li>Hotkey</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Insert Left</td>
+          <td style="text-align: left">Voice Control</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Insert Up/Down</td>
+          <td style="text-align: left">Value Change</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl \</td>
+          <td style="text-align: left">Menu Open</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt</td>
+          <td style="text-align: left">Loading Menu</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt Shift \</td>
+          <td style="text-align: left">program toggle</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="5-sense-world">5. Sense World</h2>
+<h3 id="51-매뉴-구성">5.1. 매뉴 구성</h3>
+<h3 id="52-단축키">5.2. 단축키</h3>
+<ol>
+<li>General</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Alt</td>
+          <td style="text-align: left">Menu</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt + G</td>
+          <td style="text-align: left">Input Code</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt + E</td>
+          <td style="text-align: left">Notification</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt + D</td>
+          <td style="text-align: left">Download</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt + Enter</td>
+          <td style="text-align: left">Menu Explain</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">F1, Ctrl + F1</td>
+          <td style="text-align: left">Help</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Popup, Ctrl + Popup</td>
+          <td style="text-align: left">Popup Menu</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="2">
+<li>Move</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Up/Down</td>
+          <td style="text-align: left">Move</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Home/END</td>
+          <td style="text-align: left">Top/Bottom</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Alt + Home</td>
+          <td style="text-align: left">Anyway Home</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BackSpace, Alt Left</td>
+          <td style="text-align: left">Previous</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Tab</td>
+          <td style="text-align: left">Move Object Unit</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="3">
+<li>Read</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Left/Right</td>
+          <td style="text-align: left">Read Character</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Up, Down, Left, Right</td>
+          <td style="text-align: left">Move</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Shift Enter</td>
+          <td style="text-align: left">New Window</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Enter</td>
+          <td style="text-align: left">Play External Player</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="4">
+<li>Special Function</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Ctrl Enter</td>
+          <td style="text-align: left">Writing</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl R</td>
+          <td style="text-align: left">Send Voice in Chatting</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl D</td>
+          <td style="text-align: left">Download</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl F</td>
+          <td style="text-align: left">Find</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="5">
+<li>Youtube Player</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Left/Right, J/L</td>
+          <td style="text-align: left">Forward/Backward 5second</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Up/Down</td>
+          <td style="text-align: left">Volume</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Space, K</td>
+          <td style="text-align: left">Play/Pause</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1 ~ 0</td>
+          <td style="text-align: left">Section Transfer</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="6">
+<li>Potcast Player</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Left/Right, J/L</td>
+          <td style="text-align: left">Forward/Backward 5second</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Up/Down</td>
+          <td style="text-align: left">Volume</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Space</td>
+          <td style="text-align: left">Play/Pause</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1 ~ 0</td>
+          <td style="text-align: left">Section Transfer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">G</td>
+          <td style="text-align: left">Move to Input Position</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">L</td>
+          <td style="text-align: left">Playback Information</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ctrl Up/Down</td>
+          <td style="text-align: left">Play Speed</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="6-accessibility-of-library">6. Accessibility of Library</h2>
+<h3 id="61-lg상남도서관">6.1. LG상남도서관</h3>
+<ol>
+<li>목록 페이지 단축키</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Y</td>
+          <td style="text-align: left">다음페이지 (다음 10권)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T</td>
+          <td style="text-align: left">이전페이지 (이전 10권)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">G</td>
+          <td style="text-align: left">다음 블록 (다음 10페이지)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">H</td>
+          <td style="text-align: left">이전 블록 (이전 10페이지)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">U</td>
+          <td style="text-align: left">처음 블록</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">O</td>
+          <td style="text-align: left">마지막 블록</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">N</td>
+          <td style="text-align: left">DAISY 이용 가능한 도서만 보기</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="2">
+<li>홈페이지 도서 상세페이지 제어키</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">X</td>
+          <td style="text-align: left">다음책 상세내용 보기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">C</td>
+          <td style="text-align: left">이전책 상세내용 보기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">A</td>
+          <td style="text-align: left">추천하기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">B</td>
+          <td style="text-align: left">도서를 북마크 하기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">K</td>
+          <td style="text-align: left">책마루용 DAISY 도서를 다운로드 하기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">H</td>
+          <td style="text-align: left">한소네용 DAISY 도서를 다운로드 하기</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">V</td>
+          <td style="text-align: left">리니오포켓 DAISY 도서를 다운로드 하기</td>
+      </tr>
+  </tbody>
+</table>
+<ol start="3">
+<li>홈페이지 스트리밍 도서재생 제어키</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">단축키</th>
+          <th style="text-align: left">내용</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Space</td>
+          <td style="text-align: left">음성도서를 일시정지 혹은 다시 재생을 시작합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">J</td>
+          <td style="text-align: left">현재 재생중인 도서파일 내에서 앞으로 전진합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">L</td>
+          <td style="text-align: left">현재 재생중인 도서파일 내에서 뒤로 후진합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">F</td>
+          <td style="text-align: left">음성도서 재생 속도를 빠르게 합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">S</td>
+          <td style="text-align: left">음성도서 재생 속도를 느리게 합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">R</td>
+          <td style="text-align: left">다음 도서파일을 재생합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">W</td>
+          <td style="text-align: left">이전 도서파일을 재생합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">B</td>
+          <td style="text-align: left">현재 재생중인 도서를 북마크 합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">I</td>
+          <td style="text-align: left">도서재생기의 볼륨을 작게 합니다.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">,(Comma)</td>
+          <td style="text-align: left">도서재생기의 볼륨을 크게 합니다.</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+          
+            
+              <li class="related__item"><a href="/essay/templete-key-control-article/">[셈틀과 글쇠] 컨트롤(Control) 키 – 컴퓨터를 다루는 가장 유용한 도구</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/report/visually-impaired-recreational-sports/">‘2022년 장애인 생활체육조사’로 본 시각장애인 생활체육 현황</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/essay/templete-key-shift2-article/">[셈틀과 글쇠] 시프트(Shift) 키 2 – 혼자서는 아무것도 못하지만 둘 이상이 되면 강력한 힘이 되는 글쇠</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/guide/english-title-capitalization-tips/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">영문 제목 대소문자 붙이는 요령</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/guide/whats-new-in-chrome/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">크롬 시작시 새로운 기능 안내창 열림 해제</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-custom-scss-lawstyle/">hugo 환경에서 사용자 SCSS 법령형식 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/microsoft-entra-account-mfa/">마이크로소프트 entra 계정 관리 및 MFA 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/nssm-windows-service-manager/">NSSM을 이용한 Windows 응용프로그램 서비스 등록 및 관리</a></li>
+			<li class="widget__item"><a class="widget__link" href="/review/ces2026-transition-physical-ai/">[유튜브 리뷰] CES2026에서 선보인 새로운 피지컬AI 알파마요와 신형아틀라스</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-policy-daily-briefing/">자동화 프로세스를 통한 공공정책 일일브리핑 시범 추진 결과 보고</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/windows-odbc-driver-setup/">DB 연결을 위한 Windows ODBC 구성</a></li>
+			<li class="widget__item"><a class="widget__link" href="/essay/let-me-introduce-myself/">퍼블리크 운영자 소개</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/02">2026/02 (1)</option>
+      
+      <option value="/archives/2026/01">2026/01 (10)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/article/" title="article">article (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digitalmedia/" title="digitalmedia">digitalmedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governup/" title="governup">governup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/leedeokho/" title="leedeokho">leedeokho (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (2)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div class="widget-categories widget">
+	<h2 class="widget__title">Categories</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/essay/">essay</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/guide/">guide</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/note/">note</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/planning/">planning</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/report/">report</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/review/">review</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+		</ul>
+	</div>
+</div>
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>

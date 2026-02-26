@@ -1,0 +1,5 @@
+.logo__img {
+  height: 40px;   /* 원하는 높이 */
+  width: auto;    /* 비율 유지 */
+  margin-right: 10px; /* 텍스트와 간격 */
+}

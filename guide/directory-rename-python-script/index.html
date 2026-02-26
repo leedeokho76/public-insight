@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    HTML Date 참조 디렉토리명 변경 파이썬 스크립트 - Policy Atelier 퍼블리크
+  
+</title>
+<meta name="description" content="티스토리에서 정적웹사이트로 전환을 위해 데이터를 다운받고, Python Script로 html 파일안의 날짜 정보를 참조하여 html 파일이 위치한 폴더명을 변경하되, 중복되는 경우 -n을 추가">
+
+
+<link rel="stylesheet" href="/scss/style.min.eb7272dc6670d68b73999880852e0d6204abba0415f4549e1336a53290bb1b45.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Policy Atelier 퍼블리크" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Policy Atelier 퍼블리크" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Policy Atelier 퍼블리크</div>
+          
+            <div class="logo__subtitle">정책과 기술, 어제 오늘 내일로 디자인하다</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Insights</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Portal★</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">HTML Date 참조 디렉토리명 변경 파이썬 스크립트</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="파이썬 스크립트를 상징하는 일러스트레이션">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-10-14T11:13:56&#43;09:00">2025-10-14</time>
+	<time class="meta__text" datetime="2026-02-26T15:28:34&#43;09:00">(Last updated: 2026-02-26)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/guide/" rel="category">Guide</a>
+	</span>
+</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/tools/" rel="tag">tools</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-필요-라이브러리-설치">1. 필요 라이브러리 설치</a></li>
+    <li><a href="#2-스트립트-내용">2. 스트립트 내용</a></li>
+    <li><a href="#3-스크립트-실행">3. 스크립트 실행</a></li>
+    <li><a href="#참고자료">【참고자료】</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h1 id="html-date-참조-디렉토리명-변경-파이썬-스크립트">HTML Date 참조 디렉토리명 변경 파이썬 스크립트</h1>
+<h2 id="1-필요-라이브러리-설치">1. 필요 라이브러리 설치</h2>
+<pre tabindex="0"><code>$ pip show beautifulsoup4 // 파이썬 BeautifulSoup4 라이브러리 설치확인
+WARNING: Package(s) not found: beautifulsoup4
+
+$ pip install beautifulsoup4 // 파이썬 BeautifulSoup4 라이브러리 설치
+Defaulting to user installation because normal site-packages is not writeable
+Collecting beautifulsoup4
+Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting soupsieve&gt;1.2 (from beautifulsoup4)
+Downloading soupsieve-2.8-py3-none-any.whl.metadata (4.6 kB)
+Collecting typing-extensions&gt;=4.0.0 (from beautifulsoup4)
+Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading beautifulsoup4-4.14.2-py3-none-any.whl (106 kB)
+Downloading soupsieve-2.8-py3-none-any.whl (36 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Installing collected packages: typing-extensions, soupsieve, beautifulsoup4
+
+Successfully installed beautifulsoup4-4.14.2 soupsieve-2.8 typing-extensions-4.15.0
+</code></pre><h2 id="2-스트립트-내용">2. 스트립트 내용</h2>
+<pre tabindex="0"><code>import os
+import re
+from bs4 import BeautifulSoup
+
+# 기준 루트 디렉토리
+root_dir = r&#34;D:\dev\www\content\_working&#34;
+
+def extract_date_from_html(html_path):
+    &#34;&#34;&#34;HTML 파일에서 date 정보를 추출&#34;&#34;&#34;
+    try:
+        with open(html_path, &#34;r&#34;, encoding=&#34;utf-8&#34;) as f:
+            soup = BeautifulSoup(f, &#34;html.parser&#34;)
+
+            # &lt;meta name=&#34;date&#34; content=&#34;2025-08-22&#34;&gt; 같은 경우
+            meta_date = soup.find(&#34;meta&#34;, attrs={&#34;name&#34;: &#34;date&#34;})
+            if meta_date and meta_date.get(&#34;content&#34;):
+                return meta_date[&#34;content&#34;].strip()
+
+            # &lt;time datetime=&#34;2025-08-22&#34;&gt; 같은 경우
+            time_tag = soup.find(&#34;time&#34;)
+            if time_tag and time_tag.get(&#34;datetime&#34;):
+                return time_tag[&#34;datetime&#34;].strip()
+
+            # 패턴 매칭 (본문에 YYYY-MM-DD 형태가 있을 경우)
+            text = soup.get_text()
+            match = re.search(r&#34;\d{4}-\d{2}-\d{2}&#34;, text)
+            if match:
+                return match.group(0)
+    except Exception as e:
+        print(f&#34;Error reading {html_path}: {e}&#34;)
+    return None
+
+for folder in os.listdir(root_dir):
+    old_path = os.path.join(root_dir, folder)
+    if os.path.isdir(old_path):
+        # 디렉토리 안의 첫 번째 html 파일 찾기
+        html_files = [f for f in os.listdir(old_path) if f.endswith(&#34;.html&#34;)]
+        if html_files:
+            html_path = os.path.join(old_path, html_files[0])
+            date_str = extract_date_from_html(html_path)
+            if date_str:
+                new_name = date_str
+                new_path = os.path.join(root_dir, new_name)
+                if old_path != new_path:
+                    print(f&#34;Renaming: {old_path} -&gt; {new_path}&#34;)
+                    os.rename(old_path, new_path)
+</code></pre><h2 id="3-스크립트-실행">3. 스크립트 실행</h2>
+<pre tabindex="0"><code>$ python rename-folders.py --dry-run // --dry-run는 테스트를 위해 미리실행
+10   2024-08-25 ꯰ Ϸ
+101  2025-07-07 ꯰ Ϸ
+103  2025-07-07-1 ꯰ Ϸ
+104  2025-07-07-2 ꯰ Ϸ
+105  2025-07-07-3 ꯰ Ϸ
+107  2025-07-07-4 ꯰ Ϸ
+108  2025-07-07-5 ꯰ Ϸ
+109  2025-07-07-6 ꯰ Ϸ
+11  2024-08-25-1 ꯰ Ϸ
+110  2025-07-07-7 ꯰ Ϸ
+111  2025-07-07-8 ꯰ Ϸ
+112  2025-07-07-9 ꯰ Ϸ
+113  2025-07-07-10 ꯰ Ϸ
+114  2025-07-07-11 ꯰ Ϸ
+115  2025-07-07-12 ꯰ Ϸ
+116  2025-07-07-13 ꯰ Ϸ
+119  2025-07-07-14 ꯰ Ϸ
+12  2024-08-25-2 ꯰ Ϸ
+120  2025-07-08 ꯰ Ϸ
+121  2025-07-08-1 ꯰ Ϸ
+122  2025-07-08-2 ꯰ Ϸ
+124  2025-07-09 ꯰ Ϸ
+125  2025-07-09-1 ꯰ Ϸ
+126  2025-07-09-2 ꯰ Ϸ
+128  2025-07-11 ꯰ Ϸ
+13  2024-08-25-3 ꯰ Ϸ
+130  2025-07-11-1 ꯰ Ϸ
+131  2025-07-12 ꯰ Ϸ
+133  2025-07-15 ꯰ Ϸ
+134  2025-07-15-1 ꯰ Ϸ
+137  2025-07-16 ꯰ Ϸ
+138  2025-07-17 ꯰ Ϸ
+139  2025-07-18 ꯰ Ϸ
+14  2024-08-26 ꯰ Ϸ
+140  2025-07-20 ꯰ Ϸ
+141  2025-07-21 ꯰ Ϸ
+142  2025-07-21-1 ꯰ Ϸ
+143  2025-07-23 ꯰ Ϸ
+144  2025-07-23-1 ꯰ Ϸ
+145  2025-07-24 ꯰ Ϸ
+146  2025-07-25 ꯰ Ϸ
+147  2025-07-26 ꯰ Ϸ
+148  2025-07-27 ꯰ Ϸ
+149  2025-07-28 ꯰ Ϸ
+150  2025-07-29 ꯰ Ϸ
+151  2025-07-30 ꯰ Ϸ
+152  2025-07-31 ꯰ Ϸ
+153  2025-07-31-1 ꯰ Ϸ
+154  2025-08-01 ꯰ Ϸ
+155  2025-08-04 ꯰ Ϸ
+156  2025-08-04-1 ꯰ Ϸ
+157  2025-08-05 ꯰ Ϸ
+158  2025-08-05-1 ꯰ Ϸ
+159  2025-08-06 ꯰ Ϸ
+16  2024-08-26-1 ꯰ Ϸ
+160  2025-08-07 ꯰ Ϸ
+161  2025-08-08 ꯰ Ϸ
+162  2025-08-09 ꯰ Ϸ
+163  2025-08-10 ꯰ Ϸ
+164  2025-08-11 ꯰ Ϸ
+165  2025-08-13 ꯰ Ϸ
+166  2025-08-13-1 ꯰ Ϸ
+167  2025-08-14 ꯰ Ϸ
+168  2025-08-15 ꯰ Ϸ
+169  2025-08-16 ꯰ Ϸ
+17  2024-08-26-2 ꯰ Ϸ
+170  2025-08-16-1 ꯰ Ϸ
+171  2025-08-17 ꯰ Ϸ
+172  2025-08-18 ꯰ Ϸ
+173  2025-08-19 ꯰ Ϸ
+174  2025-08-20 ꯰ Ϸ
+175  2025-08-20-1 ꯰ Ϸ
+176  2025-08-21 ꯰ Ϸ
+177  2025-08-21-1 ꯰ Ϸ
+178  2025-08-22 ꯰ Ϸ
+179  2025-08-27 ꯰ Ϸ
+18  2024-08-28 ꯰ Ϸ
+180  2025-08-27-1 ꯰ Ϸ
+181  2025-08-27-2 ꯰ Ϸ
+182  2025-08-27-3 ꯰ Ϸ
+183  2025-08-27-4 ꯰ Ϸ
+184  2025-08-28 ꯰ Ϸ
+185  2025-08-29 ꯰ Ϸ
+186  2025-09-01 ꯰ Ϸ
+187  2025-09-02 ꯰ Ϸ
+188  2025-09-03 ꯰ Ϸ
+189  2025-09-03-1 ꯰ Ϸ
+19  2024-08-29 ꯰ Ϸ
+190  2025-09-03-2 ꯰ Ϸ
+191  2025-09-03-3 ꯰ Ϸ
+192  2025-09-04 ꯰ Ϸ
+193  2025-09-04-1 ꯰ Ϸ
+194  2025-09-09 ꯰ Ϸ
+20  2024-09-03 ꯰ Ϸ
+21  2024-09-18 ꯰ Ϸ
+22  2024-09-18-1 ꯰ Ϸ
+23  2024-09-18-2 ꯰ Ϸ
+24  2024-09-18-3 ꯰ Ϸ
+25  2024-09-18-4 ꯰ Ϸ
+26  2024-09-18-5 ꯰ Ϸ
+27  2024-09-18-6 ꯰ Ϸ
+28  2024-09-18-7 ꯰ Ϸ
+29  2024-09-18-8 ꯰ Ϸ
+3  2024-08-07 ꯰ Ϸ
+30  2024-09-18-9 ꯰ Ϸ
+31  2024-09-18-10 ꯰ Ϸ
+32  2024-09-18-11 ꯰ Ϸ
+33  2024-09-18-12 ꯰ Ϸ
+34  2024-09-18-13 ꯰ Ϸ
+35  2024-09-18-14 ꯰ Ϸ
+36  2024-09-18-15 ꯰ Ϸ
+37  2024-09-18-16 ꯰ Ϸ
+38  2024-09-18-17 ꯰ Ϸ
+39  2024-09-18-18 ꯰ Ϸ
+4  2024-08-07-1 ꯰ Ϸ
+40  2024-09-18-19 ꯰ Ϸ
+41  2024-09-18-20 ꯰ Ϸ
+42  2024-09-18-21 ꯰ Ϸ
+44  2024-09-18-22 ꯰ Ϸ
+45  2024-09-18-23 ꯰ Ϸ
+46  2024-09-18-24 ꯰ Ϸ
+47  2025-02-03 ꯰ Ϸ
+49  2025-02-17 ꯰ Ϸ
+5  2024-08-12 ꯰ Ϸ
+50  2025-02-17-1 ꯰ Ϸ
+51  2025-02-17-2 ꯰ Ϸ
+52  2025-02-17-3 ꯰ Ϸ
+53  2025-02-17-4 ꯰ Ϸ
+54  2025-02-17-5 ꯰ Ϸ
+55  2025-02-17-6 ꯰ Ϸ
+56  2025-02-17-7 ꯰ Ϸ
+57  2025-02-18 ꯰ Ϸ
+58  2025-02-19 ꯰ Ϸ
+59  2025-05-25 ꯰ Ϸ
+6  2024-08-12-1 ꯰ Ϸ
+61  2025-06-02 ꯰ Ϸ
+62  2025-06-24 ꯰ Ϸ
+63  2025-06-24-1 ꯰ Ϸ
+64  2025-06-24-2 ꯰ Ϸ
+65  2025-06-24-3 ꯰ Ϸ
+66  2025-06-24-4 ꯰ Ϸ
+67  2025-06-24-5 ꯰ Ϸ
+7  2024-08-12-2 ꯰ Ϸ
+73  2025-07-04 ꯰ Ϸ
+74  2025-07-04-1 ꯰ Ϸ
+75  2025-07-04-2 ꯰ Ϸ
+76  2025-07-04-3 ꯰ Ϸ
+77  2025-07-04-4 ꯰ Ϸ
+78  2025-07-04-5 ꯰ Ϸ
+79  2025-07-04-6 ꯰ Ϸ
+8  2024-08-13 ꯰ Ϸ
+80  2025-07-04-7 ꯰ Ϸ
+81  2025-07-04-8 ꯰ Ϸ
+82  2025-07-04-9 ꯰ Ϸ
+83  2025-07-04-10 ꯰ Ϸ
+85  2025-07-06 ꯰ Ϸ
+86  2025-07-06-1 ꯰ Ϸ
+87  2025-07-06-2 ꯰ Ϸ
+89  2025-07-06-3 ꯰ Ϸ
+9  2024-08-16 ꯰ Ϸ
+90  2025-07-06-4 ꯰ Ϸ
+95  2025-07-06-5 ꯰ Ϸ
+98  2025-07-06-6 ꯰ Ϸ
+99  2025-07-06-7 ꯰ Ϸ
+</code></pre><h2 id="참고자료">【참고자료】</h2>
+<ul>
+<li><a href="https://pypi.org/project/beautifulsoup4/">파이썬 패키지 인덱스 - beautifulsoup4 4.14.3</a></li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+              <li class="related__item"><a href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/hugo-custom-scss-lawstyle/">hugo 환경에서 사용자 SCSS 법령형식 적용 테스트</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/guide/docsify-static-website-build/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">Docsify를 이용한 정적 웹사이트 구축</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/guide/phpwcms-webhosting-install-guide/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">웹호스팅 환경에서 phpwcms 설치</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-custom-scss-lawstyle/">hugo 환경에서 사용자 SCSS 법령형식 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/microsoft-entra-account-mfa/">마이크로소프트 entra 계정 관리 및 MFA 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/nssm-windows-service-manager/">NSSM을 이용한 Windows 응용프로그램 서비스 등록 및 관리</a></li>
+			<li class="widget__item"><a class="widget__link" href="/review/ces2026-transition-physical-ai/">[유튜브 리뷰] CES2026에서 선보인 새로운 피지컬AI 알파마요와 신형아틀라스</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-policy-daily-briefing/">자동화 프로세스를 통한 공공정책 일일브리핑 시범 추진 결과 보고</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/windows-odbc-driver-setup/">DB 연결을 위한 Windows ODBC 구성</a></li>
+			<li class="widget__item"><a class="widget__link" href="/essay/let-me-introduce-myself/">퍼블리크 운영자 소개</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/02">2026/02 (1)</option>
+      
+      <option value="/archives/2026/01">2026/01 (10)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/article/" title="article">article (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/digitalmedia/" title="digitalmedia">digitalmedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governup/" title="governup">governup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/leedeokho/" title="leedeokho">leedeokho (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (2)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<div class="widget-categories widget">
+	<h2 class="widget__title">Categories</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/essay/">essay</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/guide/">guide</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/note/">note</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/planning/">planning</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/report/">report</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/review/">review</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+		</ul>
+	</div>
+</div>
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>

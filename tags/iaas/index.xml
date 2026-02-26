@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iaas on Policy Atelier 퍼블리크</title>
+    <link>https://insight.public.re.kr/tags/iaas/</link>
+    <description>Recent content in Iaas on Policy Atelier 퍼블리크</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Thu, 26 Feb 2026 15:28:34 +0900</lastBuildDate>
+    <atom:link href="https://insight.public.re.kr/tags/iaas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Lightsail 환경에서 WordPress 구축</title>
+      <link>https://insight.public.re.kr/guide/wordpress-in-aws-lightsail/</link>
+      <pubDate>Mon, 12 Aug 2024 03:18:54 +0900</pubDate>
+      <guid>https://insight.public.re.kr/guide/wordpress-in-aws-lightsail/</guid>
+      <description>&lt;h1 id=&#34;aws-lightsail-환경에서-wordpress-구축&#34;&gt;AWS Lightsail 환경에서 WordPress 구축&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-워드프레스-구축&#34;&gt;1. 워드프레스 구축&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-lightsail---service-selection&#34;&gt;1.1. Lightsail - Service Selection&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create an instance&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Instance location: Seoul&lt;/li&gt;&#xA;&lt;li&gt;Select a platform: Linux&lt;/li&gt;&#xA;&lt;li&gt;Select a blueprint: Apps+OS WordPress&lt;/li&gt;&#xA;&lt;li&gt;Choose your instance plan: $3.5&lt;/li&gt;&#xA;&lt;li&gt;Identify your instance: Lightsail-Warehouse&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-lightsail---find-initial-password&#34;&gt;1.2. Lightsail - Find initial password&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Connect using SSH in created Instance&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat ~/bitnami_application_password&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-browser---access-wordpress&#34;&gt;1.3. Browser - Access WordPress&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To connect https://publicIPAddress/wp-admin and confirm login screen&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;14-lightsail---dns-zone--static-ip&#34;&gt;1.4. Lightsail - DNS zone &amp;amp; Static IP&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Domains &amp;amp; DNS: Create DNS zone&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Domain source: Use a domain from another registrar&lt;/li&gt;&#xA;&lt;li&gt;Domain name: public.re.kr&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Select a Region: Seoul&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Attach to an instance: Select created Instance&lt;/li&gt;&#xA;&lt;li&gt;Identify your static IP: Lightsail-Warehouse-IP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;15-domain-hosting-company---name-servers-setting&#34;&gt;1.5. Domain Hosting company - Name servers setting&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Domains &amp;amp; DNS: select created DNS zone&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
