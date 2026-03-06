@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2024/09 on Policy Atelier 퍼블리크</title>
+    <title>2024/09 on Insight of Public</title>
     <link>https://insight.public.re.kr/archives/2024/09/</link>
-    <description>Recent content in 2024/09 on Policy Atelier 퍼블리크</description>
+    <description>Recent content in 2024/09 on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Thu, 26 Feb 2026 15:28:34 +0900</lastBuildDate>
@@ -13,14 +13,14 @@
       <link>https://insight.public.re.kr/guide/whats-new-in-chrome/</link>
       <pubDate>Wed, 18 Sep 2024 19:28:18 +0900</pubDate>
       <guid>https://insight.public.re.kr/guide/whats-new-in-chrome/</guid>
-      <description>&lt;h1 id=&#34;크롬-시작시-새로운-기능-안내창-열림-해제&#34;&gt;크롬 시작시 새로운 기능 안내창 열림 해제&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-설정변경&#34;&gt;1. 설정변경&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;주소입력창에 chrome://flags/ 입력&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input &amp;ldquo;chrome://flags/&amp;rdquo; in URL bar&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Show Chrome What&amp;rsquo;s New page at chrome://whats-new 항목 찾기&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find &amp;ldquo;Show Chrome What&amp;rsquo;s New page at chrome://whats-new&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;기본값을 사용않함으로 변경&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Change Default to Disable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-문제가-해결되지-않는-경우&#34;&gt;2. 문제가 해결되지 않는 경우&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-%EC%84%A4%EC%A0%95%EB%B3%80%EA%B2%BD&#34;&gt;설정변경&lt;/a&gt;후에도 같은 증상이 반복되면 버전문제이므로 브라우저를 제거하고 PC 리부팅 후 다시설치 필요&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If it doesn&amp;rsquo;t change in spite of the above task, uninstall the current version and then reinstall recent version.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://support.google.com/chrome/thread/150004728?hl=ko&#34;&gt;Google Chrome 고객센터&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;1-설정변경&#34;&gt;1. 설정변경&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;주소입력창에 chrome://flags/ 입력&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Input &amp;ldquo;chrome://flags/&amp;rdquo; in URL bar&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Show Chrome What&amp;rsquo;s New page at chrome://whats-new 항목 찾기&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Find &amp;ldquo;Show Chrome What&amp;rsquo;s New page at chrome://whats-new&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;기본값을 사용않함으로 변경&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Change Default to Disable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-문제가-해결되지-않는-경우&#34;&gt;2. 문제가 해결되지 않는 경우&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-%EC%84%A4%EC%A0%95%EB%B3%80%EA%B2%BD&#34;&gt;설정변경&lt;/a&gt;후에도 같은 증상이 반복되면 버전문제이므로 브라우저를 제거하고 PC 리부팅 후 다시설치 필요&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If it doesn&amp;rsquo;t change in spite of the above task, uninstall the current version and then reinstall recent version.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://support.google.com/chrome/thread/150004728?hl=ko&#34;&gt;Google Chrome 고객센터&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>2020년 21대 총선 후 더불어시민당 해산을 앞둔 어느날 당대표의 메시지</title>
       <link>https://insight.public.re.kr/essay/citizens-party-of-korea/</link>
       <pubDate>Wed, 18 Sep 2024 19:23:00 +0900</pubDate>
       <guid>https://insight.public.re.kr/essay/citizens-party-of-korea/</guid>
-      <description>&lt;h1 id=&#34;2020년-21대-총선-후-더불어시민당-해산을-앞둔-어느날-당대표의-메시지&#34;&gt;2020년 21대 총선 후 더불어시민당 해산을 앞둔 어느날 당대표의 메시지&lt;/h1&gt;&#xA;&lt;h2 id=&#34;더불어시민당-당원-감사의-글&#34;&gt;더불어시민당 당원 감사의 글&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;사랑하는 당원동지 여러분&lt;br&gt;&#xA;동지들께서 그동안의 보내주신 열정과 헌신이 새로운 정치, 새로운 시대를 개막하고 있습니다.&lt;br&gt;&#xA;진심으로 고맙습니다.&lt;br&gt;&#xA;끝이 아니라, 이제 다시 시작입니다.&lt;br&gt;&#xA;미처 다하지 못한 개혁과제들이 여전히 우리 앞에 남아 있습니다.&lt;br&gt;&#xA;검찰개혁과 사법개혁으로 국민 누구에게나 공정하고 평등한 법의 가치를 정립해야 합니다.&lt;br&gt;&#xA;바른 언론이 나갈 길을 밝혀 정직한 나라를 세워야 합니다.&lt;br&gt;&#xA;정쟁이 아닌 정책으로 토론하고 소통과 대화를 통해서 국민을 위해 함께 일하는 성숙한 정치 문화의 국회를 만들어야 합니다.&lt;br&gt;&#xA;더불어시민당은 이제 시민개혁진영의 승리라는 시대적 소명을 다하고 국민을 위한 통합의 길에 함께할 것입니다.&lt;br&gt;&#xA;광화문을 가득 채웠던 촛불시민의 뜨거운 꿈의 실현을 위해 국민의 나라, 정의로운 대한민국을 위해 하나 된 마음으로 나아갑시다.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;더불어시민당-당원-감사의-글&#34;&gt;더불어시민당 당원 감사의 글&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;사랑하는 당원동지 여러분&lt;br&gt;&#xA;동지들께서 그동안의 보내주신 열정과 헌신이 새로운 정치, 새로운 시대를 개막하고 있습니다.&lt;br&gt;&#xA;진심으로 고맙습니다.&lt;br&gt;&#xA;끝이 아니라, 이제 다시 시작입니다.&lt;br&gt;&#xA;미처 다하지 못한 개혁과제들이 여전히 우리 앞에 남아 있습니다.&lt;br&gt;&#xA;검찰개혁과 사법개혁으로 국민 누구에게나 공정하고 평등한 법의 가치를 정립해야 합니다.&lt;br&gt;&#xA;바른 언론이 나갈 길을 밝혀 정직한 나라를 세워야 합니다.&lt;br&gt;&#xA;정쟁이 아닌 정책으로 토론하고 소통과 대화를 통해서 국민을 위해 함께 일하는 성숙한 정치 문화의 국회를 만들어야 합니다.&lt;br&gt;&#xA;더불어시민당은 이제 시민개혁진영의 승리라는 시대적 소명을 다하고 국민을 위한 통합의 길에 함께할 것입니다.&lt;br&gt;&#xA;광화문을 가득 채웠던 촛불시민의 뜨거운 꿈의 실현을 위해 국민의 나라, 정의로운 대한민국을 위해 하나 된 마음으로 나아갑시다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>대한민국 기관별 사법절차 사건부호</title>
