@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 04 Mar 2026 22:19:51 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 13:01:08 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report</title>
+      <link>https://insight.public.re.kr/categories/report/</link>
+      <pubDate>Wed, 11 Mar 2026 13:01:08 +0900</pubDate>
+      <guid>https://insight.public.re.kr/categories/report/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>https://insight.public.re.kr/categories/guide/</link>
+      <pubDate>Tue, 10 Mar 2026 14:48:36 +0900</pubDate>
+      <guid>https://insight.public.re.kr/categories/guide/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Note</title>
       <link>https://insight.public.re.kr/categories/note/</link>
@@ -16,31 +30,17 @@
       <description></description>
     </item>
     <item>
-      <title>Planning</title>
-      <link>https://insight.public.re.kr/categories/planning/</link>
-      <pubDate>Sat, 14 Feb 2026 11:25:04 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>https://insight.public.re.kr/categories/guide/</link>
-      <pubDate>Fri, 06 Feb 2026 05:44:26 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/guide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Report</title>
-      <link>https://insight.public.re.kr/categories/report/</link>
-      <pubDate>Wed, 04 Feb 2026 12:49:25 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/report/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Review</title>
       <link>https://insight.public.re.kr/categories/review/</link>
       <pubDate>Thu, 15 Jan 2026 10:40:51 +0900</pubDate>
       <guid>https://insight.public.re.kr/categories/review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planning</title>
+      <link>https://insight.public.re.kr/categories/planning/</link>
+      <pubDate>Wed, 19 Nov 2025 10:31:54 +0900</pubDate>
+      <guid>https://insight.public.re.kr/categories/planning/</guid>
       <description></description>
     </item>
     <item>

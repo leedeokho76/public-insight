@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   
-    퍼블리크 콘텐츠 작성 규칙 - Insight of Public
+    퍼블리크(인사이트) 콘텐츠 작성 규칙 - Insight of Public
   
 </title>
 <meta name="description" content="사이트 운영에 필요한 콘텐츠의 작성 및 데이터 구조화 규칙">
@@ -107,7 +107,7 @@
 <main class="main" role="main">
   <article class="post">
     <header class="post__header">
-			<h1 class="post__title">퍼블리크 콘텐츠 작성 규칙</h1>
+			<h1 class="post__title">퍼블리크(인사이트) 콘텐츠 작성 규칙</h1>
       
         <figure class="post__cover">
           <img src="cover.webp" alt="웹사이트 스타일 가이드를 상징하는 이미지">
@@ -139,14 +139,13 @@
     <li><a href="#2-tag-list">2. Tag List</a></li>
     <li><a href="#3-front-matter-규칙">3. Front Matter 규칙</a></li>
     <li><a href="#4-네레이션-구성">4. 네레이션 구성</a></li>
-    <li><a href="#5">5.</a></li>
+    <li><a href="#5-메타용어">5. 메타용어</a></li>
   </ul>
 </nav>
 			</div>
-		</div><div class="content post__content clearfix"><h1 id="웹사이트-콘텐츠-작성-규칙">웹사이트 콘텐츠 작성 규칙</h1>
-<h2 id="1-category">1. Category</h2>
+		</div><div class="content post__content clearfix"><h2 id="1-category">1. Category</h2>
 <blockquote>
-<p>카테고리의 경우 형식적 특성을, 태그의 경우 내용적 특성을 반영</p>
+<p>카테고리의 경우 형식적 특성을, 태그의 경우 내용적 특성을, 시리즈의 경우 동질성을 반영</p>
 </blockquote>
 <h3 id="11-메뉴구성상단">1.1. 메뉴구성(상단)</h3>
 <pre tabindex="0"><code>Home
@@ -156,7 +155,7 @@
 ├─Planning
 ├─Report
 ├─Review
-└─About (Tag)
+└─Public&#39;s Portal
 </code></pre><h3 id="12-세부내용">1.2. 세부내용</h3>
 <ol>
 <li>
@@ -202,10 +201,10 @@
 </ul>
 </li>
 <li>
-<p>About (tag)</p>
+<p>Public&rsquo;s Portal</p>
 <ul>
-<li>(목적) 사이트 및 Lab 소개</li>
-<li>(키워드) 소개 규정 공지</li>
+<li>(목적) 랜딩사이트 연결</li>
+<li>(키워드) 랜딩사이트</li>
 </ul>
 </li>
 </ol>
@@ -249,15 +248,13 @@
   
     <li><a href="/tags/applications">applications</a></li>
   
-    <li><a href="/tags/article">article</a></li>
+    <li><a href="/tags/architecture">architecture</a></li>
   
     <li><a href="/tags/device">device</a></li>
   
     <li><a href="/tags/fundamentals">fundamentals</a></li>
   
     <li><a href="/tags/governance">governance</a></li>
-  
-    <li><a href="/tags/governup">governup</a></li>
   
     <li><a href="/tags/iaas">iaas</a></li>
   
@@ -279,20 +276,17 @@
   
     <li><a href="/tags/writing">writing</a></li>
   
-    <li><a href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90">카테고리보조용으로영문소문자</a></li>
-  
 </ul>
 
 
 <h2 id="3-front-matter-규칙">3. Front Matter 규칙</h2>
 <pre tabindex="0"><code>title = &#34;목적 중심으로 개조식 기술&#34;
-date = &#34;YYYY-MM-DDTHH:MM:SS+09:00&#34;  // ISO 8601 표준
-lastmod = &#34;YYYY-MM-DDTHH:MM:SS+09:00&#34;  // ISO 8601 표준
-slug = &#34;영문 4단어 이내로 하이픈으로 연결&#34;
+date = YYYY-MM-DDTHH:MM:SS+09:00  // ISO 8601 표준
 description = &#34;방법 수단 중심으로 개조식 기술&#34;
 tags = [&#34;카테고리-보조용으로-영문-소문자&#34;]
 keywords = [&#34;한글과-영문소문자-별도작성&#34;]
-categories = [&#34;&#34;]
+categories = [&#34;첫글자만 대문자&#34;]
+series = [&#34;영문소문자&#34;]
 archives = [&#34;YYYY/MM&#34;]
 draft = false
 author = &#34;Lee Deokho&#34;
@@ -305,7 +299,7 @@ coverAlt = &#34;&#34;
 형식
 톤
 세부내용
-</code></pre><h2 id="5">5.</h2>
+</code></pre><h2 id="5-메타용어">5. 메타용어</h2>
 <ul>
 <li>rule 규칙</li>
 <li>plan 계획</li>
@@ -327,7 +321,157 @@ coverAlt = &#34;&#34;
 <li>setup (initial) 구성</li>
 <li>settings (user) 설정</li>
 </ul>
-</div>
+<!-- ver1.0 (2025.12.26)
+
+## 1. Category
+
+> 카테고리의 경우 형식적 특성을, 태그의 경우 내용적 특성을 반영
+
+### 1.1. 메뉴구성(상단)
+
+```
+Home
+├─Essay
+├─Guide
+├─Note
+├─Planning
+├─Report
+├─Review
+└─About (Tag)
+```
+
+### 1.2. 세부내용
+
+1. Essay
+   - (목적) 감상 의견
+   - (키워드) 주관성 느낌 감정 상념 내레이션
+
+2. Guide
+   - (목적) 실용적 도움
+   - (키워드) 방법 과정 절차 안내 제공, 미래 활용 목적
+
+3. Note
+   - (목적) 기록과 요약 
+   - (키워드) 짧은 기록, 비공식적 메모 성격
+
+4. Planning
+   - (목적) 계획 과정
+   - (키워드) 계획을 세우는 과정과 그 산출물(전략 분석, 계획서 등)
+
+5. Report
+   - (목적) 공식적 기록
+   - (키워드) 사례 성과 결과 구조적 공식적 객관적 결과·성과 케이스연구 포함
+
+6. Review
+   - (목적) 평가와 피드백
+   - (키워드) 어떤느낌 의견 비평 공유 주객관혼재
+
+7. About (tag)
+   - (목적) 사이트 및 Lab 소개
+   - (키워드) 소개 규정 공지
+
+### 1.3. 콘텐츠 특성
+
+| 구분             | 기록/전달          | 분석/평가             |     설계       |
+| :------------:   | :-------:          | :-------:             | :-------:      |
+| 비/반형식성      | Note(現) Guide(未) | Essay(過) Review(過)  |                |
+| 고형식성         |                    | Report(過)            | Planning(未)   |
+
+## 2. Tag List
+- (일반적 기준) 주제어
+- (특별한 기준) 프로젝트명, 어플명, 도메인 등
+
+
+<ul>
+  
+    <li><a href="/tags/accessibility">accessibility</a></li>
+  
+    <li><a href="/tags/ai">ai</a></li>
+  
+    <li><a href="/tags/applications">applications</a></li>
+  
+    <li><a href="/tags/architecture">architecture</a></li>
+  
+    <li><a href="/tags/device">device</a></li>
+  
+    <li><a href="/tags/fundamentals">fundamentals</a></li>
+  
+    <li><a href="/tags/governance">governance</a></li>
+  
+    <li><a href="/tags/iaas">iaas</a></li>
+  
+    <li><a href="/tags/institutions">institutions</a></li>
+  
+    <li><a href="/tags/multimedia">multimedia</a></li>
+  
+    <li><a href="/tags/public.re.kr">public.re.kr</a></li>
+  
+    <li><a href="/tags/saas">saas</a></li>
+  
+    <li><a href="/tags/spirituality">spirituality</a></li>
+  
+    <li><a href="/tags/tools">tools</a></li>
+  
+    <li><a href="/tags/webapp">webapp</a></li>
+  
+    <li><a href="/tags/wellbeing">wellbeing</a></li>
+  
+    <li><a href="/tags/writing">writing</a></li>
+  
+</ul>
+
+
+
+## 3. Front Matter 규칙
+
+```
+title = "목적 중심으로 개조식 기술"
+date = "YYYY-MM-DDTHH:MM:SS+09:00"  // ISO 8601 표준
+lastmod = "YYYY-MM-DDTHH:MM:SS+09:00"  // ISO 8601 표준
+slug = "영문 4단어 이내로 하이픈으로 연결"
+description = "방법 수단 중심으로 개조식 기술"
+tags = ["카테고리-보조용으로-영문-소문자"]
+keywords = ["한글과-영문소문자-별도작성"]
+categories = [""]
+archives = ["YYYY/MM"]
+draft = false
+author = "Lee Deokho"
+coverImage = ""
+coverAlt = ""
+```
+
+## 4. 네레이션 구성
+
+```
+프로그램명
+에피소드
+주제
+형식
+톤
+세부내용
+```
+
+## 5. 
+- rule 규칙
+- plan 계획
+- tips 요령
+- checklist Travel Checklist
+- collection 모음
+- examples Resume Examples
+- ideas Marketing Ideas
+- overview 일람
+- portfolio 포트폴리오
+- proposal (공식성이 강한) 기획안
+- Research
+- situation 상황
+- status 현황
+- summary
+- introduction 개론
+- build 구축
+- install 설치
+- setup (initial) 구성
+- settings (user) 설정
+--></div>
   </article>
 </main>
 
@@ -347,10 +491,6 @@ coverAlt = &#34;&#34;
       <div class="related">
         <h4 class="related__title">Related Posts</h4>
         <ul class="related__list">
-          
-            
-              <li class="related__item"><a href="/report/static-website-migration-result/">퍼블리크 정적웹사이트 전환 결과 보고</a></li>
-            
           
             
           
@@ -397,16 +537,16 @@ coverAlt = &#34;&#34;
 	<h2 class="widget__title">Recent</h2>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/japanese-verb-conjugation-system/">일본어 기초 품사 활용 체계</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/catholic-liturgy-structual-understanding/">가톨릭 미사 예식의 구조적 이해</a></li>
-			<li class="widget__item"><a class="widget__link" href="/planning/public-randingpage-build-plan/">퍼블리크 랜딩페이지 구축 계획</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/astro-website-builder-setup/">Astro 기반 정적 웹사이트 구축</a></li>
 			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
-			<li class="widget__item"><a class="widget__link" href="/report/daily-highlights-governup-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 추진 결과 보고</a></li>
-			<li class="widget__item"><a class="widget__link" href="/note/hugo-custom-scss-lawstyle/">hugo 환경에서 사용자 SCSS 법령형식 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-lawstyle-customscss-apply/">hugo 환경에서 사용자 SCSS 법령형식 적용</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
 			<li class="widget__item"><a class="widget__link" href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
 			<li class="widget__item"><a class="widget__link" href="/guide/microsoft-entra-account-mfa/">마이크로소프트 entra 계정 관리 및 MFA 설정</a></li>
-			<li class="widget__item"><a class="widget__link" href="/guide/nssm-windows-service-manager/">NSSM을 이용한 Windows 응용프로그램 서비스 등록 및 관리</a></li>
 		</ul>
 	</div>
 </div><div class="widget-archives widget">
@@ -415,7 +555,7 @@ coverAlt = &#34;&#34;
     <select onChange="location.href=value;">
       <option>Select Month</option>
       
-      <option value="/archives/2026/03">2026/03 (2)</option>
+      <option value="/archives/2026/03">2026/03 (4)</option>
       
       <option value="/archives/2026/02">2026/02 (2)</option>
       
@@ -452,22 +592,20 @@ coverAlt = &#34;&#34;
 		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/article/" title="article">article (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/governup/" title="governup">governup (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (12)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (3)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
 	</div>
 </div>
 <div class="widget-favorites widget">

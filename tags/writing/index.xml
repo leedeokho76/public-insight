@@ -6,8 +6,15 @@
     <description>Recent content in Writing on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 04 Mar 2026 22:19:51 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 14:48:36 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</title>
+      <link>https://insight.public.re.kr/guide/obsisian-setup-for-writing/</link>
+      <pubDate>Tue, 10 Mar 2026 14:48:36 +0900</pubDate>
+      <guid>https://insight.public.re.kr/guide/obsisian-setup-for-writing/</guid>
+      <description>&lt;h2 id=&#34;1-설치&#34;&gt;1. 설치&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;옵시디언 공식 사이트&lt;/a&gt;접속하여 인스톨파일 다운로드&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-설정-및-커뮤니티-플러그인-설치&#34;&gt;2. 설정 및 커뮤니티 플러그인 설치&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;스니펫&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. /obsidian-root/.obsidian/snippets/user.css 저장&#xD;&#xA;2. 설정→외형→CSS스니펫에 user.css 경로 등록&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Markdown Furigana (루비입력)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;- {漢字|かんじ} 배분정렬&#xD;&#xA;- {漢字|かん|じ} 기수정렬&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Templater (탬플레이트 자동화)&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. 아래 내용으로 /obsidian-root/임의폴더/임의파일.md 저장&#xD;&#xA;    &amp;lt;%-* tR += `{${tp.file.selection()}|}` -%&amp;gt;&#xD;&#xA;2. 설정→커뮤니티플러그인→Templater 설정&#xD;&#xA;    - Template folder location: 임의폴더 등록&#xD;&#xA;    - Template hotkeys: 임의폴더/임의파일 등록&#xD;&#xA;3. 설정→단축키&#xD;&#xA;    - Template로 검색 후 단축키 할당&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-옵시디언에서-가능한-마크다운-문법&#34;&gt;3. 옵시디언에서 가능한 마크다운 문법&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;범용으로 사용되는 마크다운 문법은 &lt;a href=&#34;ghttps://public.re.kr/note/markdown-syntax-usage-overview&#34;&gt;마크다운 문법 사용 개요&lt;/a&gt; 참고&lt;/p&gt;</description>
+    </item>
     <item>
       <title>일본어 기초 품사 활용 체계</title>
       <link>https://insight.public.re.kr/note/japanese-verb-conjugation-system/</link>
@@ -17,9 +24,9 @@
     </item>
     <item>
       <title>영문 제목 대소문자 붙이는 요령</title>
-      <link>https://insight.public.re.kr/guide/english-title-capitalization-tips/</link>
+      <link>https://insight.public.re.kr/note/english-title-capitalization-tips/</link>
       <pubDate>Mon, 26 Aug 2024 22:19:54 +0900</pubDate>
-      <guid>https://insight.public.re.kr/guide/english-title-capitalization-tips/</guid>
+      <guid>https://insight.public.re.kr/note/english-title-capitalization-tips/</guid>
       <description>&lt;h2 id=&#34;1-영문-제목에-대문자를-사용하는-경우&#34;&gt;1. 영문 제목에 대문자를 사용하는 경우&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-첫단어와-마지막-단어는-대문자로-사용함&#34;&gt;1.1. 첫단어와 마지막 단어는 대문자로 사용함.&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;u&gt;Of&lt;/u&gt; Mice and Men (생쥐와 인간)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;of는 전치사지만 첫 단어이므로 대문자 사용&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-명사와-대명사는-대문자로-사용함&#34;&gt;1.2. 명사와 대명사는 대문자로 사용함.&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;For &lt;u&gt;Whom&lt;/u&gt; the Bell Tolls (누구를 위하여 종을 울리나)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;whom은 대명사, bell은 명사로 대문자를 사용함.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-동사와-조동사는-대문자를-사용함&#34;&gt;1.3. 동사와 조동사는 대문자를 사용함.&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;The Sun Also &lt;u&gt;Rises&lt;/u&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;rises는 동사로 대문자를 사용함.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;All the Light We &lt;u&gt;Cannot&lt;/u&gt; See (우리가 볼 수 없는 모든 빛)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;cannot는 조동사와 not이 합쳐진 말로 대문자 사용.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Maybe You &lt;u&gt;Should&lt;/u&gt; Talk to Someone (당신은 누군가와 대화해야 할지도 몰라요)&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>

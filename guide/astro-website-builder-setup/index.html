@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    Astro 기반 정적 웹사이트 구축 - Insight of Public
+  
+</title>
+<meta name="description" content="정적웹사이트 빌드 도구인 Astro의 설치 및 설정과 관련된 정보">
+
+
+<link rel="stylesheet" href="/scss/style.min.eb7272dc6670d68b73999880852e0d6204abba0415f4549e1336a53290bb1b45.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public</div>
+          
+            <div class="logo__subtitle">정책 아틀리에 퍼블리크 운영 블로그</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">Astro 기반 정적 웹사이트 구축</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="Astro 공식 사이트 메인 화면">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-02-08T14:19:40&#43;09:00">2026-02-08</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/guide/" rel="category">Guide</a>
+	</span>
+</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/tools/" rel="tag">tools</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-설치">1. 설치</a>
+      <ul>
+        <li><a href="#11-패키지-환경-점검">1.1. 패키지 환경 점검</a></li>
+        <li><a href="#12-astro-프로젝트-생성">1.2. astro 프로젝트 생성</a></li>
+        <li><a href="#13-테스트">1.3. 테스트</a></li>
+        <li><a href="#14-페이지-확인">1.4. 페이지 확인</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-설치-후-디렉터리-구조">2. 설치 후 디렉터리 구조</a></li>
+    <li><a href="#3-명령-일람">3. 명령 일람</a></li>
+    <li><a href="#참고자료">【참고자료】</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-설치">1. 설치</h2>
+<h3 id="11-패키지-환경-점검">1.1. 패키지 환경 점검</h3>
+<ul>
+<li>node.js v18.17.1 또는 v20.3.0 이상의 버전이 필요</li>
+<li>npm v9.0.0 이상</li>
+</ul>
+<pre tabindex="0"><code>enduser@Vinus MINGW64 ~ (main)
+$ node -v
+v24.12.0
+
+enduser@Vinus MINGW64 ~ (main)
+$ npm -v
+11.6.2
+</code></pre><h3 id="12-astro-프로젝트-생성">1.2. astro 프로젝트 생성</h3>
+<ul>
+<li>uno-forge-hub/agency-landing-page-Astrojs 테마 선정</li>
+</ul>
+<pre tabindex="0"><code>####### 테마 없이 프로젝트 생성
+# enduser@Vinus MINGW64 ~ (main)
+# npm create astro@latest www
+
+####### 프로젝트 생성과 테마 설치 동시에 진행
+# npm create astro@latest → 최신 버전 Astro 프로젝트 생성 스크립트 실행
+# www → 프로젝트가 만들어질 폴더 이름
+# -- → npm 옵션과 Astro CLI 옵션을 구분
+# --template uno-forge-hub/agency-landing-page-Astrojs → 특정 GitHub 템플릿을 사용
+
+enduser@Vinus MINGW64 ~ (main)
+npm create astro@latest www -- --template uno-forge-hub/agency-landing-page-Astrojs
+
+enduser@Vinus MINGW64 ~ (main)
+Need to install the following packages:
+create-astro@4.13.2
+Ok to proceed? (y) y
+
+
+&gt; npx
+&gt; create-astro www --template uno-forge-hub/agency-landing-page-Astrojs
+
+
+ astro   Launch sequence initiated.
+
+      ◼  dir
+         Using www as project directory
+      ◼  tmpl
+         Using uno-forge-hub/agency-landing-page-Astrojs as project template
+
+  deps   Install dependencies?
+         Yes
+
+   git   Initialize a new git repository?
+         No
+      ◼  Sounds good!
+         You can always run git init manually.
+
+      ✔  Project initialized!
+         ■ Template copied
+         ■ Dependencies installed
+
+  next   Liftoff confirmed. Explore your project!
+
+ Enter your project directory using cd ./www
+ Run npm run dev to start the dev server. CTRL+C to stop.
+ Add frameworks like react or tailwind using astro add.
+
+ Stuck? Join us at https://astro.build/chat
+</code></pre><h3 id="13-테스트">1.3. 테스트</h3>
+<pre tabindex="0"><code>enduser@Vinus MINGW64 /d/onedrive/dev
+$ cd www
+
+enduser@Vinus MINGW64 /d/onedrive/dev/www
+$ npm run dev
+
+&gt; www@0.0.5 dev
+&gt; astro dev
+
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run &#34;astro telemetry disable&#34; to opt-out.
+  https://astro.build/telemetry
+
+15:47:06 [types] Generated 1ms
+15:47:06 [content] Syncing content
+15:47:06 [content] Synced content
+
+ astro  v5.7.12 ready in 560 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+15:47:06 watching for file changes...
+
+ update  ▶ New version of Astro available: 5.18.0
+  Run npx @astrojs/upgrade to update
+
+15:47:14 Configuration file updated. Restarting...
+15:47:14 [vite] Re-optimizing dependencies because vite config has changed
+15:47:14 [content] Syncing content
+15:47:14 [content] Synced content
+15:47:14 [types] Generated 158ms
+15:47:14 [vite] Re-optimizing dependencies because vite config has changed
+15:47:25 [200] / 118ms
+</code></pre><h3 id="14-페이지-확인">1.4. 페이지 확인</h3>
+<ul>
+<li>브라우저에서 http://localhost:4321/ 접속</li>
+</ul>
+<h2 id="2-설치-후-디렉터리-구조">2. 설치 후 디렉터리 구조</h2>
+<pre tabindex="0"><code>my-project/
+├─ public/              # 정적 자산 (이미지, 폰트, favicon 등) 빌드없이 그대로 배포
+├─ src/                 # 실질적 소스코드가 위치
+│  ├─ components/       # 재사용 가능한 UI 컴포넌트 (버튼, 헤더 등)
+│  ├─ content/          # 구조화된 Markdown/MDX 콘텐츠 (블로그 글, 문서 등)
+│  ├─ layouts/          # 페이지 레이아웃 (공통 헤더/푸터)
+│  ├─ pages/            # 실제 페이지 (index.astro, about.astro 등)
+│  ├─ styles/           # CSS, Tailwind 설정 등
+│  └─ utils/            # 재사용 가능한 유틸리티 함수 등 (선택)
+├─ package.json         # npm 의존성 관리
+├─ astro.config.mjs     # Astro 프로젝트 설정
+├─ tsconfig.json        # TypeScript 설정 (선택)
+└─ dist/                # 빌드 결과물 (배포용)
+</code></pre><h2 id="3-명령-일람">3. 명령 일람</h2>
+<pre tabindex="0"><code>####### Installs dependencies
+npm install
+
+####### Starts local dev server at localhost:4321
+npm run dev
+
+####### Build your production site to ./dist/
+npm run build
+
+####### Preview your build locally, before deploying
+npm run preview
+
+####### Run CLI commands like astro add, astro check
+npm run astro ...	
+
+####### Get help using the Astro CLI
+npm run astro --help	
+</code></pre><h2 id="참고자료">【참고자료】</h2>
+<p><a href="https://github.com/uno-forge-hub/agency-landing-page-Astrojs">AgenceX Landing page</a></p>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+          
+            
+              <li class="related__item"><a href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/hugo-lawstyle-customscss-apply/">hugo 환경에서 사용자 SCSS 법령형식 적용</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/guide/hugo-hero-theme-setup/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">hugo웹사이트 hero 테마 설정</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/guide/obsisian-setup-for-writing/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/japanese-verb-conjugation-system/">일본어 기초 품사 활용 체계</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/catholic-liturgy-structual-understanding/">가톨릭 미사 예식의 구조적 이해</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/astro-website-builder-setup/">Astro 기반 정적 웹사이트 구축</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-lawstyle-customscss-apply/">hugo 환경에서 사용자 SCSS 법령형식 적용</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/libwebp-for-webp-usage/">webp를 위한 라이브러리 libwebp 활용</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/microsoft-entra-account-mfa/">마이크로소프트 entra 계정 관리 및 MFA 설정</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/03">2026/03 (4)</option>
+      
+      <option value="/archives/2026/02">2026/02 (2)</option>
+      
+      <option value="/archives/2026/01">2026/01 (9)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>

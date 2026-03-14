@@ -6,12 +6,19 @@
     <description>Recent content in Tags on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 04 Mar 2026 22:19:51 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 13:01:08 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>https://insight.public.re.kr/tags/architecture/</link>
+      <pubDate>Wed, 11 Mar 2026 13:01:08 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/architecture/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Writing</title>
       <link>https://insight.public.re.kr/tags/writing/</link>
-      <pubDate>Wed, 04 Mar 2026 22:19:51 +0900</pubDate>
+      <pubDate>Tue, 10 Mar 2026 14:48:36 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/writing/</guid>
       <description></description>
     </item>
@@ -23,24 +30,10 @@
       <description></description>
     </item>
     <item>
-      <title>카테고리보조용으로영문소문자</title>
-      <link>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</link>
-      <pubDate>Sat, 14 Feb 2026 11:25:04 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Tools</title>
       <link>https://insight.public.re.kr/tags/tools/</link>
-      <pubDate>Fri, 06 Feb 2026 05:44:26 +0900</pubDate>
+      <pubDate>Sun, 08 Feb 2026 14:19:40 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Governup</title>
-      <link>https://insight.public.re.kr/tags/governup/</link>
-      <pubDate>Wed, 04 Feb 2026 12:49:25 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/governup/</guid>
       <description></description>
     </item>
     <item>
@@ -67,7 +60,7 @@
     <item>
       <title>Public.re.kr</title>
       <link>https://insight.public.re.kr/tags/public.re.kr/</link>
-      <pubDate>Thu, 01 Jan 2026 23:22:54 +0900</pubDate>
+      <pubDate>Fri, 26 Dec 2025 14:50:12 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/public.re.kr/</guid>
       <description></description>
     </item>
@@ -125,13 +118,6 @@
       <link>https://insight.public.re.kr/tags/iaas/</link>
       <pubDate>Mon, 12 Aug 2024 03:18:54 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/iaas/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Article</title>
-      <link>https://insight.public.re.kr/tags/article/</link>
-      <pubDate>Fri, 10 Mar 2023 23:39:54 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/article/</guid>
       <description></description>
     </item>
     <item>
