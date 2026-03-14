@@ -138,6 +138,7 @@
     </li>
     <li><a href="#2-설치-후-디렉터리-구조">2. 설치 후 디렉터리 구조</a></li>
     <li><a href="#3-명령-일람">3. 명령 일람</a></li>
+    <li><a href="#4-로컬에서-push">4. 로컬에서 push</a></li>
     <li><a href="#참고자료">【참고자료】</a></li>
   </ul>
 </nav>
@@ -208,6 +209,11 @@ Ok to proceed? (y) y
  Add frameworks like react or tailwind using astro add.
 
  Stuck? Join us at https://astro.build/chat
+
+
+####### 의존성 패키지 설치
+enduser@Vinus MINGW64 ~ (main)
+npm install
 </code></pre><h3 id="13-테스트">1.3. 테스트</h3>
 <pre tabindex="0"><code>enduser@Vinus MINGW64 /d/onedrive/dev
 $ cd www
@@ -280,8 +286,39 @@ npm run astro ...
 
 ####### Get help using the Astro CLI
 npm run astro --help	
+</code></pre><h2 id="4-로컬에서-push">4. 로컬에서 push</h2>
+<ul>
+<li>Astro는 Hugo와 다르게 리빌드시, 빌드 결과가 생성되는 폴더를 초기화하여 .git 이력이 삭제되는 문제가 발생</li>
+<li>그 결과, Hugo처럼 public 폴더만 git init 하여 gh-pages branch를 생성하여 업로드하는 것이 아니라, Astro 프로젝트 루트를 git init 하고 gh-pages branch를 생성하여 dist 폴더만 업로드 하는 방식을 선택</li>
+</ul>
+<pre tabindex="0"><code>####### 폴더 초기화(최초 1회만 수행)
+$ git init
+Initialized empty Git repository in D:/OneDrive/dev/public-re-kr/public/.git/
+
+####### 로컬 디렉터리와 원격저장소 연결(최초 1회만 수행)
+$ git remote add origin https://github.com/username/project-site.git
+
+####### 새 브랜치를 생성하고 그 브랜치로 이동(최초 1회만 수행)
+$ git checkout -b gh-pages
+Switched to a new branch &#39;gh-pages&#39;
+
+####### 브랜치 변경
+$ git switch gh-pages ####### PAD에서는 git switch gh-pages 2&gt;$null || echo ok 명령
+
+####### 빌드
+$ npm run build ####### 또는 astro build
+
+####### dist 디렉터리를 스테이징
+$ git add dist -f
+
+####### 스테이징한 파일을 커밋
+$ git commit -m &#34;Deploy after Edit&#34;
+
+####### --force 옵션시 강제 덮어쓰기 수행(옵션 제거시 변경된 파일만 업데이토)
+$ git subtree push --prefix dist origin gh-pages
 </code></pre><h2 id="참고자료">【참고자료】</h2>
-<p><a href="https://github.com/uno-forge-hub/agency-landing-page-Astrojs">AgenceX Landing page</a></p>
+<p><a href="https://docs.astro.build/en/getting-started/">Astro Docs</a>
+<a href="https://github.com/uno-forge-hub/agency-landing-page-Astrojs">AgenceX Landing page</a></p>
 </div>
   </article>
 </main>
