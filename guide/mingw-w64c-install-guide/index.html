@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    C 개발환경 구축을 위한 Windows 용 컴퍼일러 설치 및 환경설정 - Insight of Public
+  
+</title>
+<meta name="description" content="윈도우11 환경에서 C개발환경 구축을 위해 GCC 컴파일러인 mingw-w64 설치 및 환경설정에 대한 설명">
+
+
+<link rel="stylesheet" href="/scss/style.min.fde84b2c6da8acbfb0ca247ae04b33b6c3a5fea5fcfbe65e6439af5346e8c743.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public</div>
+          
+            <div class="logo__subtitle">정책 아틀리에 퍼블리크 운영 블로그</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">C 개발환경 구축을 위한 Windows 용 컴퍼일러 설치 및 환경설정</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="컴파일러를 상징하는 일러스트레이션">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-09-20T10:21:34&#43;09:00">2025-09-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/guide/" rel="category">Guide</a>
+	</span>
+</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/tools/" rel="tag">tools</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-mingw-w64의-windows용-배포판-개요">1. mingw-w64의 Windows용 배포판 개요</a></li>
+    <li><a href="#2-설치">2. 설치</a>
+      <ul>
+        <li><a href="#21-최신-archive-버전-설치">2.1. 최신 Archive 버전 설치</a></li>
+        <li><a href="#22-install-버전-설치">2.2. Install 버전 설치</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-path-설정-확인-및-실행-테스트">3. Path 설정 확인 및 실행 테스트</a></li>
+    <li><a href="#4-vscode에서-설정">4. vscode에서 설정</a>
+      <ul>
+        <li><a href="#41-launchjson-파일-생성또는-변경">4.1. launch.json 파일 생성(또는 변경)</a></li>
+        <li><a href="#42-taskjson-파일-생성또는-수정">4.2. task.json 파일 생성(또는 수정)</a></li>
+      </ul>
+    </li>
+    <li><a href="#참고자료">【참고자료】</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-mingw-w64의-windows용-배포판-개요">1. mingw-w64의 Windows용 배포판 개요</h2>
+<ol>
+<li>(Cygwin) 유닉스 전용 라이브러리나 툴을 Windows에서 그대로 쓰고 싶을 때 유용하나, 초중량</li>
+<li>(GCC-MCF) POSIX 호환성보다는 Windows 네이티브 성능과 단순성을 중시하나, 표준 스레드 모델이 아닌 자체 모델(MCF)로 호환성 대중성 제한</li>
+<li>(LLVM-MinGW) GCC 대신 LLVM/Clang/LLD 기반으로 일부 라이브러리 호환성 문제</li>
+<li><strong>(MinGW-W64-builds)</strong> 컴파일 결과물은 별도의 런타임 환경 없이 Windows에서 바로 실행 가능, 신속·경량·대중적</li>
+<li>(MSYS2) 최신 라이브러리와 툴을 쉽게 설치, 리눅스 스타일 개발환경 제공, 초중량</li>
+<li>(w64devkit) 매우 가볍고 휴대성 좋음, PATH 설정 불필요, 기능제한</li>
+<li>(WinLibs.com) 최신 버전 빠르게 제공, 설치 간단하나, 추가 라이브러리 설치 필요</li>
+</ol>
+<h2 id="2-설치">2. 설치</h2>
+<h3 id="21-최신-archive-버전-설치">2.1. 최신 Archive 버전 설치</h3>
+<ol>
+<li>개발자 Github <a href="https://github.com/niXman/mingw-builds-binaries/releases">niXman / mingw-builds-binaries</a>에서 최신버전(2026.3. 현재 15.2.0-rt_v13-rev1) 다운로드</li>
+<li>시스템 검색창에서 &ldquo;시스템 환경변수 편집&rdquo; 항목 검색 후 클릭</li>
+<li>&ldquo;환경변수&rdquo; 클릭</li>
+<li>시스템변수 창에 Path 선택 후, 편집</li>
+<li>&ldquo;새로만들기&rdquo; 클릭 후 경로(C:\MinGW\bin) 입력</li>
+</ol>
+<h3 id="22-install-버전-설치">2.2. Install 버전 설치</h3>
+<ol>
+<li><a href="https://sourceforge.net/projects/mingw-w64/">SourceForge</a>에서 mingw-get-setup.exe (2026.3. 현재 mingw-w64-v11.0.0)다운로드</li>
+<li>Default 로 설치 진행</li>
+<li>MinGW Installation Manger 연 상태에서 다음 4개 항목 선택
+<ul>
+<li>mingw-developer-toolkit</li>
+<li>minigw32-base</li>
+<li>mingw32-gcc-g++</li>
+<li>msys-base</li>
+</ul>
+</li>
+<li>installation - Update Category 또는 Apply Changes</li>
+</ol>
+<h2 id="3-path-설정-확인-및-실행-테스트">3. Path 설정 확인 및 실행 테스트</h2>
+<ol>
+<li>
+<p>명령프롬프트창에서 다음 명령어로 버전 확인</p>
+<pre tabindex="0"><code>C:\Users\user&gt;gcc -v  # 또는 gcc --version
+
+gcc (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 15.2.0
+Copyright (C) 2025 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+</code></pre></li>
+<li>
+<p>다음 소스 저장</p>
+<pre tabindex="0"><code>// Hello.c
+
+#include &lt;stdio.h&gt;
+
+int main(void) {
+printf(&#34;%s&#34;, &#34;Hello, World!!&#34;);
+return 0;
+}
+</code></pre></li>
+<li>
+<p>컴파일</p>
+<pre tabindex="0"><code>C:\Users\user&gt;gcc Hello.c // a.exe 생성
+C:\Users\user&gt;gcc -o Hello Hello.c // Hello.exe 생성
+</code></pre></li>
+<li>
+<p>실행결과 확인</p>
+<pre tabindex="0"><code>C:\Users\user&gt;./Hello.exe
+
+Hello, World!!
+</code></pre></li>
+</ol>
+<h2 id="4-vscode에서-설정">4. vscode에서 설정</h2>
+<h3 id="41-launchjson-파일-생성또는-변경">4.1. launch.json 파일 생성(또는 변경)</h3>
+<ol>
+<li>
+<p>명령팔레트(Ctrl + Shift + P) 실행</p>
+<ul>
+<li>C/C++: Add Debug Configuration 선택</li>
+<li>C/C++: gcc.exe build and debug active file 선택</li>
+</ul>
+</li>
+<li>
+<p>launch.json 파일 수정</p>
+</li>
+</ol>
+<pre tabindex="0"><code>{
+  &#34;version&#34;: &#34;0.2.0&#34;,
+  &#34;configurations&#34;: [
+    {
+      &#34;name&#34;: &#34;C/C++: gcc.exe build and debug active file&#34;,
+      &#34;type&#34;: &#34;cppdbg&#34;,
+      &#34;request&#34;: &#34;launch&#34;,
+      // &#34;program&#34;: &#34;${fileDirname}\\${fileBasenameNoExtension}.exe&#34;,
+      &#34;program&#34; : &#34;${fileDirname}\\${fileBasenameNoExtension}.exe&#34;,
+      &#34;args&#34;: [],
+      &#34;stopAtEntry&#34;: false,
+      // &#34;cwd&#34;: &#34;C:\\MinGW\\bin&#34;,
+      &#34;cwd&#34;: &#34;${fileDirname}&#34;,
+      &#34;environment&#34;: [],
+      &#34;externalConsole&#34;: false,
+      &#34;MIMode&#34;: &#34;gdb&#34;,
+      // &#34;miDebuggerPath&#34;: &#34;gdb.exe&#34;,
+      &#34;miDebuggerPath&#34;: &#34;C:\\Tools\\mingw64\\bin\\gdb.exe&#34;,
+      &#34;setupCommands&#34;: [
+        {
+          &#34;description&#34;: &#34;Enable pretty-printing for gdb&#34;,
+          &#34;text&#34;: &#34;-enable-pretty-printing&#34;,
+          &#34;ignoreFailures&#34;: true
+        },
+        {
+          &#34;description&#34;: &#34;Set Disassembly Flavor to Intel&#34;,
+          &#34;text&#34;: &#34;-gdb-set disassembly-flavor intel&#34;,
+          &#34;ignoreFailures&#34;: true
+        }
+      ],
+      &#34;preLaunchTask&#34;: &#34;C/C++: gcc.exe build active file&#34;
+    }
+  ]
+}
+</code></pre><h3 id="42-taskjson-파일-생성또는-수정">4.2. task.json 파일 생성(또는 수정)</h3>
+<ol>
+<li>명령팔레트(Ctrl + Shift + P) 실행
+<ul>
+<li>Tasks: Configure Task</li>
+<li>C/C++ gcc.exe build active file&hellip;</li>
+</ul>
+</li>
+<li>task.json 파일 수정</li>
+</ol>
+<pre tabindex="0"><code>{
+  &#34;version&#34;: &#34;2.0.0&#34;,
+  &#34;tasks&#34;: [
+    {
+      &#34;type&#34;: &#34;cppbuild&#34;,
+      &#34;label&#34;: &#34;C/C++: gcc.exe build active file&#34;,
+      // &#34;command&#34;: &#34;C:\\MinGW\\bin\\gcc.exe&#34;,
+      &#34;command&#34;: &#34;C:\\Tools\\mingw64\\bin\\gcc.exe&#34;,
+      &#34;args&#34;: [
+        &#34;-fdiagnostics-color=always&#34;,
+        &#34;-g&#34;,
+        &#34;${file}&#34;,
+        &#34;-o&#34;,
+        &#34;${fileDirname}\\${fileBasenameNoExtension}.exe&#34;
+      ],
+      &#34;options&#34;: {
+        &#34;cwd&#34;: &#34;${fileDirname}&#34;
+      },
+      &#34;problemMatcher&#34;: [&#34;$gcc&#34;],
+      &#34;group&#34;: {
+        &#34;kind&#34;: &#34;build&#34;,
+        &#34;isDefault&#34;: true
+      },
+      &#34;detail&#34;: &#34;Task generated by Debugger.&#34;
+    }
+  ]
+}
+</code></pre><h2 id="참고자료">【참고자료】</h2>
+<ul>
+<li><a href="https://www.mingw-w64.org">mingw-w64 Official</a></li>
+<li><a href="https://sourceforge.net/projects/mingw-w64/">SourceForge - MinGW-w64 for 32 and 64 bit Windows</a></li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+              <li class="related__item"><a href="/planning/law-semantic-styling-plan/">법령형식의 시멘틱 스타일링 적용 계획</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/guide/astro-website-builder-setup/">Astro 기반 정적 웹사이트 구축</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/law-semantic-styling-implementation/">법령형식의 시멘틱 스타일링을 실제 법령인 행정기본법에 구현</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/guide/whats-new-in-chrome/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">크롬 시작시 새로운 기능 안내창 열림 해제</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/guide/docsify-static-website-build/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">Docsify를 이용한 정적 웹사이트 구축</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/power-automate-cloud-settings/">Power Automate Cloud 사용을 위한 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/planning/law-semantic-styling-plan/">법령형식의 시멘틱 스타일링 적용 계획</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/japanese-verb-conjugation-system/">일본어 기초 품사 활용 체계</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/catholic-liturgy-structual-understanding/">가톨릭 미사 예식의 구조적 이해</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/astro-website-builder-setup/">Astro 기반 정적 웹사이트 구축</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-hero-theme-setup/">hugo웹사이트 hero 테마 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/law-semantic-styling-implementation/">법령형식의 시멘틱 스타일링을 실제 법령인 행정기본법에 구현</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/hugo-bootstrap-namespaced-test/">hugo 환경에서 부트스트랩 네임스페이스 적용 테스트</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/03">2026/03 (5)</option>
+      
+      <option value="/archives/2026/02">2026/02 (2)</option>
+      
+      <option value="/archives/2026/01">2026/01 (10)</option>
+      
+      <option value="/archives/2025/12">2025/12 (5)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (13)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (1)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>
