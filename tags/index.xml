@@ -6,20 +6,34 @@
     <description>Recent content in Tags on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 30 Mar 2026 17:52:21 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 14:39:02 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>카테고리보조용으로영문소문자</title>
-      <link>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</link>
-      <pubDate>Mon, 30 Mar 2026 17:52:21 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</guid>
+      <title>Framework</title>
+      <link>https://insight.public.re.kr/tags/framework/</link>
+      <pubDate>Wed, 08 Apr 2026 14:39:02 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/framework/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tools</title>
-      <link>https://insight.public.re.kr/tags/tools/</link>
+      <title>Util</title>
+      <link>https://insight.public.re.kr/tags/util/</link>
+      <pubDate>Wed, 08 Apr 2026 14:39:02 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/util/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saas</title>
+      <link>https://insight.public.re.kr/tags/saas/</link>
+      <pubDate>Mon, 30 Mar 2026 17:52:21 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/saas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Law</title>
+      <link>https://insight.public.re.kr/tags/law/</link>
       <pubDate>Wed, 25 Mar 2026 14:27:11 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/tools/</guid>
+      <guid>https://insight.public.re.kr/tags/law/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +55,6 @@
       <link>https://insight.public.re.kr/tags/spirituality/</link>
       <pubDate>Tue, 03 Mar 2026 15:44:21 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/spirituality/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Saas</title>
-      <link>https://insight.public.re.kr/tags/saas/</link>
-      <pubDate>Fri, 23 Jan 2026 13:41:39 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/saas/</guid>
       <description></description>
     </item>
     <item>
@@ -79,24 +86,31 @@
       <description></description>
     </item>
     <item>
-      <title>Fundamentals</title>
-      <link>https://insight.public.re.kr/tags/fundamentals/</link>
+      <title>Fundamental</title>
+      <link>https://insight.public.re.kr/tags/fundamental/</link>
       <pubDate>Mon, 06 Oct 2025 22:21:14 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/fundamentals/</guid>
+      <guid>https://insight.public.re.kr/tags/fundamental/</guid>
       <description></description>
     </item>
     <item>
-      <title>Applications</title>
-      <link>https://insight.public.re.kr/tags/applications/</link>
+      <title>Compiler</title>
+      <link>https://insight.public.re.kr/tags/compiler/</link>
+      <pubDate>Sat, 20 Sep 2025 10:21:34 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/compiler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>카테고리보조용으로영문소문자</title>
+      <link>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</link>
+      <pubDate>Wed, 09 Jul 2025 15:34:54 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Application</title>
+      <link>https://insight.public.re.kr/tags/application/</link>
       <pubDate>Wed, 18 Sep 2024 19:28:18 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/applications/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Institutions</title>
-      <link>https://insight.public.re.kr/tags/institutions/</link>
-      <pubDate>Wed, 18 Sep 2024 19:19:26 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/institutions/</guid>
+      <guid>https://insight.public.re.kr/tags/application/</guid>
       <description></description>
     </item>
     <item>

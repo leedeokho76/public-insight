@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiler on Insight of Public</title>
+    <link>https://insight.public.re.kr/tags/compiler/</link>
+    <description>Recent content in Compiler on Insight of Public</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Sat, 20 Sep 2025 10:21:34 +0900</lastBuildDate>
+    <atom:link href="https://insight.public.re.kr/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 개발환경 구축을 위한 Windows 용 컴퍼일러 설치 및 환경설정</title>
+      <link>https://insight.public.re.kr/guide/mingw-w64c-install-guide/</link>
+      <pubDate>Sat, 20 Sep 2025 10:21:34 +0900</pubDate>
+      <guid>https://insight.public.re.kr/guide/mingw-w64c-install-guide/</guid>
+      <description>&lt;h2 id=&#34;1-mingw-w64의-windows용-배포판-개요&#34;&gt;1. mingw-w64의 Windows용 배포판 개요&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;(Cygwin) 유닉스 전용 라이브러리나 툴을 Windows에서 그대로 쓰고 싶을 때 유용하나, 초중량&lt;/li&gt;&#xA;&lt;li&gt;(GCC-MCF) POSIX 호환성보다는 Windows 네이티브 성능과 단순성을 중시하나, 표준 스레드 모델이 아닌 자체 모델(MCF)로 호환성 대중성 제한&lt;/li&gt;&#xA;&lt;li&gt;(LLVM-MinGW) GCC 대신 LLVM/Clang/LLD 기반으로 일부 라이브러리 호환성 문제&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;(MinGW-W64-builds)&lt;/strong&gt; 컴파일 결과물은 별도의 런타임 환경 없이 Windows에서 바로 실행 가능, 신속·경량·대중적&lt;/li&gt;&#xA;&lt;li&gt;(MSYS2) 최신 라이브러리와 툴을 쉽게 설치, 리눅스 스타일 개발환경 제공, 초중량&lt;/li&gt;&#xA;&lt;li&gt;(w64devkit) 매우 가볍고 휴대성 좋음, PATH 설정 불필요, 기능제한&lt;/li&gt;&#xA;&lt;li&gt;(WinLibs.com) 최신 버전 빠르게 제공, 설치 간단하나, 추가 라이브러리 설치 필요&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-설치&#34;&gt;2. 설치&lt;/h2&gt;&#xA;&lt;h3 id=&#34;21-최신-archive-버전-설치&#34;&gt;2.1. 최신 Archive 버전 설치&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;개발자 Github &lt;a href=&#34;https://github.com/niXman/mingw-builds-binaries/releases&#34;&gt;niXman / mingw-builds-binaries&lt;/a&gt;에서 최신버전(2026.3. 현재 15.2.0-rt_v13-rev1) 다운로드&lt;/li&gt;&#xA;&lt;li&gt;시스템 검색창에서 &amp;ldquo;시스템 환경변수 편집&amp;rdquo; 항목 검색 후 클릭&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;환경변수&amp;rdquo; 클릭&lt;/li&gt;&#xA;&lt;li&gt;시스템변수 창에 Path 선택 후, 편집&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;새로만들기&amp;rdquo; 클릭 후 경로(C:\MinGW\bin) 입력&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;22-install-버전-설치&#34;&gt;2.2. Install 버전 설치&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sourceforge.net/projects/mingw-w64/&#34;&gt;SourceForge&lt;/a&gt;에서 mingw-get-setup.exe (2026.3. 현재 mingw-w64-v11.0.0)다운로드&lt;/li&gt;&#xA;&lt;li&gt;Default 로 설치 진행&lt;/li&gt;&#xA;&lt;li&gt;MinGW Installation Manger 연 상태에서 다음 4개 항목 선택&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mingw-developer-toolkit&lt;/li&gt;&#xA;&lt;li&gt;minigw32-base&lt;/li&gt;&#xA;&lt;li&gt;mingw32-gcc-g++&lt;/li&gt;&#xA;&lt;li&gt;msys-base&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;installation - Update Category 또는 Apply Changes&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-path-설정-확인-및-실행-테스트&#34;&gt;3. Path 설정 확인 및 실행 테스트&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;명령프롬프트창에서 다음 명령어로 버전 확인&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

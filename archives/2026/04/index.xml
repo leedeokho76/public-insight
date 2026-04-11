@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2026/04 on Insight of Public</title>
+    <link>http://localhost:1313/archives/2026/04/</link>
+    <description>Recent content in 2026/04 on Insight of Public</description>
+    <generator>Hugo</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 08 Apr 2026 14:39:02 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/archives/2026/04/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>반응형 메일 프레임워크 mjml 설치 및 설정</title>
+      <link>http://localhost:1313/guide/mjml-mail-framework-install/</link>
+      <pubDate>Wed, 08 Apr 2026 14:39:02 +0900</pubDate>
+      <guid>http://localhost:1313/guide/mjml-mail-framework-install/</guid>
+      <description>&lt;h2 id=&#34;1-설치환경-점검&#34;&gt;1. 설치환경 점검&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ npm -v&#xD;&#xA;11.6.2&#xD;&#xA;&#xD;&#xA;$ node -v&#xD;&#xA;v24.12.0&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-mjml-설치&#34;&gt;2. mjml 설치&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ npm install -g mjml&#xD;&#xA;npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me&#xD;&#xA;&#xD;&#xA;added 166 packages in 8s&#xD;&#xA;&#xD;&#xA;38 packages are looking for funding&#xD;&#xA;  run `npm fund` for details&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;3-권장-디렉터리-구조&#34;&gt;3. 권장 디렉터리 구조&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;my-email-project/&#xD;&#xA;├─ src/               # 소스 코드 저장 위치&#xD;&#xA;│  ├─ components/     # 재사용 공통 모듈&#xD;&#xA;│  │   ├─ header.mjml&#xD;&#xA;│  │   └─ footer.mjml&#xD;&#xA;│  ├─ layouts/        # 기본 베이스 레이아웃&#xD;&#xA;│  │   └─ base.mjml&#xD;&#xA;│  ├─ assets/&#xD;&#xA;│  │   └─ logo.png    # 이메일에 포함될 이미지&#xD;&#xA;│  └─ index.mjml      # 실제 빌드될 파일&#xD;&#xA;├─ dist/&#xD;&#xA;│  └─ index.html      # 컴파일된 최종 HTML 파일 (자동 생성)&#xD;&#xA;├─ .mjmlconfig        # MJML 설정 파일 (필요 시)&#xD;&#xA;├─ package.json       # 빌드 스크립트 관리 (npm/yarn 사용 시)&#xD;&#xA;└─ README.md&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;4-소스-테스트&#34;&gt;4. 소스 테스트&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mjml src/index.mjml -o dist/index.html&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;5-vscode-설정&#34;&gt;5. vscode 설정&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;명령 팔레트(Ctrl + Shft + P) 열기&lt;/li&gt;&#xA;&lt;li&gt;Preference: Open User Settings (JSON) 검색&lt;/li&gt;&#xA;&lt;li&gt;설정 끝에 다음 코드 삽입&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* MJML 관련 설정 */&#xD;&#xA;&amp;#34;mjml.preview.auto&amp;#34;: true,&#xD;&#xA;&amp;#34;mjml.compileOnSave&amp;#34;: true,&#xD;&#xA;&amp;#34;mjml.outputPath&amp;#34;: &amp;#34;dist&amp;#34;,&#xD;&#xA;&amp;#34;mjml.showPreview&amp;#34;: true&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://documentation.mjml.io/#mjml-guide&#34;&gt;MJML Guide&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

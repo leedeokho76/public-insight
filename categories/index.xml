@@ -6,49 +6,6 @@
     <description>Recent content in Categories on Insight of Public</description>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 30 Mar 2026 17:52:21 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Guide</title>
-      <link>https://insight.public.re.kr/categories/guide/</link>
-      <pubDate>Mon, 30 Mar 2026 17:52:21 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/guide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Planning</title>
-      <link>https://insight.public.re.kr/categories/planning/</link>
-      <pubDate>Wed, 25 Mar 2026 14:27:11 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Report</title>
-      <link>https://insight.public.re.kr/categories/report/</link>
-      <pubDate>Wed, 11 Mar 2026 13:01:08 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/report/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Note</title>
-      <link>https://insight.public.re.kr/categories/note/</link>
-      <pubDate>Wed, 04 Mar 2026 22:19:51 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/note/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Review</title>
-      <link>https://insight.public.re.kr/categories/review/</link>
-      <pubDate>Thu, 15 Jan 2026 10:40:51 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/review/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Essay</title>
-      <link>https://insight.public.re.kr/categories/essay/</link>
-      <pubDate>Wed, 18 Sep 2024 19:23:00 +0900</pubDate>
-      <guid>https://insight.public.re.kr/categories/essay/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

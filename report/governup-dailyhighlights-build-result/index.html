@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   
-    일일 공공 정책 요약 서비스 거번업(GovernUp) 추진 결과 - Insight of Public
+    일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과 - Insight of Public
   
 </title>
 <meta name="description" content="방법 수단 중심으로 개조식 기술">
@@ -106,7 +106,7 @@
 <main class="main" role="main">
   <article class="post">
     <header class="post__header">
-			<h1 class="post__title">일일 공공 정책 요약 서비스 거번업(GovernUp) 추진 결과</h1>
+			<h1 class="post__title">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</h1>
       
         <figure class="post__cover">
           <img src="cover.webp" alt="">
@@ -114,9 +114,7 @@
       
       <div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-02-04T12:49:25&#43;09:00">2026-02-04</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/report/" rel="category">Report</a>
-	</span>
-</div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-02-04T12:49:25&#43;09:00">2026-02-04</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
         <a class="meta__link btn" href="/tags/architecture/" rel="tag">architecture</a>
   </span>
 </div></div>
@@ -129,13 +127,63 @@
   <ul>
     <li>
       <ul>
+        <li><a href="#31-db-스키마">3.1. DB 스키마</a></li>
+        <li><a href="#32-플로우">3.2. 플로우</a></li>
         <li><a href="#23-공공정책-브리핑-전용">2.3. 공공정책 브리핑 전용</a></li>
       </ul>
     </li>
   </ul>
 </nav>
 			</div>
-		</div><div class="content post__content clearfix"><p>GetCurrentDate
+		</div><div class="content post__content clearfix"><h3 id="31-db-스키마">3.1. DB 스키마</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">committee_list</th>
+          <th style="text-align: center">ministry_list</th>
+          <th style="text-align: center">press_release_list</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">cmt_code</td>
+          <td style="text-align: center">min_repcode</td>
+          <td style="text-align: center">pr_id</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">cmt_name</td>
+          <td style="text-align: center">min_is_active</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">cmt_shortname</td>
+          <td style="text-align: center">min_order</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">cmt_url</td>
+          <td style="text-align: center">min_created_at</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">cmt_order</td>
+          <td style="text-align: center">min_name</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">min_url</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">cmt_code</td>
+          <td style="text-align: center"></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="32-플로우">3.2. 플로우</h3>
+<p>GetCurrentDate
 SearchByYesterday/Today/Selection
 FormatDateToString
 GetMinistryRepCode
@@ -238,6 +286,7 @@ SendResult</p>
 	<h2 class="widget__title">Recent</h2>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/mjml-mail-framework-install/">반응형 메일 프레임워크 mjml 설치 및 설정</a></li>
 			<li class="widget__item"><a class="widget__link" href="/guide/power-automate-cloud-settings/">Power Automate Cloud 사용을 위한 설정</a></li>
 			<li class="widget__item"><a class="widget__link" href="/planning/law-semantic-styling-plan/">법령형식의 시멘틱 스타일링 적용 계획</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/constitution-rights-structual-understanding/">대한민국헌법 기본권의 구조적 이해</a></li>
@@ -247,7 +296,6 @@ SendResult</p>
 			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/artificial-intelligence-introduction-summary/">인공지능 개론 요약</a></li>
 			<li class="widget__item"><a class="widget__link" href="/note/japanese-verb-conjugation-system/">일본어 기초 품사 활용 체계</a></li>
-			<li class="widget__item"><a class="widget__link" href="/note/catholic-liturgy-structual-understanding/">가톨릭 미사 예식의 구조적 이해</a></li>
 		</ul>
 	</div>
 </div><div class="widget-archives widget">
@@ -256,13 +304,13 @@ SendResult</p>
     <select onChange="location.href=value;">
       <option>Select Month</option>
       
-      <option value="/archives/2026/03">2026/03 (8)</option>
+      <option value="/archives/2026/03">2026/03 (10)</option>
       
       <option value="/archives/2026/02">2026/02 (3)</option>
       
       <option value="/archives/2026/01">2026/01 (10)</option>
       
-      <option value="/archives/2025/12">2025/12 (6)</option>
+      <option value="/archives/2025/12">2025/12 (5)</option>
       
       <option value="/archives/2025/11">2025/11 (3)</option>
       
@@ -271,6 +319,8 @@ SendResult</p>
       <option value="/archives/2025/09">2025/09 (4)</option>
       
       <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (1)</option>
       
       <option value="/archives/2024/09">2024/09 (3)</option>
       
@@ -292,22 +342,24 @@ SendResult</p>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (3)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/applications/" title="applications">applications (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fundamentals/" title="fundamentals">fundamentals (6)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/institutions/" title="institutions">institutions (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/tools/" title="tools">tools (13)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (1)</a>
 	</div>
 </div>
 <div class="widget-favorites widget">

@@ -2,52 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://insight.public.re.kr/archives/2025/12/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
+    <loc>https://insight.public.re.kr/archives/-.date--dateformat-2006/01-/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/categories/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/categories/guide/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
+    <loc>https://insight.public.re.kr/tags/framework/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/util/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/guide/mjml-mail-framework-install/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/guide/puppeteer-browser-automation-setup/</loc>
+    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/power-automate-cloud-settings/</loc>
     <lastmod>2026-03-30T17:52:21+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/</loc>
+    <loc>https://insight.public.re.kr/tags/saas/</loc>
     <lastmod>2026-03-30T17:52:21+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</loc>
-    <lastmod>2026-03-30T17:52:21+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2026/03/</loc>
-    <lastmod>2026-03-25T14:27:11+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/categories/planning/</loc>
+    <loc>https://insight.public.re.kr/tags/law/</loc>
     <lastmod>2026-03-25T14:27:11+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/planning/</loc>
-    <lastmod>2026-03-25T14:27:11+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/tools/</loc>
     <lastmod>2026-03-25T14:27:11+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/planning/law-semantic-styling-plan/</loc>
     <lastmod>2026-03-25T14:27:11+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/architecture/</loc>
-    <lastmod>2026-03-11T13:01:08+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/categories/report/</loc>
     <lastmod>2026-03-11T13:01:08+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/report/</loc>
@@ -62,9 +59,6 @@
     <loc>https://insight.public.re.kr/guide/obsisian-setup-for-writing/</loc>
     <lastmod>2026-03-10T14:48:36+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/categories/note/</loc>
-    <lastmod>2026-03-04T22:19:51+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/note/</loc>
     <lastmod>2026-03-04T22:19:51+09:00</lastmod>
   </url><url>
@@ -77,16 +71,10 @@
     <loc>https://insight.public.re.kr/note/catholic-liturgy-structual-understanding/</loc>
     <lastmod>2026-03-03T15:44:21+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2026/02/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/guide/astro-website-builder-setup/</loc>
     <lastmod>2026-02-08T14:19:40+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/hugo-hero-theme-setup/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2026/01/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/law-semantic-styling-implementation/</loc>
@@ -96,9 +84,6 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/libwebp-for-webp-usage/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/saas/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/microsoft-entra-account-mfa/</loc>
@@ -114,9 +99,6 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/ai/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/categories/review/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/review/</loc>
@@ -140,17 +122,14 @@
     <loc>https://insight.public.re.kr/note/public-content-style-rule/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/note/public-or-kr-history/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
+    <loc>https://insight.public.re.kr/report/public-update-management-record/</loc>
+    <lastmod>2025-12-23T13:38:23+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/hello/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/hugo-website-builder-setup/</loc>
     <lastmod>2025-12-19T10:31:54+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2025/11/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/planning/public-staticwebsite-migration-plan/</loc>
     <lastmod>2025-11-19T10:31:54+09:00</lastmod>
@@ -164,22 +143,16 @@
     <loc>https://insight.public.re.kr/review/nvidia-korea-ai-alliance/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2025/10/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/guide/directory-rename-python-script/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/docsify-static-website-build/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/fundamentals/</loc>
+    <loc>https://insight.public.re.kr/tags/fundamental/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/python-data-science-summary/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2025/09/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/data-structure-introduction-summary/</loc>
@@ -188,22 +161,25 @@
     <loc>https://insight.public.re.kr/guide/mingw-w64c-install-guide/</loc>
     <lastmod>2025-09-20T10:21:34+09:00</lastmod>
   </url><url>
+    <loc>https://insight.public.re.kr/tags/compiler/</loc>
+    <lastmod>2025-09-20T10:21:34+09:00</lastmod>
+  </url><url>
     <loc>https://insight.public.re.kr/note/data-science-introduction-summary/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/report/lee-jaemyung-government-agenda/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2025/08/</loc>
-    <lastmod>2025-08-22T15:46:54+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/note/markdown-syntax-usage-overview/</loc>
     <lastmod>2025-08-22T15:46:54+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2024/09/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
+    <loc>https://insight.public.re.kr/report/tistory-enterprise-web-analysis/</loc>
+    <lastmod>2025-07-09T15:34:54+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/applications/</loc>
+    <loc>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</loc>
+    <lastmod>2025-07-09T15:34:54+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/application/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/whats-new-in-chrome/</loc>
@@ -212,19 +188,10 @@
     <loc>https://insight.public.re.kr/essay/citizens-party-of-korea/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/categories/essay/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/essay/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/institutions/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/note/korea-adjudication-case-code/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2024/08/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/creation-innovation-principle-collection/</loc>
@@ -284,32 +251,24 @@
     <loc>https://insight.public.re.kr/essay/templete-key-control-article/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2023/04/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/report/visually-impaired-recreational-sports/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/essay/templete-key-shift2-article/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2023/03/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/essay/templete-key-shift1-article/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/archives/2023/02/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/essay/portfolio-article-korean-fruit/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/archives/2023/01/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/tags/wellbeing/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/report/mailing-list-web-analysis/</loc>
+  </url><url>
+    <loc>https://insight.public.re.kr/categories/</loc>
   </url><url>
     <loc>https://insight.public.re.kr/search/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
