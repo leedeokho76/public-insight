@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2025/08 on Insight of Public</title>
-    <link>http://localhost:1313/archives/2025/08/</link>
-    <description>Recent content in 2025/08 on Insight of Public</description>
+    <title>2025/08 on Insight of Public.re.kr</title>
+    <link>https://insight.public.re.kr/archives/2025/08/</link>
+    <description>Recent content in 2025/08 on Insight of Public.re.kr</description>
     <generator>Hugo</generator>
-    <language>ko</language>
+    <language>ko-kr</language>
     <lastBuildDate>Fri, 22 Aug 2025 15:46:54 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/archives/2025/08/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://insight.public.re.kr/archives/2025/08/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>마크다운 문법 사용 개요</title>
-      <link>http://localhost:1313/note/markdown-syntax-usage-overview/</link>
+      <link>https://insight.public.re.kr/note/markdown-syntax-usage-overview/</link>
       <pubDate>Fri, 22 Aug 2025 15:46:54 +0900</pubDate>
-      <guid>http://localhost:1313/note/markdown-syntax-usage-overview/</guid>
+      <guid>https://insight.public.re.kr/note/markdown-syntax-usage-overview/</guid>
       <description>&lt;h2 id=&#34;1-제목&#34;&gt;1. 제목&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;헤딩으로 문서구조가 깨질 수 있어 주석만 표기&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# A first-level heading&#xD;&#xA;## A second-level heading&#xD;&#xA;### A third-level heading&#xD;&#xA;#### A fourth-level heading&#xD;&#xA;##### A fifth-level heading&#xD;&#xA;###### A sixth-level heading&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-텍스트-스타일&#34;&gt;2. 텍스트 스타일&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;**굵게** 또는 __굵게__&lt;/code&gt;&lt;br&gt;&#xA;&lt;strong&gt;굵게&lt;/strong&gt; 또는 &lt;strong&gt;굵게&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;*이탤릭체* 또는 _이탤릭체_&lt;/code&gt;&lt;br&gt;&#xA;&lt;em&gt;이탤릭체&lt;/em&gt; 또는 &lt;em&gt;이탤릭체&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;~~취소선~~&lt;/code&gt;&lt;br&gt;&#xA;&lt;del&gt;취소선&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;**굵게 일부 _이탤릭체_**&lt;/code&gt;&lt;br&gt;&#xA;&lt;strong&gt;굵게 일부 &lt;em&gt;이탤릭체&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;***모두 굵게 이탤릭***&lt;/code&gt;&lt;br&gt;&#xA;&lt;em&gt;&lt;strong&gt;모두 굵게 이탤릭&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;sub&amp;gt;아래&amp;lt;/sub&amp;gt; 첨자&lt;/code&gt;&lt;br&gt;&#xA;&lt;sub&gt;아래&lt;/sub&gt; 첨자&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;sup&amp;gt;윗&amp;lt;/sup&amp;gt; 첨자&lt;/code&gt;&lt;br&gt;&#xA;&lt;sup&gt;윗&lt;/sup&gt; 첨자&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;ins&amp;gt;ins&amp;lt;/ins&amp;gt;는 시각적 언더바 뿐만아니라 추가된 또는 변경된 내용 표시 의미&lt;/code&gt;&lt;br&gt;&#xA;&lt;ins&gt;ins&lt;/ins&gt;는 시각적 언더바 뿐만아니라 추가된 또는 변경된 내용 표시 의미&lt;/p&gt;</description>
     </item>
   </channel>

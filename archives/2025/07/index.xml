@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2025/07 on Insight of Public</title>
-    <link>http://localhost:1313/archives/2025/07/</link>
-    <description>Recent content in 2025/07 on Insight of Public</description>
+    <title>2025/07 on Insight of Public.re.kr</title>
+    <link>https://insight.public.re.kr/archives/2025/07/</link>
+    <description>Recent content in 2025/07 on Insight of Public.re.kr</description>
     <generator>Hugo</generator>
-    <language>ko</language>
+    <language>ko-kr</language>
     <lastBuildDate>Wed, 09 Jul 2025 15:34:54 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/archives/2025/07/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://insight.public.re.kr/archives/2025/07/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tistory를 기반으로 제작된 기업 웹사이트 분석</title>
-      <link>http://localhost:1313/report/tistory-enterprise-web-analysis/</link>
+      <link>https://insight.public.re.kr/report/tistory-enterprise-web-analysis/</link>
       <pubDate>Wed, 09 Jul 2025 15:34:54 +0900</pubDate>
-      <guid>http://localhost:1313/report/tistory-enterprise-web-analysis/</guid>
+      <guid>https://insight.public.re.kr/report/tistory-enterprise-web-analysis/</guid>
       <description>&lt;h2 id=&#34;1-sk-telecom-newsroom&#34;&gt;1. SK Telecom Newsroom&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-structure&#34;&gt;1.1. Structure&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Category&#xA;&lt;ul&gt;&#xA;&lt;li&gt;기업뉴스&#xA;&lt;ul&gt;&#xA;&lt;li&gt;기업&lt;/li&gt;&#xA;&lt;li&gt;ESG&lt;/li&gt;&#xA;&lt;li&gt;문화&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;인사이트&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI&lt;/li&gt;&#xA;&lt;li&gt;기술&lt;/li&gt;&#xA;&lt;li&gt;서비스&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;프레스센터&#xA;&lt;ul&gt;&#xA;&lt;li&gt;보도자료&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;tag&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AI&lt;/li&gt;&#xA;&lt;li&gt;데이터인사이드&lt;/li&gt;&#xA;&lt;li&gt;ESG&lt;/li&gt;&#xA;&lt;li&gt;팩트북&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;about-newsroom (About 뉴스룸)&lt;/li&gt;&#xA;&lt;li&gt;policy (뉴스룸 운영 정책)&lt;/li&gt;&#xA;&lt;li&gt;privacy.sktelecom.com (개인정보 처리방침)&lt;/li&gt;&#xA;&lt;li&gt;information-use (뉴스룸 콘텐츠 이용 안내)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;12-mainpage&#34;&gt;1.2. MainPage&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./img01.webp&#34; alt=&#34;메인페이지&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-sk-hynix-newsroom&#34;&gt;2. SK Hynix Newsroom&lt;/h2&gt;&#xA;&lt;h3 id=&#34;21-structure&#34;&gt;2.1. Structure&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;category&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tech&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tag=hbm&lt;/li&gt;&#xA;&lt;li&gt;tag=cxl&lt;/li&gt;&#xA;&lt;li&gt;tag=pim&lt;/li&gt;&#xA;&lt;li&gt;tag=nand&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;ai&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tag=hbm3e&lt;/li&gt;&#xA;&lt;li&gt;tag=ai메모리&lt;/li&gt;&#xA;&lt;li&gt;tag=생성형ai&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;culture&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tag=기업문화&lt;/li&gt;&#xA;&lt;li&gt;tag=행사&lt;/li&gt;&#xA;&lt;li&gt;tag=topteam인터뷰&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;sustainability&#xA;&lt;ul&gt;&#xA;&lt;li&gt;tag=행복나눔기금&lt;/li&gt;&#xA;&lt;li&gt;tag=사회적가치&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;press&lt;/li&gt;&#xA;&lt;li&gt;media-library&#xA;&lt;ul&gt;&#xA;&lt;li&gt;media&#xA;&lt;ul&gt;&#xA;&lt;li&gt;category=product&lt;/li&gt;&#xA;&lt;li&gt;category=people&lt;/li&gt;&#xA;&lt;li&gt;category=etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;youtube&lt;/li&gt;&#xA;&lt;li&gt;shorts&lt;/li&gt;&#xA;&lt;li&gt;instagram&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;heritagy&lt;/li&gt;&#xA;&lt;li&gt;series&lt;/li&gt;&#xA;&lt;li&gt;contact&lt;/li&gt;&#xA;&lt;li&gt;privacy&lt;/li&gt;&#xA;&lt;li&gt;policy&lt;/li&gt;&#xA;&lt;li&gt;guideline&lt;/li&gt;&#xA;&lt;li&gt;subscribe&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;22-mainpage&#34;&gt;2.2. MainPage&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./img02.webp&#34; alt=&#34;메인페이지&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
