@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko-kr" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    퍼블리크 정적웹사이트 전환 결과 - Insight of Public.re.kr
+  
+</title>
+<meta name="description" content="public.re.kr 정적웹사이트 전환 계획에 의거 실행된 결과의 최종 보고">
+
+
+<link rel="stylesheet" href="/scss/style.min.fde84b2c6da8acbfb0ca247ae04b33b6c3a5fea5fcfbe65e6439af5346e8c743.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public.re.kr" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public.re.kr</div>
+          
+            <div class="logo__subtitle">경험을 기록하고, 지식을 이어가는 통찰</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/test/">
+								
+								<span class="menu__text">test</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">퍼블리크 정적웹사이트 전환 결과</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="정적 웹사이트와 동적 웹사이트의 동작원리">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-01-01T23:22:54&#43;09:00">2026-01-01</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/architecture/" rel="tag">architecture</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-추진근거">1. 추진근거</a></li>
+    <li><a href="#2-추진개요">2. 추진개요</a></li>
+    <li><a href="#3-성과-및-시사점">3. 성과 및 시사점</a>
+      <ul>
+        <li><a href="#31-전환-총평">3.1. 전환 총평</a></li>
+        <li><a href="#32-정적-웹사이트-생성-도구-선정">3.2. 정적 웹사이트 생성 도구 선정</a></li>
+        <li><a href="#33-정적-웹-사이트-호스팅-선정">3.3. 정적 웹 사이트 호스팅 선정</a></li>
+        <li><a href="#34-외부-동적서비스-검토">3.4. 외부 동적서비스 검토</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-향후계획">4. 향후계획</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-추진근거">1. 추진근거</h2>
+<ul>
+<li><a href="/planning/public-staticwebsite-migration-plan/">퍼블리크 정적웹사이트 전환 계획 (2025-11-19)</a></li>
+</ul>
+<h2 id="2-추진개요">2. 추진개요</h2>
+<ul>
+<li>(추진기간) 2025. 11. 19. ~ 2026. 1. 2. (45일간)</li>
+<li>(투입인원) 초급기술자(정보처리기사) 1인</li>
+<li>(활용자원) pc, vscode 및 github.com 계정</li>
+<li>(주요내용) 정적웹사이트로의 전환 및 콘텐츠 구조화 등
+<ul>
+<li><a href="/guide/hugo-static-website-setup/">효과적 콘텐츠 관리를 위한 hugo 기반 정적 웹사이트 구축</a></li>
+<li><a href="http://localhost:1313/note/website-content-style-rule/">퍼블리크 콘텐츠 작성 규칙</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="3-성과-및-시사점">3. 성과 및 시사점</h2>
+<h3 id="31-전환-총평">3.1. 전환 총평</h3>
+<ul>
+<li>정적 웹사이트 구축툴로써 Hugo의 경우 개념검증과정에 오류가 없어 디버그의 부담이 적었고, 명확한 디렉토리 구조로 프로그램 이해가 용이</li>
+<li>다만 테마에 따라 사용자화를 위한 설정 과정의 복잡성 차이가 존재</li>
+<li>Github.com에서는 특정 브랜치의 배포(publishing) 설정으로 하나의 리포지토리에서도 소스의 통합적 관리가 용이</li>
+<li>Front Matter 등 메타데이터 관리로 초기에는 콘텐츠 작성의 생산성이 낮았으나, 콘텐츠 생성환경에 대한 친숙도가 제고된 후, 분류 체계가 정립되고 콘텐츠 내용 구성에 집중할 수 있어 효과성 및 효율성 향상</li>
+</ul>
+<h3 id="32-정적-웹사이트-생성-도구-선정">3.2. 정적 웹사이트 생성 도구 선정</h3>
+<ol>
+<li>
+<p>관련 기술 검토</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">구분</th>
+          <th style="text-align: center">Hugo</th>
+          <th style="text-align: center">Docsify</th>
+          <th style="text-align: center">React</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">주요<br/>용도</td>
+          <td style="text-align: center">블로그, 기업사이트<br/>포트폴리오</td>
+          <td style="text-align: center">문서사이트<br/>간단한위키</td>
+          <td style="text-align: center">대규모 상업용 웹앱</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">기반<br/>기술</td>
+          <td style="text-align: center">Go</td>
+          <td style="text-align: center">JavaScript(mode.js)</td>
+          <td style="text-align: center">JavaScript, TypeScript</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">구현<br/>난이도</td>
+          <td style="text-align: center">중간(설치후 <br/>메타정보 및 테마 구성)</td>
+          <td style="text-align: center">낮음<br/>(html 스크립트 추가)</td>
+          <td style="text-align: center">높음<br/>(빌드툴, 라우팅 설정 등)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">학습<br/>곡선</td>
+          <td style="text-align: center">중간<br/>(hugo구조 등 학습)</td>
+          <td style="text-align: center">낮음<br/>(마크다운 이해)</td>
+          <td style="text-align: center">높음<br/>(React 학습 등)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">배포</td>
+          <td style="text-align: center">Github Pages</td>
+          <td style="text-align: center">Netlify, Vercel, GitHub Pages</td>
+          <td style="text-align: center">Vercel, Netlify, 클라우드 등</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">개발자<br/>동향</td>
+          <td style="text-align: center">속도에 대한 만족감 높고, <br/>테마도 다양</td>
+          <td style="text-align: center">속도문제로<br/> 이탈 케이스 다수</td>
+          <td style="text-align: center">프론트앤드<br/> 지배적 기술 등극</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>개념검증</p>
+<ul>
+<li>(Docsify) 랜딩페이지에 버그 발견되어 디버그 시도했으나 실패하였으며, 긴 내용의 md파일의 경우 랜더링시 지연 발생</li>
+<li>(Hugo) 100page를 대략 100ms로 랜더링했으며, 페이지수 증가에 랜더링 속도가 큰 영향을 받지 않는 것으로 관찰</li>
+<li>(React) 기술적 난이도가 높아 본 개념검증에서 제외</li>
+</ul>
+</li>
+<li>
+<p>선정결과</p>
+<ul>
+<li>정적 웹사이트 도입시 요구되는 기술적 한계와 2026년 사이트 게시라는 시간적 제약을 고려</li>
+<li>구현난이도와 학습곡선에서 중간난이도 이하를 보인 Hugo와 Docsify를 대상으로 개념검증을 실시하여, 최종적으로 기술적으로 안정되고 랜더링 속도도 준수한 Hugo를 채택</li>
+</ul>
+</li>
+</ol>
+<h3 id="33-정적-웹-사이트-호스팅-선정">3.3. 정적 웹 사이트 호스팅 선정</h3>
+<ol>
+<li>
+<p>보유자원</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">구분</th>
+          <th style="text-align: center">Github</th>
+          <th style="text-align: center">Cafe24</th>
+          <th style="text-align: center">Netlify</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">비용</td>
+          <td style="text-align: center">무료</td>
+          <td style="text-align: center">유료</td>
+          <td style="text-align: center">무료</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">운용현황</td>
+          <td style="text-align: center">코딩 백업</td>
+          <td style="text-align: center">웹앱테스트</td>
+          <td style="text-align: center">미사용</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">배포방식</td>
+          <td style="text-align: center">Github푸시</td>
+          <td style="text-align: center">FTP</td>
+          <td style="text-align: center">Git 자동 + CI/CD지원</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">도메인보안</td>
+          <td style="text-align: center">https지원</td>
+          <td style="text-align: center">외부ssl지원</td>
+          <td style="text-align: center">무료ssl지원</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">서버위치</td>
+          <td style="text-align: center">Global</td>
+          <td style="text-align: center">Local</td>
+          <td style="text-align: center">Global</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">트래픽</td>
+          <td style="text-align: center">100GB/월</td>
+          <td style="text-align: center">48GB/월</td>
+          <td style="text-align: center">100GB/월</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">자동화</td>
+          <td style="text-align: center">불가</td>
+          <td style="text-align: center">불가</td>
+          <td style="text-align: center">자동 빌드•롤백•폼처리 등 풍부</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>검토사항</p>
+<ul>
+<li>(Github) 현재 코딩 백업 용도로 무료 운용 중이며, 정적웹사이트 운영 및 충분한 트래픽 제공 등의 문제는 없는 것으로 평가</li>
+<li>(Cafe24) 현재 phpwcms 1.9.47 테스트 서버로 유료 운용 중이며, php 와 MariaDB 등 동적웹개발을 위한 자원이 제공되며 1.6GB/일 트래픽 제공 등 정적웹사이트 운영에도 충분한 것으로 평가</li>
+<li>(Netlify) 현재 미 운용 중으로, 정적 사이트 + 서버리스 함수 조합의 “빠르고 안전한 정적 웹”에 “필요한 만큼의 동적 기능”을 붙이는 방식에 최적의 성능을 보이는 것으로 평가</li>
+</ul>
+</li>
+<li>
+<p>선정결과</p>
+<ul>
+<li>넓은 기술선택 측면에서는 서버사이드 자원을 제공하는 Cafe24가 우월한 선택으로 평가</li>
+<li>반면 public.re.kr의 주요 기능을 자료관리에 두고 동적서비스는 외부 자원을 활용</li>
+<li>의 폭을 널게 가져동적자원을 동시에 사용할 수 있는 Github을 이용할 경우, 버전 관리 외에도 gh-pages 같은 특정 브랜치로 정적 웹호스팅 서비스가 가능하고, Commit으로 배포가 용이하며, 트래픽 100GB/월 및 https 지원 등 기능적 요구사항을 충족하여 최종 선정</li>
+</ul>
+</li>
+</ol>
+<h3 id="34-외부-동적서비스-검토">3.4. 외부 동적서비스 검토</h3>
+<ol>
+<li>고객문의(Contact Us)
+<ul>
+<li>(목적) 사용자 커뮤니케이션</li>
+<li>(후보군) 네이버 폼, GoogleForm</li>
+<li>국내 사용자를 고려 네이버폼을 채택하여, 주로 온라인 설문용으로 사용하는 폼서비스의 항목을 단순화하여 고객문의 형태로 이용</li>
+</ul>
+</li>
+<li>댓글시스템
+<ul>
+<li>(목적) 사용자 커뮤니케이션 및 피드백</li>
+<li>(후보군) LiveRe, Disqus, Giscus, Utterances</li>
+<li>사이트 속도 영향 및 개인정보 유출에 대한 이슈가 있어 영향평가 후 설치 검토</li>
+</ul>
+</li>
+<li>방문자 분석툴
+<ul>
+<li>(목적) 사용자 행동 분석 및 기술적 개션</li>
+<li>(후보군) 네이버 애널리틱스, Google Analytics, Cloudflare Web Analytics</li>
+<li>국내 사용자 동향 파악을 위해 네이버 애널리틱스 채택</li>
+</ul>
+</li>
+<li>방문자 카운터
+<ul>
+<li>(목적) 웹사이트 신뢰성 제공 및 방문자 동기 부여 목적</li>
+<li>(후보군) Google Analytics, Hits.sh, Visitor Badge</li>
+<li>Google Analytics 정보를 API로 가져와 사이트바에 표시해 주는 방법이 기술적으로는 진보된 것으로 평가되나 구현과정이 복잡하여, 방문자 카운터 전용 서비스를 이용</li>
+<li>Hits.sh, Visitor Badge 서비스 비교 결과 카운터 이미지 스타일의 사용자화가 가능한 Hits.sh 채택</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-향후계획">4. 향후계획</h2>
+<ol>
+<li>2026. 1. 31. 까지 메타데이터가 적용된 콘텐츠 이전을 완료하고, public.re.kr 도메인 매핑</li>
+<li>본 계획이 콘텐츠 관리의 효율성 제고에 주안점을 두고 추진되었음을 감안, 랜딩페이지의 스핀오프 여부와 그에 따른 다음 사항에 대하여 3개월 운영 후 결정
+<ul>
+<li>콘텐츠 페이지와 랜딩페이지의 도메인 (분리)결정 (예: know.public.re.kr)</li>
+<li>(분리할 경우) 히어로 섹션과 랜딩페이지 디자인</li>
+<li>랜딩페이지의 웹 플랫폼 선정</li>
+</ul>
+</li>
+</ol>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+              <li class="related__item"><a href="/guide/automation-powerautomate-hugobook-setup/">Power Automate Desktop 및 hugo book 테마 활용 자동화 설정</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/test/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/report/governup-dailyhighlights-build-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/test/public-update-management-record/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">퍼블리크 변경 관리 이력</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/test/policy-dailybriefing-test-result/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">자동화 프로세스를 통한 공공정책 일일브리핑 시범 추진 결과</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/automation-powerautomate-hugobook-setup/">Power Automate Desktop 및 hugo book 테마 활용 자동화 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/mjml-mail-framework-install/">반응형 이메일 프레임워크 mjml 설치 및 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/puppeteer-browser-automation-setup/">브라우저 자동화 라이브러리 Puppeteer 설치</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/power-automate-cloud-settings/">Power Automate Cloud 사용을 위한 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/planning/law-semantic-styling-plan/">법령형식의 시멘틱 스타일링 적용 계획</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/constitution-rights-structual-understanding/">대한민국헌법 기본권의 구조적 이해</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/algorithm-introduction-summary/">알고리즘(Algorithm) 요약</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/unemployment-benefits-training-introduction/">실업 지원 정책 개요</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/04">2026/04 (3)</option>
+      
+      <option value="/archives/2026/03">2026/03 (11)</option>
+      
+      <option value="/archives/2026/02">2026/02 (4)</option>
+      
+      <option value="/archives/2026/01">2026/01 (12)</option>
+      
+      <option value="/archives/2025/12">2025/12 (5)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (5)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (2)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (3)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (2)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>

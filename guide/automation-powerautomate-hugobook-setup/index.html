@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko-kr" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    Power Automate Desktop 및 hugo book 테마 활용 자동화 설정 - Insight of Public.re.kr
+  
+</title>
+<meta name="description" content="정적웹사이트 생성기인 hugo 의 book 테마의 설정과 관련된 내용">
+
+
+<link rel="stylesheet" href="/scss/style.min.fde84b2c6da8acbfb0ca247ae04b33b6c3a5fea5fcfbe65e6439af5346e8c743.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+  	 
+    	  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public.re.kr" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public.re.kr</div>
+          
+            <div class="logo__subtitle">경험을 기록하고, 지식을 이어가는 통찰</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/test/">
+								
+								<span class="menu__text">test</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header>
+	  
+    <div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+			<h1 class="post__title">Power Automate Desktop 및 hugo book 테마 활용 자동화 설정</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt=" 테마 샘플웹사이트 스크린캡쳐">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-04-12T15:05:30&#43;09:00">2026-04-12</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/architecture/" rel="tag">architecture</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-서비스-구성-목표">1. 서비스 구성 목표</a></li>
+    <li><a href="#2-정적-웹사이트-생성기-설정">2. 정적 웹사이트 생성기 설정</a>
+      <ul>
+        <li><a href="#21-hugo-book-테마-설치">2.1. Hugo book 테마 설치</a></li>
+        <li><a href="#22-사이트-구조">2.2. 사이트 구조</a></li>
+        <li><a href="#23-환경설정">2.3. 환경설정</a></li>
+        <li><a href="#24-프론트매터">2.4. 프론트매터</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-자동화-프로세스-요약">3. 자동화 프로세스 요약</a></li>
+    <li><a href="#참고자료">【참고자료】</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-서비스-구성-목표">1. 서비스 구성 목표</h2>
+<ol>
+<li>로컬DB에 저장되어 있는 데이터를 md파일로 저장</li>
+<li>정적 웹사이트 생성기로 빌드하여 웹페이지 생성</li>
+<li>이상의 과정이 매일 실행될 수 있도록 자동화</li>
+</ol>
+<h2 id="2-정적-웹사이트-생성기-설정">2. 정적 웹사이트 생성기 설정</h2>
+<ul>
+<li>샘플 사이트에는 hugo의 기본적인 디렉터리를 기초로, 계층적 문서의 경우 docs와 블로그의 경우 posts로 제시</li>
+<li>양자의 장점을 살려 디렉터리로 카테고리 및 계층 구조를, 프론트매터 설정으로 년/월의 아카이브를 생성</li>
+</ul>
+<h3 id="21-hugo-book-테마-설치">2.1. Hugo book 테마 설치</h3>
+<ul>
+<li><a href="../hugo-website-builder-setup/">hugo standard 기반 정적 웹사이트 구축</a>의 <a href="../hugo-website-builder-setup/#21-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%82%AD%EC%A0%9C">2.1. 테마 적용 및 삭제</a> 참조</li>
+</ul>
+<h3 id="22-사이트-구조">2.2. 사이트 구조</h3>
+<pre tabindex="0"><code>content
+ ├─Categories1
+ │  │  .index.md  # 섹션 페이지
+ │  ├─년(2026)
+ │  │  │ .index.md  # 섹션 페이지
+ │  │  ├─월(04)
+ │  │  │   .index.md  # 섹션 페이지
+ │  │  │   01.md  # 콘텐츠 페이지
+ │  │  │   02.md  # 콘텐츠 페이지
+ │  │  └─월(04)
+ │  │    ... 
+ │  └─년(2025)
+ │    ... 
+ └─Categories2
+   ...
+</code></pre><h3 id="23-환경설정">2.3. 환경설정</h3>
+<pre tabindex="0"><code>baseURL = &#34;http://governup.pub7.kr/&#34;
+languageCode = &#34;ko-kr&#34;
+title = &#34;공공정책 다이제스트 거번업(GovernUp)&#34;
+theme = &#34;hugo-book&#34;
+
+# 1. 마크다운 렌더링 설정
+[markup]
+  [markup.goldmark.renderer]
+    # 광고나 댓글 스크립트(HTML)를 인식하게 하려면 반드시 true여야 합니다.
+    unsafe = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+# 2. 테마 핵심 파라미터 (Params)
+[params]
+# 검색 결과 미리보기(Snippet)에 표시될 설명
+  description = &#34;거번업(GovernUp)은 퍼블리크(public.re.kr)가 당일의 정부 정책을 모아 다음날 아침 7시에 보내드리는 공공정책 다이제스트 입니다. 정책 분석, 가이드, 노트, 기획, 보고서, 리뷰 등 다양한 콘텐츠를 통해 공공정책에 대한 깊이 있는 통찰을 제공합니다.&#34;
+  
+  # 소셜 미디어 공유 시 보일 이름
+  author = &#34;퍼블리크&#34;
+  # (선택) 사이드바 상단 로고 이미지 (static 폴더 기준)
+  # BookLogo = &#34;logo.png&#34;
+
+  # (선택) 다크 모드 설정: &#34;light&#34;, &#34;dark&#34;, 또는 시스템 설정을 따르는 &#34;auto&#34;
+  BookTheme = &#34;dark&#34;
+
+  # (선택) 오른쪽 목차(TOC) 표시 여부
+  BookToC = true
+
+  # (선택) 하단 내비게이션 (이전글/다음글) 버튼 표시 여부
+  BookPagination = true
+
+  # (선택) 검색 기능 활성화
+  BookSearch = true
+
+  # (선택) 모바일에서 검색창을 상단 바에 고정
+  BookSearchMobileToolbar = true
+
+  # (선택) 섹션을 자동으로 번호 매기기 (예: 1, 1.1, 1.2 등)
+  BookSectionEnumerable = false
+
+  # (선택) 메뉴 상단 헤더 텍스트 (사이트 제목과 다르게 설정 가능)
+  BookMenuHeader = &#34;지식 저장소&#34;
+
+  # (선택) 원격 저장소 링크 (GitHub 등) - &#39;Edit this page&#39; 기능 활성화
+  # BookRepo = &#34;https://github.com/user/repo&#34;
+  # BookEditPath = &#34;edit/main/content&#34;
+
+# 3. 검색 엔진 세부 설정
+[params.BookSearchConfig]
+  indexed = true      # 검색 인덱스 생성 여부
+  showParent = true   # 검색 결과에 상위 폴더(날짜 등) 이름 표시
+
+# 4. 메뉴 구성 (사이드바 메뉴 하단에 별도 노출 링크)
+[[menu.after]]
+  name = &#34;GitHub&#34;
+  url = &#34;https://github.com/your-id&#34;
+  weight = 10
+
+[[menu.after]]
+  name = &#34;Contact&#34;
+  url = &#34;mailto:you@example.com&#34;
+  weight = 20
+
+# 5. 다국어 설정 (필요할 경우만 사용)
+[languages]
+  [languages.ko]
+    languageName = &#34;Korean&#34;
+    contentDir = &#34;content&#34;
+    weight = 1
+
+# 6. Toxonomy 설정
+[taxonomies]
+  archive = &#34;archive&#34;
+</code></pre><h3 id="24-프론트매터">2.4. 프론트매터</h3>
+<pre tabindex="0"><code>+++
+title = &#34;Policy Morning Digest GovernUp %SearchDate% %CurrentItem2[&#39;cmt_name&#39;]%분야&#34;
+date = %IsoDateTime%
+description = &#34;%SearchDate% %CurrentItem2[&#39;cmt_name&#39;]%분야 정부 정책을 모아 전해드리는 공공정책 다이제스트입니다.&#34;
+archives = [&#34;%TextYear%/%TextMonth%&#34;]
+author = &#34;Lee Deokho&#34;
++++
+</code></pre><h2 id="3-자동화-프로세스-요약">3. 자동화 프로세스 요약</h2>
+<p><img src="01.svg" alt="자동화 프로세스"></p>
+<h2 id="참고자료">【참고자료】</h2>
+<ul>
+<li><a href="https://github.com/alex-shpak/hugo-book">alex-shpak / hugo-book</a></li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+          
+            
+              <li class="related__item"><a href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/test/2025/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/report/governup-dailyhighlights-build-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/guide/mjml-mail-framework-install/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">반응형 이메일 프레임워크 mjml 설치 및 설정</p>
+					</a>
+				</div>
+		</nav> 
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/guide/automation-powerautomate-hugobook-setup/">Power Automate Desktop 및 hugo book 테마 활용 자동화 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/mjml-mail-framework-install/">반응형 이메일 프레임워크 mjml 설치 및 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/puppeteer-browser-automation-setup/">브라우저 자동화 라이브러리 Puppeteer 설치</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/power-automate-cloud-settings/">Power Automate Cloud 사용을 위한 설정</a></li>
+			<li class="widget__item"><a class="widget__link" href="/planning/law-semantic-styling-plan/">법령형식의 시멘틱 스타일링 적용 계획</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/constitution-rights-structual-understanding/">대한민국헌법 기본권의 구조적 이해</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/algorithm-introduction-summary/">알고리즘(Algorithm) 요약</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/unemployment-benefits-training-introduction/">실업 지원 정책 개요</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/public-randingpage-build-result/">퍼블리크 랜딩페이지 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/obsisian-setup-for-writing/">구조적 글쓰기를 위한 옵시디언(Obsidian) 설정</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/04">2026/04 (3)</option>
+      
+      <option value="/archives/2026/03">2026/03 (11)</option>
+      
+      <option value="/archives/2026/02">2026/02 (4)</option>
+      
+      <option value="/archives/2026/01">2026/01 (12)</option>
+      
+      <option value="/archives/2025/12">2025/12 (5)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (5)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (2)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (3)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/" title="카테고리보조용으로영문소문자">카테고리보조용으로영문소문자 (2)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+		</div>
+  	<footer>
+    	<footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+
+  	</footer>
+	</div></body>
+</html>
