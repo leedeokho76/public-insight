@@ -1,7 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko-kr" dir="ltr">
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   
@@ -19,11 +22,10 @@
 
 <link rel="stylesheet" href="/scss/bootstrap.css">
 
-</head>
-<body class="body">
-	<div class="container container--outer">
-  	 
-    	  <header class="header">
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
     <div class="logo">
       <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
         
@@ -99,11 +101,10 @@
 						</li>
 			</ul>
 		</nav>
-</header>
-	  
-    <div class="wrapper flex">
-			<div class="primary">
-			
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
 <main class="main" role="main">
   <article class="post">
     <header class="post__header">
@@ -298,25 +299,69 @@ $ npm run dev
 ├─ astro.config.mjs     # Astro 프로젝트 설정
 ├─ tsconfig.json        # TypeScript 설정 (선택)
 └─ dist/                # 빌드 결과물 (배포용)
+/
+├── public/               # 정적 자산 (이미지, 폰트, favicon 등) 빌드없이 그대로 배포
+│   ├── images/
+│   ├── logos/*
+│   └── favicon.svg
+├── src/                  # 실질적 소스코드가 위치
+│   ├── components/       # 재사용 가능한 UI 컴포넌트 (버튼, 헤더 등)
+│   │   ├── blocks/*
+│   │   ├── cards/*
+│   │   ├── elements/*
+│   │   ├── sections/*
+│   │   └── shared/*
+│   ├── content/          # 구조화된 Markdown/MDX 콘텐츠 (블로그 글, 문서 등)
+│   ├── layouts/          # 페이지 레이아웃 (공통 헤더/푸터)
+│   │   └── Layout.astro
+│   ├── pages/            # 실제 페이지 (index.astro, about.astro 등)
+│   │   └── index.astro
+│   ├── styles/           # CSS, Tailwind 설정 등
+│   │   └── global.css
+│   ├─ utils/             # 재사용 가능한 유틸리티 함수 등 (선택)
+│   └─ dist/              # 빌드 결과물 (배포용)
+├─ package.json           # npm 의존성 관리
+├─ astro.config.mjs       # Astro 프로젝트 설정
+└─ tsconfig.json          # TypeScript 설정 (선택)
 </code></pre><h2 id="3-명령-일람">3. 명령 일람</h2>
-<pre tabindex="0"><code>####### Installs dependencies
-npm install
-
-####### Starts local dev server at localhost:4321
-npm run dev
-
-####### Build your production site to ./dist/
-npm run build
-
-####### Preview your build locally, before deploying
-npm run preview
-
-####### Run CLI commands like astro add, astro check
-npm run astro ...	
-
-####### Get help using the Astro CLI
-npm run astro --help	
-</code></pre><h2 id="4-로컬에서-push">4. 로컬에서 push</h2>
+<ul>
+<li>모든 명령어는 프로젝트 루트에서 실행</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">npm install</td>
+          <td style="text-align: left">Installs dependencies</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">npm run dev</td>
+          <td style="text-align: left">Starts local dev server at &ldquo;localhost:4321&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">npm run build</td>
+          <td style="text-align: left">Build your production site to &ldquo;./dist/&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">npm run preview</td>
+          <td style="text-align: left">Preview your build locally, before deploying</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">npm run astro &hellip;</td>
+          <td style="text-align: left">Run CLI commands like &ldquo;astro add&rdquo;, &ldquo;astro check&rdquo;</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">npm run astro &ndash;help</td>
+          <td style="text-align: left">Get help using the Astro CLI</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="4-로컬에서-push">4. 로컬에서 push</h2>
 <ul>
 <li>Astro는 Hugo와 다르게 리빌드시, 빌드 결과가 생성되는 폴더를 초기화하여 .git 이력이 삭제되는 문제가 발생</li>
 <li>그 결과, Hugo처럼 public 폴더만 git init 하여 gh-pages branch를 생성하여 업로드하는 것이 아니라, Astro 프로젝트 루트를 git init 하고 gh-pages branch를 생성하여 dist 폴더만 업로드 하는 방식을 선택</li>
@@ -408,8 +453,8 @@ $ git subtree push --prefix dist origin gh-pages
 					</a>
 				</div>
 		</nav> 
-			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+        </div>
+        <aside class="sidebar"><div class="widget-search widget">
     <h2 class="widget__title">Search</h2>
     <form action="/search" class="widget__content">
         <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
@@ -519,9 +564,8 @@ $ git subtree push --prefix dist origin gh-pages
 </div>
 
   </aside>
-		</div>
-  	<footer>
-    	<footer class="footer">
+      </div>
+      <footer><footer class="footer">
 	<div class="container footer__container flex">
 		
 <div class="footer__links">
@@ -539,7 +583,6 @@ $ git subtree push --prefix dist origin gh-pages
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-..."
         crossorigin="anonymous"></script>
-
-  	</footer>
-	</div></body>
+</footer>
+    </div></body>
 </html>

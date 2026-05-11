@@ -1,7 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko-kr" dir="ltr">
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   
@@ -19,11 +22,10 @@
 
 <link rel="stylesheet" href="/scss/bootstrap.css">
 
-</head>
-<body class="body">
-	<div class="container container--outer">
-  	 
-    	  <header class="header">
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
     <div class="logo">
       <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
         
@@ -99,11 +101,10 @@
 						</li>
 			</ul>
 		</nav>
-</header>
-	  
-    <div class="wrapper flex">
-			<div class="primary">
-			
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
 <main class="main" role="main">
   <article class="post">
     <header class="post__header">
@@ -158,15 +159,37 @@
 			<div class="toc__menu">
 				<nav id="TableOfContents">
   <ul>
-    <li><a href="#2026">2026</a></li>
-    <li><a href="#2025">2025</a></li>
-    <li><a href="#2024">2024</a></li>
-    <li><a href="#2023">2023</a></li>
-    <li><a href="#2021">2021</a></li>
+    <li><a href="#2026년">2026년</a>
+      <ul>
+        <li><a href="#5월">5월</a></li>
+        <li><a href="#4월">4월</a></li>
+        <li><a href="#1월">1월</a></li>
+      </ul>
+    </li>
+    <li><a href="#2025년">2025년</a></li>
+    <li><a href="#2024년">2024년</a></li>
+    <li><a href="#2023년">2023년</a></li>
+    <li><a href="#2021년">2021년</a></li>
   </ul>
 </nav>
 			</div>
-		</div><div class="content post__content clearfix"><h2 id="2026">2026</h2>
+		</div><div class="content post__content clearfix"><h2 id="2026년">2026년</h2>
+<h3 id="5월">5월</h3>
+<ul>
+<li>2026. 05. Hugo v0.158.0부터 언어 관련 속성이 바뀌면서 다음 경고내용 반영을 위한 소스 수정
+<blockquote>
+<p>WARN deprecated: .Language.LanguageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Locale instead.<br>
+WARN deprecated: .Language.LanguageDirection was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Direction instead.</p>
+</blockquote>
+<ul>
+<li><strong>config.toml(6)</strong> 변경 languageCode = &ldquo;ko-KR&rdquo; → locale = &ldquo;ko-KR&rdquo;</li>
+<li><strong>config.toml(7)</strong> 신규 direction = &ldquo;ltr&rdquo;</li>
+<li><strong>layouts/_default/baseof.html(2)</strong> 변경 {{ .Language.LanguageCode }} → {{ .Language.Locale }}</li>
+<li><strong>layouts/_default/baseof.html(2)</strong> 변경 {{ .Language.LanguageDirection }} → {{ .Language.Direction }}</li>
+</ul>
+</li>
+</ul>
+<h3 id="4월">4월</h3>
 <ul>
 <li>2026. 04. Post에 breadcrumb 추가
 <ul>
@@ -178,26 +201,29 @@
 <li>개발 당시부터 Directory 구조가 Category를 잘 반영하고 있어 추가 설정이 필요없고, FrontMatter에서 설정할 경우 중복 및 유지보수 문제 발생</li>
 </ul>
 </li>
+</ul>
+<h3 id="1월">1월</h3>
+<ul>
 <li>2026. 01. 기본도메인에 랜딩페이지 매핑 및 2차 도메인 insight를 붙여 블로그 별로 운영
 <ul>
 <li><a href="./report/static-website-migration-result/">퍼블리크 정적웹사이트 전환 결과 보고</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="2025">2025</h2>
+<h2 id="2025년">2025년</h2>
 <ul>
 <li>2025. 12. <a href="./note/website-content-style-rule/">퍼블리크 콘텐츠 작성 규칙</a></li>
 <li>2025. 11. <a href="./planning/static-website-migration-plan/">퍼블리크 정적웹사이트 전환 계획</a></li>
 </ul>
-<h2 id="2024">2024</h2>
+<h2 id="2024년">2024년</h2>
 <ul>
 <li>2024년 8월 서비스형 블로그 tistory.com으로 이전</li>
 </ul>
-<h2 id="2023">2023</h2>
+<h2 id="2023년">2023년</h2>
 <ul>
 <li>2023년 4월 AWS Lightsail에 Wordpress로 사이트 이전</li>
 </ul>
-<h2 id="2021">2021</h2>
+<h2 id="2021년">2021년</h2>
 <ul>
 <li>2021년 6월 도메인 등록</li>
 <li>2021년 8월 wordpress 기반 웹사이트 cafe24.com에 개설</li>
@@ -257,8 +283,8 @@
 					</a>
 				</div>
 		</nav> 
-			</div>
-			<aside class="sidebar"><div class="widget-search widget">
+        </div>
+        <aside class="sidebar"><div class="widget-search widget">
     <h2 class="widget__title">Search</h2>
     <form action="/search" class="widget__content">
         <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
@@ -368,9 +394,8 @@
 </div>
 
   </aside>
-		</div>
-  	<footer>
-    	<footer class="footer">
+      </div>
+      <footer><footer class="footer">
 	<div class="container footer__container flex">
 		
 <div class="footer__links">
@@ -388,7 +413,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-..."
         crossorigin="anonymous"></script>
-
-  	</footer>
-	</div></body>
+</footer>
+    </div></body>
 </html>

@@ -1,7 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko-kr" dir="ltr">
-<head>
-  <meta charset="utf-8">
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
   
@@ -20,11 +23,10 @@
 
 <link rel="stylesheet" href="/scss/bootstrap.css">
 
-</head>
-<body class="body">
-	<div class="container container--outer">
-  	 
-    	  <header class="header">
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
     <div class="logo">
       <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
         
@@ -100,11 +102,10 @@
 						</li>
 			</ul>
 		</nav>
-</header>
-	  
-    <div class="wrapper flex">
-			<div class="primary">
-			
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
 <title>Search | Insight of Public.re.kr</title>
 
 <h1>Search</h1>
@@ -237,7 +238,7 @@ const data = [
         url: "/guide/astro-website-builder-setup/",
         title: "Astro 기반 정적 웹사이트 구축",
         date: "2026-02-08T14:19:40+09:00",
-        body: "Astro 기반 정적 웹사이트 구축 1. 설치 1.1. 패키지 환경 점검 node.js v18.17.1 또는 v20.3.0 이상의 버전이 필요 npm v9.0.0 이상 enduser@Vinus MINGW64 ~ (main)\r$ node -v\rv24.12.0\renduser@Vinus MINGW64 ~ (main)\r$ npm -v\r11.6.2 1.2. astro 프로젝트 생성 uno-forge-hub/agency-landing-page-Astrojs 테마 선정 ####### 테마 없이 프로젝트 생성\r# enduser@Vinus MINGW64 ~ (main)\r# npm create astro@latest www\r####### 프로젝트 생성과 테마 설치 동시에 진행\r# npm create astro@latest → 최신 버전 Astro 프로젝트 생성 스크립트 실행\r# www → 프로젝트가 만들어질 폴더 이름\r# -- → npm 옵션과 Astro CLI 옵션을 구분\r# --template uno-forge-hub/agency-landing-page-Astrojs → 특정 GitHub 템플릿을 사용\renduser@Vinus MINGW64 ~ (main)\rnpm create astro@latest www -- --template uno-forge-hub/agency-landing-page-Astrojs\renduser@Vinus MINGW64 ~ (main)\rNeed to install the following packages:\rcreate-astro@4.13.2\rOk to proceed? (y) y\r\u0026gt; npx\r\u0026gt; create-astro www --template uno-forge-hub/agency-landing-page-Astrojs\rastro Launch sequence initiated.\r◼ dir\rUsing www as project directory\r◼ tmpl\rUsing uno-forge-hub/agency-landing-page-Astrojs as project template\rdeps Install dependencies?\rYes\rgit Initialize a new git repository?\rNo\r◼ Sounds good!\rYou can always run git init manually.\r✔ Project initialized!\r■ Template copied\r■ Dependencies installed\rnext Liftoff confirmed. Explore your project!\rEnter your project directory using cd ./www\rRun npm run dev to start the dev server. CTRL+C to stop.\rAdd frameworks like react or tailwind using astro add.\rStuck? Join us at https://astro.build/chat\r####### 의존성 패키지 설치\renduser@Vinus MINGW64 ~ (main)\rnpm install 1.3. 테스트 enduser@Vinus MINGW64 /d/onedrive/dev\r$ cd www\renduser@Vinus MINGW64 /d/onedrive/dev/www\r$ npm run dev\r\u0026gt; www@0.0.5 dev\r\u0026gt; astro dev\r▶ Astro collects anonymous usage data.\rThis information helps us improve Astro.\rRun \u0026#34;astro telemetry disable\u0026#34; to opt-out.\rhttps://astro.build/telemetry\r15:47:06 [types] Generated 1ms\r15:47:06 [content] Syncing content\r15:47:06 [content] Synced content\rastro v5.7.12 ready in 560 ms\r┃ Local http://localhost:4321/\r┃ Network use --host to expose\r15:47:06 watching for file changes...\rupdate ▶ New version of Astro available: 5.18.0\rRun npx @astrojs/upgrade to update\r15:47:14 Configuration file updated. Restarting...\r15:47:14 [vite] Re-optimizing dependencies because vite config has changed\r15:47:14 [content] Syncing content\r15:47:14 [content] Synced content\r15:47:14 [types] Generated 158ms\r15:47:14 [vite] Re-optimizing dependencies because vite config has changed\r15:47:25 [200] / 118ms 1.4. 페이지 확인 브라우저에서 http://localhost:4321/ 접속 2. 설치 후 디렉터리 구조 my-project/\r├─ public/ # 정적 자산 (이미지, 폰트, favicon 등) 빌드없이 그대로 배포\r├─ src/ # 실질적 소스코드가 위치\r│ ├─ components/ # 재사용 가능한 UI 컴포넌트 (버튼, 헤더 등)\r│ ├─ content/ # 구조화된 Markdown/MDX 콘텐츠 (블로그 글, 문서 등)\r│ ├─ layouts/ # 페이지 레이아웃 (공통 헤더/푸터)\r│ ├─ pages/ # 실제 페이지 (index.astro, about.astro 등)\r│ ├─ styles/ # CSS, Tailwind 설정 등\r│ └─ utils/ # 재사용 가능한 유틸리티 함수 등 (선택)\r├─ package.json # npm 의존성 관리\r├─ astro.config.mjs # Astro 프로젝트 설정\r├─ tsconfig.json # TypeScript 설정 (선택)\r└─ dist/ # 빌드 결과물 (배포용) 3. 명령 일람 ####### Installs dependencies\rnpm install\r####### Starts local dev server at localhost:4321\rnpm run dev\r####### Build your production site to ./dist/\rnpm run build\r####### Preview your build locally, before deploying\rnpm run preview\r####### Run CLI commands like astro add, astro check\rnpm run astro ...\t####### Get help using the Astro CLI\rnpm run astro --help\t4. 로컬에서 push Astro는 Hugo와 다르게 리빌드시, 빌드 결과가 생성되는 폴더를 초기화하여 .git 이력이 삭제되는 문제가 발생 그 결과, Hugo처럼 public 폴더만 git init 하여 gh-pages branch를 생성하여 업로드하는 것이 아니라, Astro 프로젝트 루트를 git init 하고 gh-pages branch를 생성하여 dist 폴더만 업로드 하는 방식을 선택 ####### 폴더 초기화(최초 1회만 수행)\r$ git init\rInitialized empty Git repository in D:/OneDrive/dev/public-re-kr/public/.git/\r####### 로컬 디렉터리와 원격저장소 연결(최초 1회만 수행)\r$ git remote add origin https://github.com/username/project-site.git\r####### 새 브랜치를 생성하고 그 브랜치로 이동(최초 1회만 수행)\r$ git checkout -b gh-pages\rSwitched to a new branch \u0026#39;gh-pages\u0026#39;\r####### 브랜치 변경\r$ git switch gh-pages ####### PAD에서는 git switch gh-pages 2\u0026gt;$null || echo ok 명령\r####### 빌드\r$ npm run build ####### 또는 astro build\r####### dist 디렉터리를 스테이징\r$ git add dist -f\r####### 스테이징한 파일을 커밋\r$ git commit -m \u0026#34;Deploy after Edit\u0026#34;\r####### --force 옵션시 강제 덮어쓰기 수행(옵션 제거시 변경된 파일만 업데이토)\r$ git subtree push --prefix dist origin gh-pages 【참고자료】 Astro Docs AgenceX Landing page"
+        body: "Astro 기반 정적 웹사이트 구축 1. 설치 1.1. 패키지 환경 점검 node.js v18.17.1 또는 v20.3.0 이상의 버전이 필요 npm v9.0.0 이상 enduser@Vinus MINGW64 ~ (main)\r$ node -v\rv24.12.0\renduser@Vinus MINGW64 ~ (main)\r$ npm -v\r11.6.2 1.2. astro 프로젝트 생성 uno-forge-hub/agency-landing-page-Astrojs 테마 선정 ####### 테마 없이 프로젝트 생성\r# enduser@Vinus MINGW64 ~ (main)\r# npm create astro@latest www\r####### 프로젝트 생성과 테마 설치 동시에 진행\r# npm create astro@latest → 최신 버전 Astro 프로젝트 생성 스크립트 실행\r# www → 프로젝트가 만들어질 폴더 이름\r# -- → npm 옵션과 Astro CLI 옵션을 구분\r# --template uno-forge-hub/agency-landing-page-Astrojs → 특정 GitHub 템플릿을 사용\renduser@Vinus MINGW64 ~ (main)\rnpm create astro@latest www -- --template uno-forge-hub/agency-landing-page-Astrojs\renduser@Vinus MINGW64 ~ (main)\rNeed to install the following packages:\rcreate-astro@4.13.2\rOk to proceed? (y) y\r\u0026gt; npx\r\u0026gt; create-astro www --template uno-forge-hub/agency-landing-page-Astrojs\rastro Launch sequence initiated.\r◼ dir\rUsing www as project directory\r◼ tmpl\rUsing uno-forge-hub/agency-landing-page-Astrojs as project template\rdeps Install dependencies?\rYes\rgit Initialize a new git repository?\rNo\r◼ Sounds good!\rYou can always run git init manually.\r✔ Project initialized!\r■ Template copied\r■ Dependencies installed\rnext Liftoff confirmed. Explore your project!\rEnter your project directory using cd ./www\rRun npm run dev to start the dev server. CTRL+C to stop.\rAdd frameworks like react or tailwind using astro add.\rStuck? Join us at https://astro.build/chat\r####### 의존성 패키지 설치\renduser@Vinus MINGW64 ~ (main)\rnpm install 1.3. 테스트 enduser@Vinus MINGW64 /d/onedrive/dev\r$ cd www\renduser@Vinus MINGW64 /d/onedrive/dev/www\r$ npm run dev\r\u0026gt; www@0.0.5 dev\r\u0026gt; astro dev\r▶ Astro collects anonymous usage data.\rThis information helps us improve Astro.\rRun \u0026#34;astro telemetry disable\u0026#34; to opt-out.\rhttps://astro.build/telemetry\r15:47:06 [types] Generated 1ms\r15:47:06 [content] Syncing content\r15:47:06 [content] Synced content\rastro v5.7.12 ready in 560 ms\r┃ Local http://localhost:4321/\r┃ Network use --host to expose\r15:47:06 watching for file changes...\rupdate ▶ New version of Astro available: 5.18.0\rRun npx @astrojs/upgrade to update\r15:47:14 Configuration file updated. Restarting...\r15:47:14 [vite] Re-optimizing dependencies because vite config has changed\r15:47:14 [content] Syncing content\r15:47:14 [content] Synced content\r15:47:14 [types] Generated 158ms\r15:47:14 [vite] Re-optimizing dependencies because vite config has changed\r15:47:25 [200] / 118ms 1.4. 페이지 확인 브라우저에서 http://localhost:4321/ 접속 2. 설치 후 디렉터리 구조 my-project/\r├─ public/ # 정적 자산 (이미지, 폰트, favicon 등) 빌드없이 그대로 배포\r├─ src/ # 실질적 소스코드가 위치\r│ ├─ components/ # 재사용 가능한 UI 컴포넌트 (버튼, 헤더 등)\r│ ├─ content/ # 구조화된 Markdown/MDX 콘텐츠 (블로그 글, 문서 등)\r│ ├─ layouts/ # 페이지 레이아웃 (공통 헤더/푸터)\r│ ├─ pages/ # 실제 페이지 (index.astro, about.astro 등)\r│ ├─ styles/ # CSS, Tailwind 설정 등\r│ └─ utils/ # 재사용 가능한 유틸리티 함수 등 (선택)\r├─ package.json # npm 의존성 관리\r├─ astro.config.mjs # Astro 프로젝트 설정\r├─ tsconfig.json # TypeScript 설정 (선택)\r└─ dist/ # 빌드 결과물 (배포용)\r/\r├── public/ # 정적 자산 (이미지, 폰트, favicon 등) 빌드없이 그대로 배포\r│ ├── images/\r│ ├── logos/*\r│ └── favicon.svg\r├── src/ # 실질적 소스코드가 위치\r│ ├── components/ # 재사용 가능한 UI 컴포넌트 (버튼, 헤더 등)\r│ │ ├── blocks/*\r│ │ ├── cards/*\r│ │ ├── elements/*\r│ │ ├── sections/*\r│ │ └── shared/*\r│ ├── content/ # 구조화된 Markdown/MDX 콘텐츠 (블로그 글, 문서 등)\r│ ├── layouts/ # 페이지 레이아웃 (공통 헤더/푸터)\r│ │ └── Layout.astro\r│ ├── pages/ # 실제 페이지 (index.astro, about.astro 등)\r│ │ └── index.astro\r│ ├── styles/ # CSS, Tailwind 설정 등\r│ │ └── global.css\r│ ├─ utils/ # 재사용 가능한 유틸리티 함수 등 (선택)\r│ └─ dist/ # 빌드 결과물 (배포용)\r├─ package.json # npm 의존성 관리\r├─ astro.config.mjs # Astro 프로젝트 설정\r└─ tsconfig.json # TypeScript 설정 (선택) 3. 명령 일람 모든 명령어는 프로젝트 루트에서 실행 Command Action npm install Installs dependencies npm run dev Starts local dev server at \u0026ldquo;localhost:4321\u0026rdquo; npm run build Build your production site to \u0026ldquo;./dist/\u0026rdquo; npm run preview Preview your build locally, before deploying npm run astro \u0026hellip; Run CLI commands like \u0026ldquo;astro add\u0026rdquo;, \u0026ldquo;astro check\u0026rdquo; npm run astro \u0026ndash;help Get help using the Astro CLI 4. 로컬에서 push Astro는 Hugo와 다르게 리빌드시, 빌드 결과가 생성되는 폴더를 초기화하여 .git 이력이 삭제되는 문제가 발생 그 결과, Hugo처럼 public 폴더만 git init 하여 gh-pages branch를 생성하여 업로드하는 것이 아니라, Astro 프로젝트 루트를 git init 하고 gh-pages branch를 생성하여 dist 폴더만 업로드 하는 방식을 선택 ####### 폴더 초기화(최초 1회만 수행)\r$ git init\rInitialized empty Git repository in D:/OneDrive/dev/public-re-kr/public/.git/\r####### 로컬 디렉터리와 원격저장소 연결(최초 1회만 수행)\r$ git remote add origin https://github.com/username/project-site.git\r####### 새 브랜치를 생성하고 그 브랜치로 이동(최초 1회만 수행)\r$ git checkout -b gh-pages\rSwitched to a new branch \u0026#39;gh-pages\u0026#39;\r####### 브랜치 변경\r$ git switch gh-pages ####### PAD에서는 git switch gh-pages 2\u0026gt;$null || echo ok 명령\r####### 빌드\r$ npm run build ####### 또는 astro build\r####### dist 디렉터리를 스테이징\r$ git add dist -f\r####### 스테이징한 파일을 커밋\r$ git commit -m \u0026#34;Deploy after Edit\u0026#34;\r####### --force 옵션시 강제 덮어쓰기 수행(옵션 제거시 변경된 파일만 업데이토)\r$ git subtree push --prefix dist origin gh-pages 【참고자료】 Astro Docs AgenceX Landing page"
       },
       {
         url: "/guide/hugo-theme-hero-setup/",
@@ -321,7 +322,7 @@ const data = [
         url: "/report/insight-update-management-record/",
         title: "퍼블리크 변경 관리 이력",
         date: "2025-12-23T13:38:23+09:00",
-        body: "퍼블리크 변경 관리 이력 2026 2026. 04. Post에 breadcrumb 추가 컨텐츠의 탐색 경로를 확인할 수 있도록 제목 상단에 breadcrumb 추가 2026. 04. FrontMatter에서 Categories 항목 삭제 개발 당시부터 Directory 구조가 Category를 잘 반영하고 있어 추가 설정이 필요없고, FrontMatter에서 설정할 경우 중복 및 유지보수 문제 발생 2026. 01. 기본도메인에 랜딩페이지 매핑 및 2차 도메인 insight를 붙여 블로그 별로 운영 퍼블리크 정적웹사이트 전환 결과 보고 2025 2025. 12. 퍼블리크 콘텐츠 작성 규칙 2025. 11. 퍼블리크 정적웹사이트 전환 계획 2024 2024년 8월 서비스형 블로그 tistory.com으로 이전 2023 2023년 4월 AWS Lightsail에 Wordpress로 사이트 이전 2021 2021년 6월 도메인 등록 2021년 8월 wordpress 기반 웹사이트 cafe24.com에 개설"
+        body: "퍼블리크 변경 관리 이력 2026년 5월 2026. 05. Hugo v0.158.0부터 언어 관련 속성이 바뀌면서 다음 경고내용 반영을 위한 소스 수정 WARN deprecated: .Language.LanguageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Locale instead. WARN deprecated: .Language.LanguageDirection was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Language.Direction instead. config.toml(6) 변경 languageCode = \u0026ldquo;ko-KR\u0026rdquo; → locale = \u0026ldquo;ko-KR\u0026rdquo; config.toml(7) 신규 direction = \u0026ldquo;ltr\u0026rdquo; layouts/_default/baseof.html(2) 변경 {{ .Language.LanguageCode }} → {{ .Language.Locale }} layouts/_default/baseof.html(2) 변경 {{ .Language.LanguageDirection }} → {{ .Language.Direction }} 4월 2026. 04. Post에 breadcrumb 추가 컨텐츠의 탐색 경로를 확인할 수 있도록 제목 상단에 breadcrumb 추가 2026. 04. FrontMatter에서 Categories 항목 삭제 개발 당시부터 Directory 구조가 Category를 잘 반영하고 있어 추가 설정이 필요없고, FrontMatter에서 설정할 경우 중복 및 유지보수 문제 발생 1월 2026. 01. 기본도메인에 랜딩페이지 매핑 및 2차 도메인 insight를 붙여 블로그 별로 운영 퍼블리크 정적웹사이트 전환 결과 보고 2025년 2025. 12. 퍼블리크 콘텐츠 작성 규칙 2025. 11. 퍼블리크 정적웹사이트 전환 계획 2024년 2024년 8월 서비스형 블로그 tistory.com으로 이전 2023년 2023년 4월 AWS Lightsail에 Wordpress로 사이트 이전 2021년 2021년 6월 도메인 등록 2021년 8월 wordpress 기반 웹사이트 cafe24.com에 개설"
       },
       {
         url: "/note/hello/",
@@ -571,8 +572,8 @@ search(keyword);
   
   <script src="https://insight.public.re.kr/ts/search.108d796cf2efd94a6faf47d5779f36dc46a0d016f0a811fa6e2ea247c12fe328.js"></script>
 
-			</div>
-			
+        </div>
+        
 <aside class="sidebar"><div class="widget-search widget">
     <h2 class="widget__title">Search</h2>
     <form action="/search" class="widget__content">
@@ -683,9 +684,8 @@ search(keyword);
 </div>
 
   </aside>
-		</div>
-  	<footer>
-    	<footer class="footer">
+      </div>
+      <footer><footer class="footer">
 	<div class="container footer__container flex">
 		
 <div class="footer__links">
@@ -703,7 +703,6 @@ search(keyword);
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-..."
         crossorigin="anonymous"></script>
-
-  	</footer>
-	</div></body>
+</footer>
+    </div></body>
 </html>
