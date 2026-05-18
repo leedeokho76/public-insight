@@ -3,15 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insight.public.re.kr/archives/2026/05/</loc>
-    <lastmod>2026-05-04T09:45:57+09:00</lastmod>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/</loc>
-    <lastmod>2026-05-04T09:45:57+09:00</lastmod>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/db/</loc>
-    <lastmod>2026-05-04T09:45:57+09:00</lastmod>
+    <loc>https://insight.public.re.kr/guide/</loc>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/</loc>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/</loc>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/util/</loc>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/guide/headless-browswer-puppeteer-setup/</loc>
+    <lastmod>2026-05-17T15:40:19+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/review/</loc>
+    <lastmod>2026-05-15T00:03:10+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/archives/yyyy/mm/</loc>
+    <lastmod>2026-05-15T00:03:10+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/review/government-mailing-newsletter-analysis/</loc>
+    <lastmod>2026-05-15T00:03:10+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</loc>
+    <lastmod>2026-05-15T00:03:10+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/db/</loc>
     <lastmod>2026-05-04T09:45:57+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/</loc>
@@ -20,13 +44,7 @@
     <loc>https://insight.public.re.kr/note/sqlite-dbatabase-query-sample/</loc>
     <lastmod>2026-05-04T09:45:57+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/</loc>
-    <lastmod>2026-05-04T09:45:57+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/guide/cloudflare-pages-setup-process/</loc>
-    <lastmod>2026-05-01T18:10:37+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/guide/</loc>
     <lastmod>2026-05-01T18:10:37+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/paas/</loc>
@@ -49,9 +67,6 @@
   </url><url>
     <loc>https://insight.public.re.kr/guide/powerautomate-hextra-automation-setup/</loc>
     <lastmod>2026-04-12T15:05:30+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/util/</loc>
-    <lastmod>2026-04-08T14:39:02+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/mjml-mail-framework-install/</loc>
     <lastmod>2026-04-08T14:39:02+09:00</lastmod>
@@ -132,9 +147,6 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/ai/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/review/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/governance/</loc>
@@ -225,9 +237,6 @@
     <lastmod>2025-07-09T15:34:54+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/report/tistory-enterprise-web-analysis/</loc>
-    <lastmod>2025-07-09T15:34:54+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EB%B3%B4%EC%A1%B0%EC%9A%A9%EC%9C%BC%EB%A1%9C%EC%98%81%EB%AC%B8%EC%86%8C%EB%AC%B8%EC%9E%90/</loc>
     <lastmod>2025-07-09T15:34:54+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/2024/09/</loc>
@@ -334,8 +343,6 @@
   </url><url>
     <loc>https://insight.public.re.kr/tags/wellbeing/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/report/mailing-list-web-analysis/</loc>
   </url><url>
     <loc>https://insight.public.re.kr/categories/</loc>
   </url><url>
