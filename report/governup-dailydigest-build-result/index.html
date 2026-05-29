@@ -3,7 +3,7 @@
   lang="ko-KR"
   dir="ltr"
 >
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="/scss/style.min.891f9af35158e3d67de6f524523bb2bea8e8357fc7f8bca1ed71e049092d2159.css">
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
 
 
 <link rel="stylesheet" href="/scss/bootstrap.css">
@@ -178,6 +179,10 @@
     <li><a href="#6-주요성과-및-시사점">6. 주요성과 및 시사점</a>
       <ul>
         <li><a href="#61-총평">6.1. 총평</a></li>
+        <li><a href="#62-휴먼-인지의-적절한-개입">6.2. 휴먼 인지의 적절한 개입</a></li>
+        <li><a href="#63-효율적-데이터-관리">6.3. 효율적 데이터 관리</a></li>
+        <li><a href="#64-자동화">6.4. 자동화</a></li>
+        <li><a href="#65-독립적-블록-설계와-확장성-확보">6.5. 독립적 블록 설계와 확장성 확보</a></li>
       </ul>
     </li>
     <li><a href="#7-향후-계획">7. 향후 계획</a></li>
@@ -190,10 +195,11 @@
 </ul>
 <h2 id="2-추진개요">2. 추진개요</h2>
 <ol>
-<li>추진기간: 2026. 1. ~ 2025. 5. (5개월)</li>
-<li>인력투입: 행정전문가(일반행정사) 0.25인 / 초급기술자(정보처리기사) 0.75인</li>
+<li>추진기간: 2026. 1. ~ 2026. 5. (5개월)</li>
+<li>수행인력: 행정전문가(일반행정사) 0.25인 / 초급기술자(정보처리기사) 0.75인</li>
 <li>개발인프라
 <ul>
+<li><strong>(RPA Machine)</strong> Intel Core i3-10105 3.70GHz / RAM 16.0GB / SSD / Windows 11 Pro</li>
 <li><strong>(DB)</strong> SQLite (Public Domain)</li>
 <li><strong>(Automation Engine)</strong> MS Power Automate Cloud(SaaS) &amp; Desktop(On-premises) (free for a limited time)</li>
 <li><strong>(Web Builder)</strong> Hugo Extended (Apache License 2.0)</li>
@@ -279,7 +285,7 @@
       <tr>
           <td style="text-align: center">행정안전</td>
           <td style="text-align: center">행안위</td>
-          <td style="text-align: center">행정안전부, 경찰청, 소방청, 인사혁신처, 중선관위, 지방자치단체</td>
+          <td style="text-align: center">행정안전부, 경찰청, 소방청, 인사혁신처, 중앙선관위, 지방자치단체</td>
       </tr>
       <tr>
           <td style="text-align: center">문화체육관광</td>
@@ -351,8 +357,34 @@
 </ul>
 <h2 id="6-주요성과-및-시사점">6. 주요성과 및 시사점</h2>
 <h3 id="61-총평">6.1. 총평</h3>
-<p>-</p>
+<ul>
+<li>본 프로젝트는, 데이터 입·출력·수정·갱신이 중심인 DB 집약적 시스템과 달리, 로컬에서의 데이터 가공 자동화와 온라인에서의 콘텐츠 배포 파이프라인을 중심에 두고 경량화된 구조와 유연한 확장성을 고려하여 설계되었다는데 큰 의의</li>
+</ul>
+<h3 id="62-휴먼-인지의-적절한-개입">6.2. 휴먼 인지의 적절한 개입</h3>
+<ul>
+<li><strong>(정책통찰)</strong> 정책적·행정적 고려가 필요한 범주화·그룹화 및 위원회·부처 기초자료 수집 등에 행정전문가의 역량을 적절히 투입하여 자료구조의 안정성과 서비스의 효율성을 제고</li>
+<li><strong>(고객이해)</strong> 구독 정보 구축 단계에서는 인지적 개입을 통해 고객의 유효성을 평가하고 이용자 특성을 파악함으로써 맞춤형 응대에 대비</li>
+</ul>
+<h3 id="63-효율적-데이터-관리">6.3. 효율적 데이터 관리</h3>
+<ul>
+<li><strong>(DBMS전략)</strong> <a href="../policy-dailybriefing-test-result/">자동화 프로세스를 통한 공공정책 일일브리핑 시범 추진 결과</a>를 토대로 DBMS 도입의 필요성을 인지하여, 가벼우면서도 안정적인 트랜잭션과 표준SQL 및 제약 조건 등 RDBMS의 본질적 장점 지원이라는 요구사항에 부합하는 SQLite롤 채택하게 되어, 서버설치 불필요, 클라우드를 통한 손쉬운 백업, OS 변경시 이식 용이 등 운영 편의성도 증대</li>
+<li><strong>(최적화)</strong> 구독괸련 관심분야와 이메일 정보는, 자원소모가 적고 구조가 유연하며 앱을 통한 접근도 간단한 JSON파일로 운용하되, 향후 CRM 확장시 데이터 관리 적정화 평가를 통해 호스티드 DBMS로 이전 여부를 검토</li>
+</ul>
+<h3 id="64-자동화">6.4. 자동화</h3>
+<ul>
+<li><strong>(Local자동화)</strong> Power Automate Desktop을 도입하여 콘텐츠 생성 과정을 자동화함으로써, 고비용의 자동화 도구에 의존하지 않고 직관적 운용이 가능한 PC 하드웨어, 운영체제, 브라우저 등 로컬 기반 자원을 효과적으로 활용</li>
+<li><strong>(CI/CD자동화)</strong> 당초 로컬에서 hugo(웹사이트 빌더)를 빌드하고 그 결과물만 웹서버에 업로드하여 배포하는 것으로 계획하였으나, 구축 과정에서 Github Actions의 가용성을 인지하여 CI/CD 플랫폼을 활용하게 되었고, Git Push 이후의 빌드 및 업로드 과정이 자동화되어 배포 편의성 혁신</li>
+</ul>
+<h3 id="65-독립적-블록-설계와-확장성-확보">6.5. 독립적 블록 설계와 확장성 확보</h3>
+<ul>
+<li><strong>(구성)</strong> &ldquo;여러 사람에 의해 운영할 경우&quot;를 가정하고 DB 관리, 웹 스크래핑, 콘텐츠 생성, 빌드, 배포를 각각 독립된 형태로 블록화</li>
+<li><strong>(자원연결)</strong> 서비스 목적 달성을 위해 Cloudflare Pages, Daum Smartwork, MS Forms, Puppeteer 등 서로 다른 기술을 유기적으로 결합</li>
+<li><strong>(지능화)</strong> 새로운 데이터 소스나 배포 채널을 추가하기 용이하며, 장기적으로 AI 파이프라인을 결합해 지능형 자동화로 확장 가능한 구조 마련</li>
+</ul>
 <h2 id="7-향후-계획">7. 향후 계획</h2>
+<ul>
+<li>정적웹사이트 토대가 마련되어, 실시간 댓글 서비스 확장을 위한 서버리스 및 noSQL DB 등 백엔드 자원 연계 계획 수립 추진</li>
+</ul>
 </div>
   </article>
 </main>
@@ -447,7 +479,7 @@
       
       <option value="/archives/2026/04">2026/04 (4)</option>
       
-      <option value="/archives/2026/03">2026/03 (10)</option>
+      <option value="/archives/2026/03">2026/03 (6)</option>
       
       <option value="/archives/2026/02">2026/02 (3)</option>
       
@@ -484,17 +516,17 @@
 	<h2 class="widget__title">Tags</h2>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (9)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/db/" title="db">db (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (8)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/paas/" title="paas">paas (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
