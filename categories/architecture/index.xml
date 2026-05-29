@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Insight of Public.re.kr</title>
+    <link>http://localhost:1313/categories/architecture/</link>
+    <description>Recent content in Architecture on Insight of Public.re.kr</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Thu, 28 May 2026 09:48:09 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>유튜브 기본 계정 또는 브랜드 계정 전환</title>
+      <link>http://localhost:1313/note/youtube-brand-personal-account/</link>
+      <pubDate>Thu, 28 May 2026 09:48:09 +0900</pubDate>
+      <guid>http://localhost:1313/note/youtube-brand-personal-account/</guid>
+      <description>&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
