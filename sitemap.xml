@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insight.public.re.kr/archives/2026/05/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/architecture/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/note/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
+    <loc>https://insight.public.re.kr/report/</loc>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/</loc>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/report/governup-dailydigest-build-result/</loc>
+    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/note/</loc>
     <lastmod>2026-05-25T16:13:51+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/system-architecture-diagram-summary/</loc>
@@ -86,9 +92,6 @@
     <loc>https://insight.public.re.kr/planning/law-semantic-styling-plan/</loc>
     <lastmod>2026-03-25T14:27:11+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/report/</loc>
-    <lastmod>2026-03-11T13:01:08+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/report/public-randingpage-build-result/</loc>
     <lastmod>2026-03-11T13:01:08+09:00</lastmod>
   </url><url>
@@ -116,9 +119,6 @@
     <loc>https://insight.public.re.kr/guide/hugo-theme-hero-setup/</loc>
     <lastmod>2026-02-06T05:44:26+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/report/governup-dailydigest-build-result/</loc>
-    <lastmod>2026-02-04T12:49:25+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/archives/2026/01/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
@@ -144,9 +144,6 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/tags/ai/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/governance/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/report/policy-dailybriefing-test-result/</loc>
@@ -189,6 +186,9 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/review/nvidia-korea-ai-alliance/</loc>
+    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/governance/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/2025/10/</loc>
