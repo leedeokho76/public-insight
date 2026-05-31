@@ -6,8 +6,15 @@
     <description>Recent content in Fundamental on Insight of Public.re.kr</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Thu, 26 Feb 2026 15:28:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 03:15:01 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/tags/fundamental/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go언어 기초 가이드</title>
+      <link>https://insight.public.re.kr/note/go-lang-fundamental-guide/</link>
+      <pubDate>Sun, 31 May 2026 03:15:01 +0900</pubDate>
+      <guid>https://insight.public.re.kr/note/go-lang-fundamental-guide/</guid>
+      <description>&lt;h2 id=&#34;1-환경설정&#34;&gt;1. 환경설정&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;winget 설치시 id명: GoLang.Go&lt;/li&gt;&#xA;&lt;li&gt;mod파일 생성&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;go mod init github.com/leedeokho76/go&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Go전용 디버거 설치&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;go install github.com/go-delve/delve/cmd/dlv@latest&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>데이터과학을 위한 파이썬 컴퓨팅 요약</title>
       <link>https://insight.public.re.kr/note/python-data-science-summary/</link>

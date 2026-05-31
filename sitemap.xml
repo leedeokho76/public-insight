@@ -3,28 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://insight.public.re.kr/archives/2026/05/</loc>
-    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/architecture/</loc>
-    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/archives/</loc>
-    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/fundamental/</loc>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/note/go-lang-fundamental-guide/</loc>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/</loc>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/note/</loc>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/</loc>
+    <lastmod>2026-05-31T03:15:01+09:00</lastmod>
+  </url><url>
+    <loc>https://insight.public.re.kr/tags/architecture/</loc>
     <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/report/</loc>
     <lastmod>2026-05-29T14:47:59+09:00</lastmod>
   </url><url>
-    <loc>https://insight.public.re.kr/tags/</loc>
-    <lastmod>2026-05-29T14:47:59+09:00</lastmod>
-  </url><url>
     <loc>https://insight.public.re.kr/report/governup-dailydigest-build-result/</loc>
     <lastmod>2026-05-29T14:47:59+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/note/</loc>
-    <lastmod>2026-05-25T16:13:51+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/system-architecture-diagram-summary/</loc>
     <lastmod>2026-05-25T16:13:51+09:00</lastmod>
@@ -198,9 +204,6 @@
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/guide/docsify-static-website-build/</loc>
-    <lastmod>2026-02-26T15:28:34+09:00</lastmod>
-  </url><url>
-    <loc>https://insight.public.re.kr/tags/fundamental/</loc>
     <lastmod>2026-02-26T15:28:34+09:00</lastmod>
   </url><url>
     <loc>https://insight.public.re.kr/note/python-data-science-summary/</loc>
