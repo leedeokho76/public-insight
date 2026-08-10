@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2026/07 on Insight of Public.re.kr</title>
+    <link>https://insight.public.re.kr/archives/2026/07/</link>
+    <description>Recent content in 2026/07 on Insight of Public.re.kr</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Fri, 03 Jul 2026 14:18:54 +0900</lastBuildDate>
+    <atom:link href="https://insight.public.re.kr/archives/2026/07/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo multi language 기능 활성화 방법</title>
+      <link>https://insight.public.re.kr/guide/hugo-multi-language-activation/</link>
+      <pubDate>Fri, 03 Jul 2026 14:18:54 +0900</pubDate>
+      <guid>https://insight.public.re.kr/guide/hugo-multi-language-activation/</guid>
+      <description>&lt;h2 id=&#34;1&#34;&gt;1.&lt;/h2&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>학습을 위한 Ubuntu Linux 설치</title>
+      <link>https://insight.public.re.kr/guide/linux-installation-for-learning/</link>
+      <pubDate>Thu, 02 Jul 2026 10:37:06 +0900</pubDate>
+      <guid>https://insight.public.re.kr/guide/linux-installation-for-learning/</guid>
+      <description>&lt;h2 id=&#34;1-설치환경-구성&#34;&gt;1. 설치환경 구성&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Linux 부팅usb 제작&lt;/li&gt;&#xA;&lt;li&gt;usb 부팅&#xA;&lt;ul&gt;&#xA;&lt;li&gt;노트북 등 몇몇 하드웨어에서 부팅순서 변경을 위한 BIOS Setup 진입이 불가능한 경우, 부팅usb를 꼽고 윈도우 로그인 상태에서 shift키+다시시작을 클릭하면 부팅 디바이스를 선택할 수 있는 상태로 전환&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-linux-설치-순서&#34;&gt;2. Linux 설치 순서&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;언어선택 및 체험·설치 옵션 선택&lt;/li&gt;&#xA;&lt;li&gt;키보드 레이아웃 선택&lt;/li&gt;&#xA;&lt;li&gt;업데이트 및 기타 소프트웨어&#xA;&lt;ul&gt;&#xA;&lt;li&gt;일반설치 vs 최소설치&lt;/li&gt;&#xA;&lt;li&gt;Ubuntu 업데이트 다운로드 및 서드파티 소프트웨어 선택 옵션&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;설치형식&#xA;&lt;ul&gt;&#xA;&lt;li&gt;기존 OS 삭제 여부 선택&lt;/li&gt;&#xA;&lt;li&gt;디스크 파티션 설정 과정&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;시간대 설정&lt;/li&gt;&#xA;&lt;li&gt;계정명 및 네트워크명 등 설정&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-원격데스크톱-접속-설정&#34;&gt;3. 원격데스크톱 접속 설정&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Linux에 xrdp 설치 및 설정&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt update&#xD;&#xA;$ sudo apt install xrdp -y&#xD;&#xA;$ sudo systemctl enable xrdp  //시작시 자동실행&#xD;&#xA;$ sudo systemctl start xrdp&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;서버측 ip주소 확인&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ip addr&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;xfce 데스크톱 설치 및 설정&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt install xfce4&#xD;&#xA;$ echo &amp;#34;startxfce4&amp;#34; &amp;gt; ~/.xsession  //환경변수 등록 ~/.xinitrc 파일로도 시도&#xD;&#xA;$ dpkg -l | grep xfce4  //xfce 설치확인&#xD;&#xA;$ sudo systemctl restart xrdp&#xD;&#xA;$ ls -l ~/.xsession  //일반 사용자 계정으로 접속 가능한지 확인&#xD;&#xA;$ cat /var/log/xrdp-sesman.log  //오류확인&#xD;&#xA;$ cat /var/log/xrdp.log  //오류확인&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;startwm_sh 내용 변경(2번 실패시)&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo nano /etc/xrdp/startwm_sh&#xD;&#xA;#test -x /etc/x11/xsession &amp;amp;&amp;amp; exec /etc/x11/xsession  //기존내용 주석처리&#xD;&#xA;#exec /bin/sh /etc/x11/xsession  //기존내용 주석처리&#xD;&#xA;test -x /usr/bin/startxfce4 &amp;amp;&amp;amp; exec /usr/bin/startxfce4&#xD;&#xA;exec /bin/sh /usr/bin/startxfce4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;방화벽 포트 허용&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo ufw allow 3389/tcp&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;4-ssh-접속-설정&#34;&gt;4. SSH 접속 설정&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;SSH 서버 설치&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sudo apt update&#xD;&#xA;$ sudo apt install openssh-server -y&#xD;&#xA;$ sudo systemctl status ssh  //서비스 상태 확인&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;서버측 ip주소 확인&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ip addr&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;클라이언트에서 접속 및 확인&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ssh 사용자명@IP주소&#xD;&#xA;$ whoami  //계정정보&#xD;&#xA;$ hostname  //호스트정보&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://help.ubuntu.com/22.04/ubuntu-help/index.html&#34;&gt;Ubuntu 데스크톱 가이드 - Ubuntu 22.04&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

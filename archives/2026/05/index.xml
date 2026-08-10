@@ -9,11 +9,11 @@
     <lastBuildDate>Sun, 31 May 2026 03:15:01 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/archives/2026/05/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Go언어 기초 가이드</title>
-      <link>https://insight.public.re.kr/note/go-lang-fundamental-guide/</link>
+      <title>TypeScript 언어 기초 가이드</title>
+      <link>https://insight.public.re.kr/note/type-script-fundamental-guide/</link>
       <pubDate>Sun, 31 May 2026 03:15:01 +0900</pubDate>
-      <guid>https://insight.public.re.kr/note/go-lang-fundamental-guide/</guid>
-      <description>&lt;h2 id=&#34;1-환경설정&#34;&gt;1. 환경설정&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;winget 설치시 id명: GoLang.Go&lt;/li&gt;&#xA;&lt;li&gt;mod파일 생성&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;go mod init github.com/leedeokho76/go&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Go전용 디버거 설치&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;go install github.com/go-delve/delve/cmd/dlv@latest&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;【참고자료】&lt;/h2&gt;</description>
+      <guid>https://insight.public.re.kr/note/type-script-fundamental-guide/</guid>
+      <description>&lt;h2 id=&#34;1-typescript의-이론적-기초&#34;&gt;1. TypeScript의 이론적 기초&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-ts가-좋은-이유&#34;&gt;1.1. TS가 좋은 이유&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;TS는 JS의 상위 집합으로 모든 ECMA 버전의 JS파일 사용 가능&lt;/li&gt;&#xA;&lt;li&gt;TS는 정적타이핑을 지원하는 반면 JS는 동적타이핑만을 지원&lt;/li&gt;&#xA;&lt;li&gt;정적타입 프로그래밍 언어는 변수 사용 전 타입을 할당해야 하며, 타입선언 후 변경시 컴파일 오류&lt;/li&gt;&#xA;&lt;li&gt;TS는 ECMA스크립트 표준을 따르며, 웹 브라우저보다 훨씬 더 빠르게 JS의 기능을 실행가능&lt;/li&gt;&#xA;&lt;li&gt;TS에서 최신 JS문법을 지원하며 모든 브라우저 사양을 지원하는 버전으로 컴파일 가능&lt;/li&gt;&#xA;&lt;li&gt;TS를 컴파일한 JS코드는 사람이 작성한 것처럼 읽기 용이&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;12-ts-앱-개발과정&#34;&gt;1.2. TS 앱 개발과정&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;TS 앱의 배포 과정&lt;br&gt;&#xA;&lt;img src=&#34;./1-2-1.webp&#34; alt=&#34;TS 앱의 배포 과정&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;TS와 JS가 함께 사용된 앱의 배포 과정&lt;br&gt;&#xA;&lt;img src=&#34;./1-2-2.webp&#34; alt=&#34;TS와 JS가 함께 사용된 앱의 배포 과정&#34;&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;13-typescript-컴파일러&#34;&gt;1.3. TypeScript 컴파일러&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;컴파일러의 설치&lt;/p&gt;</description>
     </item>
     <item>
       <title>일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</title>

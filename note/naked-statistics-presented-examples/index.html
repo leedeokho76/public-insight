@@ -1,0 +1,765 @@
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례 - Insight of Public.re.kr
+  
+</title>
+<meta name="description" content="Wheelan, Charles가 쓴 통계와 관련된 도서인 Naked Statistics에서 언급된 통계 사례를 요약">
+
+
+<link rel="stylesheet" href="/scss/style.min.891f9af35158e3d67de6f524523bb2bea8e8357fc7f8bca1ed71e049092d2159.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public.re.kr" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public.re.kr</div>
+          
+            <div class="logo__subtitle">경험을 기록하고, 지식을 이어가는 통찰💡</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+      
+      
+<nav class="breadcrumbs" aria-label="breadcrumb" style="font-size: 0.9rem; margin-bottom: 1rem; color: #666;">
+  <a href="/">Home</a>
+  
+  
+  
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note">Note</a>
+      
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note/naked-statistics-presented-examples">Naked statistics presented examples</a>
+      
+    
+  
+    
+  
+</nav>
+
+      
+			<h1 class="post__title">벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="확률과 통계를 상징하는 일러스트레이션">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-06-25T14:32:26&#43;09:00">2026-06-25</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/data-science/" rel="tag">data-science</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1장-진실-거짓-그리고-탐정">1장 진실, 거짓, 그리고 탐정</a></li>
+    <li><a href="#2장-메이저리그-역대-최고의-야구선수는-누구일까">2장 메이저리그, 역대 최고의 야구선수는 누구일까?</a></li>
+    <li><a href="#3장-숫자의-함정-사실을-왜곡하는-아주-교묘한-거짓말들">3장 숫자의 함정, 사실을 왜곡하는 아주 교묘한 거짓말들</a></li>
+    <li><a href="#4장-넷플릭스는-내가-좋아하는-영화를-어떻게-찾아낼까">4장 넷플릭스는 내가 좋아하는 영화를 어떻게 찾아낼까?</a></li>
+    <li><a href="#5장-보증-기간-연장에-돈-쓰지-말라">5장 보증 기간 연장에 돈 쓰지 말라</a></li>
+    <li><a href="#5장-몬티-홀의-딜레마---염소와-자동차는-어디에-있을까">5½장 몬티 홀의 딜레마 - 염소와 자동차는 어디에 있을까?</a></li>
+    <li><a href="#6장-국제-금융-시스템을-망쳐놓은-확률의-달인들">6장 국제 금융 시스템을 망쳐놓은 확률의 달인들</a></li>
+    <li><a href="#7장-쓰레기를-넣으면-쓰레기가-나온다">7장 쓰레기를 넣으면 쓰레기가 나온다</a></li>
+    <li><a href="#8장-슈퍼스타-통계학의-르브론-제임스를-기억하라">8장 슈퍼스타, 통계학의 르브론 제임스를 기억하라</a></li>
+    <li><a href="#9장-왜-교수님은-내가-부정행위를-했다고-생각했을까">9장 왜 교수님은 내가 부정행위를 했다고 생각했을까?</a></li>
+    <li><a href="#10장-여론을-보다-정확하게-파악하는-방법들">10장 여론을 보다 정확하게 파악하는 방법들</a></li>
+    <li><a href="#11장-데이터를-분석하는-기적의-만병통치약">11장 데이터를 분석하는 기적의 만병통치약</a></li>
+    <li><a href="#12장-명백한-데이터-앞에서도-논리를-잊지-말라">12장 명백한 데이터 앞에서도 논리를 잊지 말라</a></li>
+    <li><a href="#13장-하버드에-가면-정말로-인생이-바뀔까">13장 하버드에 가면 정말로 인생이 바뀔까?</a></li>
+    <li><a href="#맺음말-통계로-답할-수-있는-다섯-가지-질문">맺음말 통계로 답할 수 있는 다섯 가지 질문</a></li>
+    <li><a href="#참고자료">참고자료</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1장-진실-거짓-그리고-탐정">1장 진실, 거짓, 그리고 탐정</h2>
+<ul>
+<li>지니계수</li>
+<li>기술통계로써 볼링스코어</li>
+<li>학업 수행 정도 평가를 위한 평균 평점 및 GPA(Grade Point Average)</li>
+<li>1990년대 시카고대학 NORC(National Opinion Research Center)의 미국인 성생활에 대한 조사</li>
+<li>카지노에 유리한 기본 확률</li>
+<li>기업들의 리스크 관리를 위한 엔지니어링 프로세스</li>
+<li>보험 산업의 원리</li>
+<li>데이터 범죄수사학에 특화된 Caveon Test Security</li>
+<li>애틀랜타에 사는 Delma Kinney의 2008·2011 100만 달러 복권당첨</li>
+<li>앨런 크루거(Alan Krueger) 무엇이 테러리스트를 만드는가(What Makes a Terrorist)</li>
+<li>대럴 허프 Darrelll Huff, 새빨간 거짓말, 통계(How to Lie with Statistics)</li>
+</ul>
+<h2 id="2장-메이저리그-역대-최고의-야구선수는-누구일까">2장 메이저리그, 역대 최고의 야구선수는 누구일까?</h2>
+<ul>
+<li>Jeffrey Grogger와 Alan Krueger는 미국 중산층의 경제적 건전성 평가에 <strong>물가상승 고려</strong>, <strong>지난 수 십 년간 임금의 중앙값 변화 조사</strong>, <strong>25 및 75번째 백분위의 임금 변화 조사</strong> 제시</li>
+<li>Baseball Info Solution의 Steve Moyer는 선수를 평가하는 유용한 통계치로 <strong>출루율</strong>, <strong>장타율</strong>, <strong>타수</strong> 제시</li>
+<li>회사가 판매하는 각 프린터별로 품질보증 기간 내에 접수된 품질 결함 발생 건수</li>
+<li>비행기 탑승객과 마라톤 선수의 몸무게 평균</li>
+<li>질환과 관련된 혈액검사 결과의 중앙값, 평균, 표준편차</li>
+<li>미국 남성 평균 신장과 표준편차</li>
+<li><strong>Wall Street Journal</strong>에서 미국인들이 쇼핑몰에 주차할 때 입구를 중심으로 한 정규분포 형태를 보인다는 기사</li>
+<li><strong>퍼센트 변화의 비대칭성</strong> 설명을 위한 상품가격의 동일 비율 인하 및 인상</li>
+<li>전년도 대비 회사 수익율 증감</li>
+<li>일리노이주의 판매세율, 소득세율</li>
+<li>지수(index)의 예로 NFL의 passer rating</li>
+<li>Malcolm Gladwell는 New Yorker 기사에서 Car and Driver 가 발표한 순위를 예를 들어 순위 매기는 것에 대한 사람들의 강한 욕구를 비판</li>
+<li>UN 인간개발지수(HDI, Human Development Index)</li>
+</ul>
+<h2 id="3장-숫자의-함정-사실을-왜곡하는-아주-교묘한-거짓말들">3장 숫자의 함정, 사실을 왜곡하는 아주 교묘한 거짓말들</h2>
+<ul>
+<li>Mark Twain 曰 &ldquo;거짓말에는 세 종류가 있다. 거짓말, 새빨간 거짓말 그리고 통계&rdquo;</li>
+<li>정밀성과 정확성의 측면에서 골프용 거리측정기</li>
+<li>월스트리트 기업들의 리스크 예측 모델인 value at risk와 2008년 금융위기</li>
+<li>미국 제조업은 얼마나 건전한가?
+<ul>
+<li>CIA의 World Factbook에는 미국이 중국과 독일에 이어 전 세계에서 세번째 규모의 제조업 수출국이라는 자료 제시</li>
+<li>Economist의 &ldquo;미국의 증가하는 제조업 생산량과 감소하는 일자리&rdquo; 그래프</li>
+</ul>
+</li>
+<li>분석 단위 차이에 따른 상반된 입장의 예시
+<ul>
+<li>학교와 학생으로 기준을 달리 했을때, 전국 학교 수준 평가의 차이</li>
+<li>주 소득과 국민 소득으로 기준을 달리 했을 때, 국가 경제 성장 여부</li>
+<li>세계화는 지구 상의 소득 불평등을 완화시키는가 아니면 악화시키는가에 대한 물음과 Economist의 <strong>국가가 아닌 사람들을 고려할 때 지구촌 소득 불평등은 급격히 감소하고 있다</strong>는 지적</li>
+<li>verizon과 AT&amp;T의 광고컨셉이 각각 <strong>서비스 범위가 넓은 지역</strong>과 <strong>생활권 중심의 서비스</strong></li>
+</ul>
+</li>
+<li>평균과 중앙값
+<ul>
+<li>George W. Bush 행정부가 감세 정책 추진하며 9,200만 미국인들이 <strong>평균 1,000달러 이상</strong>의 감면을 받는다고 주장하였으나, 세금감면의 중앙값은 100달러도 되지 않으며, The New York Times는 <strong>데이터는 거짓말을 하지 않지만 그 중 일부는 침묵한다</strong>고 언급</li>
+<li>신약 투약으로 환자의 3~40%가 완치 되었다는 드라마틱한 변화를 기대 수명의 중앙값이 2주 증가했다는 기술로는 파악 불가</li>
+<li>Stephen Jay Gould의 중앙값은 메시지가 아니다(The Median Isn&rsquo;t the Message)</li>
+</ul>
+</li>
+<li>1박에 €180인 프랑스 호텔과 £150인 런던의 호텔</li>
+<li>명목수치(Nominal Value)와 실질수치(Real Value)</li>
+<li>2010년 미국 연방 최저임금 그래프</li>
+<li>2011년 기준 미국에서 가장 큰 매출을 올린 영화 5편 <strong>아바타(2009)</strong>, <strong>타이타닉(1997)</strong>, <strong>다크나이트(2008)</strong>, <strong>스타워즈 에피소드 IV(1977)</strong>, <strong>슈렉2(2004)</strong></li>
+<li>2011년 기준 인플레이션을 감안한 미국에서 가장 큰 매출을 올린 영화 5편 <strong>바람과 함께 사라지다(1939)</strong>, <strong>스타워즈 에피소드 IV(1977)</strong>, <strong>사운드 오브 뮤직(1965)</strong>, <strong>E.T.(1982)</strong>, <strong>십계(1956)</strong>, 아바타(2009) 14위, 슈렉2(2004) 31위</li>
+<li>Illinois Cook County 결핵 요양소의 정부 지원액이 527% 증가</li>
+<li>The Chicago Sun-Times의 일반적인 주택 보유자의 세금이 $1.15에서 $6로 상승했다는 보도</li>
+<li>미 국방부 예산이 (당시) $7,000억으로, 국방장관은 올 예산이 단 4% 증가할 것으로 예상한다고 보고하였으나, 이는 NASA의 전체 예산보다 많고 노동부와 재무부 예산을 합한 금액과 비슷</li>
+<li>미국 선별입학학교의 경우, 시험 성적이 높다는 이유로 훌륭한 학교로 인식되며 이런 학교에 입학하기 위해서는 좋은 시험 성적이 있어야 함.</li>
+<li>부시 행정부 전 교육부 장관 Rod Paige가 huston 교육감 재직 시절, huston시는 고등학생 중퇴율이 1.5%라고 발표했으나 CBS 시사 프로그램 60minutes에서 조사한 결과 25~50%로 밝혀졌고, 이런 통계 조작의 이면에는 중퇴학생들을 전학처리하는 등의 방법이 사용</li>
+<li>뉴욕주에서 심장병 전문의 평가를 위해 심장동맥 확장 수술 채점표를 도입하였으나 심각한 뱡세를 보이는 환자들의 수술을 거부하는 부작용 발생</li>
+<li>채점표에 대해 로체스터 대학의 의·치과 대학원의 심장병 전문의를 대상으로 실시한 결과에 따르면 응답자 83%가 이런 공식 통걔로 수술을 받지 못했을 수도 있었을 것이라거나, 응답자 79%는 사망률에 대한 자료가 수집되고 공개된다는 사실이 의료행위에 대한 의사들 개개인의 판단에 영향을 미친다고 응답</li>
+<li>통걔지수가 다수의 지표들을 하나로 합치는 데에서 비롯되는 왜곡
+<ul>
+<li>USNWR의 2·4년제 대학 평가에 16개 지표 사용하는데, Micheal McPherson은 &ldquo;사용된 자료들로는 서열을 매길 만큼의 정확도를 보장할 수 없음에도 불구하고, 이 목록이 학교들을 서열 순으로 평가한 것이라고 주장한다는 점이 문제&quot;라고 했고, 이에 USNWR은 &ldquo;각각의 지표에 얼마의 가중치를 부여할 것인지는 학교의 질을 판단하는 척도 가운데 무엇이 가장 중요한가에 대한 우리의 판단에 따랐다.&ldquo;고 밝혔으며, Micheal McPherson은 &ldquo;USNWR의 순위는 학생들이 4년간 받는 교육이 얼마나 이들의 능력을 향상시키거나 지식을 풍부하게 만드는 가와 관련된 내용은 전혀 알려주지 않는다.&ldquo;고 지적</li>
+<li>Malcolm Gladwell은, 전미시간 수석대법관이 100여 명의 변호사들에게 로스쿨 열 곳을 우수한 순으로 꼽아달라는 내용을 담아 배포한 설문지를 인용하여, 로스쿨이 존재하지도 않은 펜실베니아 주립대학이 중간정도의 순위를 차지했다며, 동료평가의 방법론을 비판</li>
+<li>Leon Botstein &ldquo;사람들은 쉬운 대답을 사랑한다. 가장 좋은 학교는 어디인가? 바로 1위에 오른 학교이다.&ldquo;라며 USNWR 순위가 사라지지 않을 것임을 지적</li>
+</ul>
+</li>
+<li>저자 &ldquo;법에 대한 세부 지식이 범죄 행위를 방지하지 못하듯 통계에 대한 세세한 지식이 부정한 행위를 막지 못한다. 통계와 범죄 모두에서 악당들은 흔히 자신이 무슨 일을 벌이는지를 정확히 알고 있다.&rdquo;</li>
+</ul>
+<h2 id="4장-넷플릭스는-내가-좋아하는-영화를-어떻게-찾아낼까">4장 넷플릭스는 내가 좋아하는 영화를 어떻게 찾아낼까?</h2>
+<ol>
+<li>변수들의 연관성을 나타내는 상관계수
+<ul>
+<li>미국 성인 100명을 무작위로 선정하여 키와 몸무게의 관계에 대한 산포도</li>
+</ul>
+</li>
+<li>텔레비전 수(부유한 잡)와 SAT의 상관관계
+<ul>
+<li>SAT 출제 및 관리를 주관하는 College Board에 따르면 SAT는 &ldquo;모든 학생에게 대학 진학의 공평한 기회를 주기위해 만들어졌다&quot;고 밝힘.</li>
+<li>고등학교 평균평점과 대학교 1학년 평균평점 사이의 상관계수는 0.56이고, sAT총점과 대학1학년 평균평점 사이의 상관관계는 0.56이며, SAT점수와 고등학교 평균평점을 조합한 점수와 대학1학년 평균평점 사이의 상관관계는 0.64</li>
+</ul>
+</li>
+<li>개인의 취향을 찾아내는 넷플릭스 알고리즘
+<ul>
+<li>특정 영화에 평점 부여 → 개인 평점을 비교하여 상관관계가 높은 개인회원 검색 → 상관관계가 높은 개인회원이 높게 평가한 영화 중 아직 시청하지 않은 영화 추천</li>
+<li>2006년 넷플릭스는 상금 100만 달러를 걸고 영화 추천 기법을 최소 10퍼센트 이상 향상시키는 매컽니즘을 설계하는 대회 개최</li>
+</ul>
+</li>
+<li><strong>상관관계의 핵심</strong> &ldquo;당신은 내가 좋아하는 것을 좋아하고, 내가 싫어하는 것을 싫어하는 경향이 있군요. 그럼 조지클루니의 새 영화는 어땠나요?&rdquo;</li>
+</ol>
+<blockquote>
+<p>참고 <a href="../probability-statistics-fundamental-summary/index.md/#%ED%8F%89%EA%B7%A0%EB%B6%84%EC%82%B0%ED%91%9C%EC%A4%80%ED%8E%B8%EC%B0%A8z%EC%A0%90%EC%88%98%EA%B8%B0%EC%97%AC%EB%8F%84%EC%83%81%EA%B4%80%EA%B3%84%EC%88%98-%EA%B3%84%EC%82%B0">기초통계요약-평균·분산·표준편차·z점수·기여도·상관계수-계산</a></p>
+</blockquote>
+<h2 id="5장-보증-기간-연장에-돈-쓰지-말라">5장 보증 기간 연장에 돈 쓰지 말라</h2>
+<ul>
+<li>Joseph Schlitz Brewing Company는 1981년 170만 달러를 들여 NFL 하프타임에 자사와 경쟁사 맥주 블라인드 테스트 생방송 광고 진행</li>
+<li>오스트레일리아 교통안전국이 발표한 다양한 운송수단별 사망 위험을 수령화한 보고서</li>
+<li>2011년 9월 6.5t의 NASA 위성이 지구로 낙하 중 대기권 진입 후 분해될 것으로 예상</li>
+<li>Steven Levitt과 Stephen Dubner의 괴짜경제학(Freakonomics)에서 벽장 속의 총보다 뒷뜰의 수영장이 더 위험</li>
+<li>코넬대학 연구원 Garrick Blalock, Vrinda Kadiyali, Daniel Simon의 논문에는 9·11 공격 이후 수천명의 미국인이 비행기 여행을 두려워해 사망했을 수 있다고 언급</li>
+<li>CSI 감식관에 의한 DNA 샘플 검증</li>
+<li>9·11사태 때 세계무역센터에서 발견된 유해의 신원확인을 위해 DNA 사용</li>
+<li>Los Angeles Times는 2008년 범죄의 증거로 DNA 사용에 대한 기사에서, 수사기관에서 일반적으로 사용하는 확률이 우연의 일치일 가능성을 축소하고 있는 것은 아닌지 의문 제기</li>
+<li>애리조나주 과학수사연구소 분석가가 주 DNA DB를 검사하던 중 혈연이 아닌 두 강력범 DNA에서 9개의 유전자좌가 일치하는 것을 발견하였고, FBI는 관련 없는 두 사람 사이에서의 이런 가능성을 1/11,300,000,000이라고 표명</li>
+<li>비밀번호의 보안수준을 높이기 위한 조합</li>
+<li>사고 후 보험료 상승은 지급한 보험료의 만회가 아니라 사고확률의 상승에 기인</li>
+<li>Las Vegas 도박장의 craps라는 게임에서 요구하는 7또는 11이 나올 가능성은 8/36</li>
+<li>미식축구에서 터치다운 후 3야드라인에서 공을 차서 쉽게 1점을 추가할지, 컨버전을 시도하여 어렵게 2점을 추가할지의 선택</li>
+<li>일리노이주 복권의 당첨확률은 새 복권 교환 확률은 1/10, $2 당첨 1/15, $4 당첨 1/42.86, $5 당첨 1/75, $1,000 당청 1/40,000 등이고 1달러짜리 복권의 기대 금액은 약 $0.56</li>
+<li>보험사의 관점에서 자동차가 $40,000 보험에 들어있고 어느 해든 차 도난 확률이 1/1,000 이라면 차의 기대 손실은 $40(=$40,000*1/1,000) 이면 도난 부분에 대한 연간 보험료는 $40 이상이어야 함.</li>
+<li>Warren Buffett 같은 부자는 어떤 안 좋은 일이 생겨도 감당할 수 있기때문에 보험에 가입하지 않음으로서 금전절약이 가능</li>
+<li>$99짜리 새 프린터 구입시 판매처에서 $25(혹은 $50)를 더 내면 1년(또는 2년) 연장보증 해 주겠다는 옵션에서 추론가능한 내용
+<ol>
+<li>판매처는 이윤을 최대화하려는 이윤추구 기업</li>
+<li>판매원은 소비자가 품질보증 연장 옵션 선택을 간절히 희망</li>
+<li>1·2번의 내용을 토대로 보증 비용이 판매처가 프린터를 수리하는데 투입되는 예상 비용을 상회할 것으로 추론</li>
+<li>$99짜리 프린터가 고장나서 주머닛돈으로 수리하거나 교체하더라도 인생의 리스크는 아님.</li>
+</ol>
+</li>
+<li>대머리 치료법 연구 번처기업에 $1,000,000 투자시
+<ol>
+<li>치료법 미 발견시 투자금 중 $250,000만 회수되고, 효과있는 치료법 발견 가능성 30%</li>
+<li>치료법 발견한 경우에도 FDA 안전성 승인 가능성은 60%</li>
+<li>FDA 승인을 받았다 하더라도 경쟁사가 비슷한 시기에 더 좋은 약을 출시할 확률도 10%</li>
+<li>이상의 리스크 없이 최고 투자 수익 예상치는 $25,000,000</li>
+</ol>
+</li>
+<li>10만명당 1명이 걸리는 고위험 질병에 대해 99.9999%의 정확성을 가진 검사 키트가 있고 잘못된 음성판정은 절대 없지만 1만번 중 1번꼴로 잘못된 양성판정이 가능한 경우 175,000,000명 검사시 의사결정 트리
+<ol>
+<li>1,750명만 질병을 가지고 있고, 이들은 모두 양성 판정</li>
+<li>비질환자 174,998,250명 중, 99.9999%는 음성판정 0.0001%인 17,500명이 양성판정</li>
+<li>결과적으로 19,250명이 양성판정을 받는데, 실제 질환자는 9.1%에 불과</li>
+</ol>
+</li>
+<li>미SEC(US Securities and Exchange Commission) 인수합병 발표 직전 회사의 주식을 대량구매하거나 저조한 실적발표 전 회사의 주식을 투매하는 의심스러운 활동 및 오랜기간 고수익 투자 매니저 등 감시</li>
+<li>New York Times의 2011년 범죄발생전에 경찰 출동이라는 기사에서, 특정 장소에서 차량털이 범죄 발생가능성이 높다고 예측한 컴퓨터 프로그램에 따라 SantaCruz 시내의 주차장에 형사를 파견한 사건 소개</li>
+<li><strong>데이터 마이닝과 예측분석: 정보수집과 범죄분석(Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis)</strong> 미 수사 기관의 통계 지침서</li>
+<li>신용카드회사 관점에서 신용도가 좋은 고객은 청구액을 지불하기 때문에 돈이 되지 않는 고객이고, 대금 잔액이 많고 고율의 이자를 내는 고객은 채무를 불이행하지 않는 한 우수 고객</li>
+<li>New York Times Magazine의 <strong>신용카드 회사가 알고 있는 것들</strong>이라는 기사에는 Canadian Tire의 이사 J.P.Martin이 발견한 흥미로운 사실을 소개
+<ul>
+<li>저렴하고 일반적 엔진오일을 사는 사람들은 비싸고 유명한 브랜드의 물건을 사는 사람들보다 신용카드 대금을 제때 지불하지 않을 가능성 높음.</li>
+<li>가정용 일산화탄소 감지기나 의자 다리에 붙이는 바닥 긁힘 방지용 펠트패드를 구입한 사람들은 거의 대금 지불 기한 지킴.</li>
+<li>크롬으로 된 두개골모양 자동차 액세서리나 초대형 반동 추진 엔진 배기 장치를 구입하는 사람들은 대금 지불 기한 넘김.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5장-몬티-홀의-딜레마---염소와-자동차는-어디에-있을까">5½장 몬티 홀의 딜레마 - 염소와 자동차는 어디에 있을까?</h2>
+<ul>
+<li>
+<p><strong>Monty Hall problem</strong>은 Let&rsquo;s Make a Deal이란 TV쇼에서 참가자들이 직면했던 확률과 관련된 유명한 수수께끼</p>
+<ul>
+<li>New York Times 컬럼니스트 John Tierney는 몬티홀 현상에 대한 칼럼과 프로그램 제공</li>
+<li>춤추는 술고래의 수학 이야기(The Drunkard&rsquo;s Walk)의 저자 Leonardo Mlodinow에 따르면 선택을 바꾼 참가자가 이길 확률이 2배 가량 높음.</li>
+</ul>
+<blockquote>
+<p>1990년 Marilyn vos Savant가 잡지 퍼레이드의 칼럼 &ldquo;사반트에게 물어보세요&quot;에서 증명</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="6장-국제-금융-시스템을-망쳐놓은-확률의-달인들">6장 국제 금융 시스템을 망쳐놓은 확률의 달인들</h2>
+<ul>
+<li>2008년 이전 월스트리트의 금융회사들은 일반적 리스크 지표은 VaR(Value at Risk) 모델 사용
+<ul>
+<li>New York Times의 기자 Joe Nocera는 &ldquo;금융시장 분석가가 아닌 사람에게 VaR은 단 하나의 숫자, 달러로 리스크를 나타내는 아주 매력적이고 훌륭한 장점을 가지고 있다.&ldquo;며, 또한 블랙 스완: 0.1퍼센트의 가능성이 모든 것을 바꾼다.(The Black Swan: The Impact of the Highly Improbable)의 저자 Nicholas Taleb의 의견을 요약하여 &ldquo;가장 큰 리스크는 당신이 한번도 본적이 없고 그렇기 때문에 측정할 수 없다. 지금까지 이것은 당신 생애에 일어난다고 생각조차 하지 못할 정도로 일반적인 확률을 벗어나 있는 것처럼 보이지만, 당신이 아는 것보다 훨씬 더 자주 발생한다.&ldquo;고 언급</li>
+<li>Alan Greenspan은 2007년 금융위기 발생 후 &ldquo;하지만 2007년 여름, 지식 체계 전체가 무너졌습니다. 리스크 관리 모델에 입력된 데이터는 운 좋은 시절의 지난 20년의 자료들이었기 때문입니다. 그 대신 역사적으로 여러웠던 시절에 더 적합하도록 모델을 조정했다면, 자본 요건이 훨씬 상향되었을 것이고 금융계는 더 나은 모습일 겁니다.&ldquo;라고 의회위원회에서 진술</li>
+<li>헤지펀드 매니저 David Einhorn &ldquo;평소에 잘 작동하다가도 사고가 나면 작동하지 않는 에어백과 같습니다.&rdquo;</li>
+<li>전 미 재무장관 Hank Paulson &ldquo;많은 기업들이 비상시에 자산을 매각하여 현금을 모을 수 있다고 가정한다. 하지만 위기 상황에서는 다른 기업들 역시 현금이 필요하므로 누구나 같은 종류의 자산을 매각하려고 한다.&rdquo;</li>
+</ul>
+</li>
+<li>독립적이지 않은 사건을 독립사건으로 추정
+<ul>
+<li>항공사에서 대서양 횡단 비행시 제트기 엔진이 고장날 확률은 1/100,000인데, 두 개가 장착되므로 두 엔진이 모두 멈출 확률은 (1/100,000)<sup>2</sup>이므로 1/10,000,000,000로 생각할 수 있지만 각 엔진의 고장은 독립적이지 않을뿐만 아니라, 엔진하나가 고장나면 다른 엔진도 고장날 확률은 1/100,000보다 상승</li>
+<li>유아돌연사증후군(SIDS, Sudden Infant Death Syndrome)과 관련하여 Economist는 &ldquo;한 명의 유아가 사망하는 것은 비극이고, 두 명의 유아가 사망하는 것은 의심할 만한 일이며, 세 명의 유아가 사망하는 것은 살인으로 생각하는 메도의 법칙(Meadpw&rsquo;s Law)은 만약 어떤 사건이 드물게 일어난다면 한 가족에서 똑같은 사건이 두 번 이상 일어날 수 없으므로 우연일 가능성이 없다는 개념에 기초를 둔다.&ldquo;며 통계적 독립성에 대한 오해로 메도의 증언이 어떻게 잘못되었는지를 설명</li>
+<li>Thomas Gilovich·Robert Vallone·Amos Tversky의 연구에 따르면 Hot Hand, 즉 농구 경기 중 선수들이 연이어 골을 성공시키는 현상이 주기적으로 반복된다는 생각인데, 연이은 슛의 결과 사이에 양의 상관관계가 있다는 증거는 없다고 밝힘.</li>
+</ul>
+</li>
+<li>마치 암 다발지역이란 개념처럼
+<ul>
+<li>검찰의 오류: ①범죄현장에서 채취한 샘플이 피고로부터 채취한 샘플과 일치, ②현장에서 발견된 샘플이 피고가 아닌 다른 사람의 샘플과 일치할 확률은 1/1,000,000</li>
+</ul>
+</li>
+<li>평균회귀
+<ul>
+<li>Sports Illustrated 징크스: Sports Illustrated 잡지의 표지에 등장하면 성적이 떨어진다는 징크스</li>
+<li>Ulrike Malmendier·Geoffrey Tate는 비즈니스효과에 대해 &ldquo;CEO가 슈퍼스타 자리에 오르면 새로 얻은 명성 때문에 흐트러지게 된다. 회고록을 쓰고 사외이사 자리를 제안받고 트로피 배우자를 찾기 시작한다. 우리의 연구 결과에 따르면 미디어가 만든 슈퍼스타 문화는 단지 평균으로 복귀하는 수준이 아니라 그 이상으로 행동을 왜곡시킨다.&ldquo;고 언급</li>
+</ul>
+</li>
+<li>통계적 차별
+<ul>
+<li>유럽 고용사회위원회 Anna Diamantopoulou 위원은 보험 회사가 남성과 여성에게 서로 다른 보험료를 부과하는 것은 유럽연합의 평등 대우 원칙에 위배되므로 이를 금지하는 행정명령이 필요하다고 주장</li>
+<li>2012년부터 실행중인 유럽연합의 성별 보혐료 차등 적용 금지 정책은, 성별과 보장되는 위험사이의 관련성이 없다는게 아니라 성별에 근거해 보험료를 차등 적용하는 행위를 허용할 수 없다는 것임.</li>
+</ul>
+</li>
+</ul>
+<h2 id="7장-쓰레기를-넣으면-쓰레기가-나온다">7장 쓰레기를 넣으면 쓰레기가 나온다</h2>
+<ul>
+<li>데이터에 요구되는 조건
+<ol>
+<li>모집단을 대표하는 표본</li>
+<li>비교 가능한 것</li>
+<li>없음</li>
+</ol>
+</li>
+<li>2012년 봄 Science지 수컷초파리가 암컷초파일에게 계속 퇴짜 맞았을 때, 술로 슬픔을 달랜다는 연구 소개</li>
+<li>Massachusetts Framingham에셔 수행된 프레이밍햄 심장 연구(Framingham Heart Study)</li>
+<li>페리 미취학 아동 연구(Perry Preschool Study)</li>
+<li>질병의 평균지속 기간이 43일이고 표준편차가 24일인 경우, 정규분포를 따를 경우, 1표준편차 즉 19<del>67일 사이에 68%의 사례가, 2표준편차 즉 0</del>91일 사이에 95%의 사례 포함.</li>
+<li>선택편향(Selection Bias)
+<ul>
+<li>잡지 The New Yorker의 영화평론가 Pauline Kael &ldquo;닉슨이 이겼을 리가 없다. 내 주변의 어느 누구도 그에게 투표하지 않았다.&rdquo;</li>
+<li>Iowa Strawpoll(미공화당이 대통령 선거 코커스(당원대회)를 앞두고 실시하던 대규모 비공식 투표 행사)의 공화당 후보 예측 실패</li>
+<li>1936년 Literary Digest의 설문조사 표본 편향</li>
+<li>전립선암 치료의 부작용에 대한 보고서에서 제거수술, 방사선치료, 근접방사선치료 후 성관계 가능 경우가 각각 35%, 37%, 43%로 나타났지만 근접방사선치료가 가장 적게 성기능을 덜 감소시킨다고 결론내는 것은 부적정</li>
+<li>자기선택편향(Self-selection Bias)은 약물치료 재소자의 사례에서 나타날 수 있음.</li>
+</ul>
+</li>
+<li>출판편향(Publication Bias)
+<ul>
+<li>긍정적인 연구결과는 부정적인 연구결과보다 출판가능성 높음.</li>
+<li>The NewYork Times의 우울증 치료제의 출판편향을 다룬 기사에서 &ldquo;정부 허가를 받기 위해 Prozac이나 Paxil 같은 항우울제를 만드는 제조사들은 실제 진행한 임상 시험 결과의 1/3은 발표하지 않았는데, 그 결과 약물의 진정한 효과에 대해 의료진과 소비자를 호도</li>
+</ul>
+</li>
+<li>기억편향(Recall Bias)
+<ul>
+<li>현재를 과거에 일어났던 일들의 논리적 결과라고 인과관계를 적용하여 이해하려는 본능</li>
+<li>The New York Times Magazine은 1993년 하버드가 수행한 암에 걸린 사실이 여성이 어렸을 때 자신의 식습관을 기억하는데 어떤 영향을 미치는가에 대한 연구를 소개하며 &ldquo;유방암 진단은 여성의 현재와 미래만 바꾼 것이 아니라 과거까지 바꾸었다. 유방암으로 진단 받은 여성은 무의식적으로 고지방 식사를 유방암의 근본 이유로 판단했고 자신이 고지방 식사를 했다고 무의식적으로 떠올렸다. 암과 같이 악명 높은 질병의 역사를 아는 사람이라면 누구에게나 지독하게 낯익은 패턴 그대로였다. 이 여성들은 과거 수천명의 여성들이 그랬던 것처럼 병에 걸린 원인을 찾아 기억을 더듬었고 그렇게 찾은 원인을 기억으로 불러들였다.&ldquo;라고 소개</li>
+</ul>
+</li>
+<li>생존편향(Survivorship Bias)
+<ul>
+<li>뮤추얼펀드업계의 성공한 펀드만 보여주고 실패한 펀드는 숨기는 방식</li>
+<li>투자상품에 대한 참고서적 Burton Malkiel의 시장 변화를 이기는 투자(A Random Walk Down Wall Street)</li>
+</ul>
+</li>
+<li>건강한 피험자 편향(Healthy User Bias)
+<ul>
+<li>비타민을 규칙적으로 섭취하는 사람들이 건강한 이유</li>
+<li>The Newyork Times의 건강관련 기자 Gary Taubes는 &ldquo;처방받은 대로 액을 복용하거나 건강에 좋다고 생각하는 식단을 챙겨먹는 것처럼 스스로에게 좋은 활동에 충실한 사람들은 그렇지 않은 사람들과 다르다.&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h2 id="8장-슈퍼스타-통계학의-르브론-제임스를-기억하라">8장 슈퍼스타, 통계학의 르브론 제임스를 기억하라</h2>
+<ul>
+<li><strong>중심극한 정리</strong> 개별 데이터는 불규칙해도 평균은 정규분포로 수렴</li>
+<li>우측으로 치우쳐져 있는 미국의 가계소득 분포</li>
+<li>Michigan Univ.의 미국인들의 변화하는 삶(American&rsquo;s Changing Lives) 장기 계속 연구</li>
+<li><strong>표준오차(Standard Error)</strong> 표본평균들의 표준편차</li>
+<li>프레이밍햄 심장연구(Framingham Heart Study)는 1948년 미국 매사추세츠주 프레이밍햄에서 시작된 대규모 장기 코호트 연구</li>
+</ul>
+<h2 id="9장-왜-교수님은-내가-부정행위를-했다고-생각했을까">9장 왜 교수님은 내가 부정행위를 했다고 생각했을까?</h2>
+<ul>
+<li>미연방재난관리국(The Federal Emergency Management Administration)의 추정으로는 번개에 1번 맞을 확률은 1/600,000</li>
+<li><strong>귀무가설(null hypothesis)</strong> 차이·효과가 없다.</li>
+<li><strong>대립가설(alternative hypothesis)</strong> 차이·효과가 있다.</li>
+<li><strong>p-value</strong> 귀무가설이 참일 때, 지금 관측된 결과만큼 극단적인 값이 나올 확률</li>
+<li>귀무가설을 기각한다는 것은, 관측된 결과가 귀무가설의 정규분포에서 양측(혹은 단측) 극단의 5% 영역에 해당하여, 귀무가설로 설명하기보다는 다른 가설을 세워 그 결과가 자연스럽게 들어갈 새로운 정규분포를 만드는 것이 더 합리적이라는 뜻</li>
+<li>애틀랜타 표준시험 부정행위 스캔들(Atlanta Public Schools cheating scandal)</li>
+<li><strong>양측검정</strong> 정규분포 곡선의 양쪽 꼬리(좌·우)를 모두 고려</li>
+<li><strong>단측검정</strong> 정규분포 곡선의 한쪽 꼬리만 고려</li>
+<li>The New York Times는 카네기멜론대학이 판매하고 있는 뇌과학 튜터(Cognitive Tutor)라는 소프트웨어가 학교성적을 높여준다고 주장하지만 그렇지 않다는 것을 폭로</li>
+<li>The Wall Street Journal의 2011년 5월 일반 정신의 학회지(Archives of General Psychiatry)에 실린 논문을 요약한 기사 <strong>자폐증의 열쇠, 뇌의 크기(Link in Autism, Brain Size)</strong></li>
+<li>성격 및 사회심리학 저널(Journal of Personality and Social Psychology)에 대릴 벰(Daryl J. Bem)이 게제한 논문과 관련된 <strong>초능력 논문 게재 사건</strong>에 대하여 The New York Times는 &ldquo;과학 법칙에 반하는 거의 모든 주장은 대단하며, 그래서 뒷받침하는 증거도 대단해야한다. 이를 고려하지 않는 행동(의례적인 사회과학 분석이 특히 그렇다.)은 많은 연구 결과를 사실보다 더 대단해 보이도록 포장한다.&rdquo;</li>
+<li><strong>긍정오류</strong> 결과(Q)가 나타났다고 해서 원인(P)을 단정하는 건 위험하다. (후건 긍정의 오류, Affirming the Consequent)
+<ul>
+<li>전제: P → Q (만약 P라면 Q이다)</li>
+<li>관찰: Q이다</li>
+<li>잘못된 결론: 따라서 P이다</li>
+</ul>
+</li>
+<li><strong>부정오류</strong> 원인이 없다고 해서 결과가 반드시 없다고 말할 수 없다. (전건 부정의 오류, Denying the Antecedent)
+<ul>
+<li>전제: P → Q (만약 P라면 Q이다)</li>
+<li>관찰: ¬P (P가 아니다)</li>
+<li>잘못된 결론: 따라서 ¬Q이다</li>
+</ul>
+</li>
+<li>긍·부정오류 사례
+<ul>
+<li><strong>스팸필터</strong> 1종 오류는 스팸이 아닌 메일을 걸러내는 경우이고, 2종 오류는 스팸 메일을 허용하는 경우</li>
+<li><strong>암검사, 유방촬영술, PSA 등</strong> 1종 오류는 질병이 아닌 것으로 밝혀지는 긍정오류이고, 2종 오류는 질병을 놓치게 되는 부정오류</li>
+<li><strong>테러리스트 수감</strong> 1종 오류는 테러리스트가 아닌 사람을 수감하는 오류이고, 2종 오류는 테러리스트를 석방하는 오류</li>
+</ul>
+</li>
+</ul>
+<h2 id="10장-여론을-보다-정확하게-파악하는-방법들">10장 여론을 보다 정확하게 파악하는 방법들</h2>
+<ul>
+<li>2011년말 The NewYork Times는 **미래에 대한 깊은 의혹과 분노가 미국 전역을 덮었다.**는 기사로 오바마행정부의 국정 운영 성과부터 부의 배분에까지 미국의 여론을 설명
+<ul>
+<li>미국인의 43%는 월스트리트 점령시위에 대체로 동의하고, 46%는 대다수 미국인의 시각을 반영한다고 생각</li>
+<li>미국인의 89%는 미 정부가 제대로 일하지 않는다고 생각</li>
+<li>미국인의 2/3는 부의 더 고른 배분 필요하다고 생각</li>
+<li>미국인의 46%는 오바마의 직무수행에 만족한 반면, 동률은 국정운영 성과에 불만족</li>
+<li>미국인의 9%만 의회의 일하는 방식에 만족</li>
+<li>미 공화당 예비선거 유권자 중 80%가 지지후보 결정이 이르다고 응답</li>
+</ul>
+</li>
+<li>미 갤럽의 사형에 대한 미국인의 인식
+<ul>
+<li>2002년 이래 60%이상의 미국인이 살인범에 대한 사형에 찬성</li>
+<li>2006년 조사에서는 형벌로 종신형 선호는 48%, 사형 선호는 47%</li>
+</ul>
+</li>
+<li><strong>분할표본검정</strong> 두 범주형 변수 간의 독립성을 검정하는 방법으로, 일반적으로 카이제곱 독립성 검정(Chi-Square Test of Independence)을 의미</li>
+<li>시카고대학 전미여론조사센터(National Opinion Research Center)의 <strong>섹슈얼리티의 사회적 구조:미국의 성생활(The Social Organization of Sexuality:Sexual Practices in the United States)</strong>
+<ul>
+<li>사람들은 보통 자신과 비슷한 부류와 섹스한다.</li>
+<li>편차는 크지만 평범한 응답자는 &lsquo;한달에 몇 번&rsquo; 정도 성행위를 한다.</li>
+<li>남성 중 약 5%, 여성 중 약 4%가 동성 상대와의 성행위 경험을 밝혔다.</li>
+<li>응답자 중 80%는 이전 해에 성관계 상대가 한 명이거나 아예 없었다.</li>
+<li>성관계 상대가 한 명인 응답자는 상대가 다수이거나 아예 없는 응답자보다 더 행복했다.</li>
+<li>기혼 남성 중 25%, 여성 중 10%가 혼외 성관계를 맺고 있다.</li>
+<li>대다수 사람들이 전형적인 방식의 성관계를 하고 있다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="11장-데이터를-분석하는-기적의-만병통치약">11장 데이터를 분석하는 기적의 만병통치약</h2>
+<ul>
+<li><strong>화이트홀(Whitehall)연구</strong> 심장병에 영향을 미치는 사회적 요인을 알아내기 위한 연구로 1967·1984 두 차례 이루어지고 있으며, 현재도 진행중</li>
+<li><strong>최소제곱법(Ordinary Least Squares)</strong> 실제 값과 예측 값의 차이를 제곱해서 모두 더한 뒤 그 합을 최소화하는 방법</li>
+<li><strong>잔차(residual)</strong> 실제 값과 추정된 회귀선(예측값) 사이의 차이</li>
+<li><strong>미국의 변화하는 삶 연구(Americans&rsquo; Changing Lives, ACL)</strong> 1986년 시작된 미국의 대표적인 장기 추적 조사로, 거주지, 직업, 사회적 관계가 성인의 건강과 삶에 미치는 영향을 연구하며, 최근에는 DNA 분석 등 생물학적 요소까지 포함해 삶의 경험이 신체에 미치는 변화를 연구</li>
+<li><strong>Ceteris paribus</strong> 다른 모든 조건이 동일하다면&hellip;</li>
+<li><strong>t-분포</strong> 표본 평균을 이용해 모수를 추정할 때 생기는 불확실성을 반영하는 분포로, 표본 크기가 작을 때 정규분포 대신 사용하며, 표준정규분포와 비슷하지만 꼬리가 두꺼운 분포</li>
+</ul>
+<h2 id="12장-명백한-데이터-앞에서도-논리를-잊지-말라">12장 명백한 데이터 앞에서도 논리를 잊지 말라</h2>
+<ul>
+<li>하버드의과대학 및 하버드공공보건학과의 간호사 건강에 관한 연구에서 회귀분석을 통해 에스트로겐을 보충했을 때 심장병, 골다공증 등 폐경에 따른 질환예방에 의학적 효과가 있다고 주장
+<ul>
+<li>임상 대조실험에서 에스트로겐 투여군이 심장마비, 뇌졸증, 혈전증, 유방암 등이 빈번하게 발생</li>
+</ul>
+</li>
+<li><strong>희귀분석의 오용 사례</strong>
+<ul>
+<li>비선형 관계를 분석하는데 선형 회귀분석을 사용한 경우</li>
+<li>상관관계와 인과관계는 다르다</li>
+<li>역인과관계</li>
+<li>변수 누락 편향</li>
+<li><strong>다중공선성</strong> 서로 관련이 깊은 설명변수</li>
+<li>데이터범위를 벗어난 추정</li>
+<li><strong>데이터마이닝</strong> 지나치게 많은 변수
+<ul>
+<li>The New York Times Magazine는 &ldquo;전염병학은 굉장히 멋진분야로 인간의 삶과 죽음에 관해 무척 중요한 깨달음을 준다. 하지만 쓰레기 같은 논문도 믿을 수 없을 만큼 많이 발표된다.&ldquo;고 Richard Peto의 말을 인용</li>
+<li>2011년 The Wall Street Journal은 &ldquo;감추고 싶은 비밀(Dirty little secret)&ldquo;이란 기사에서 &ldquo;일류 피어리뷰 학술지에 실린 연구결과를 포함한 대부분의 결과는 복원불가능&rdquo;</li>
+<li>John Ioannidis 박사는 미국의학협회지에 유명의학 학술지 3곳에 게재된 논문 49개 검토하여 1/3이 훗날 다른 연구로 반증되었다는 내용의 논문 게재</li>
+</ul>
+</li>
+<li>명백한 데이터 앞에서도 논리를 잊지 말라
+<ul>
+<li>올바른 회귀방정식을 세우는 과정이 통계적 계산과정보다 중요</li>
+<li>회귀분석은 특정상황에 기반한 분석임을 명심</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="13장-하버드에-가면-정말로-인생이-바뀔까">13장 하버드에 가면 정말로 인생이 바뀔까?</h2>
+<ul>
+<li><strong>프로그램 평가</strong> 특정 정책이나 사회복지·교육 프로그램이 실제로 효과를 냈는지를 검증하는 과정으로, 사전·사후 비교, 통제집단 활용, 그리고 성과지표 분석을 통해 인과적 효과를 추정하며, 단순 만족도 조사에 그치지 않고, 행동·태도·지식 변화 같은 구체적 성과를 측정하는 것이 핵심</li>
+<li>펜실베니아대학의 Jonathan Klick과 Alexander Tabarrok의 <strong>더 많은 경찰 배치 조치가 범죄율에 미치는 영향</strong> 연구</li>
+<li>미국심장학회지에 실린 환자가 모르는 대규모 종교집단으로부터 안전한 수술과 빠른 회복을 기원하는 기도를 받았을 때 심혈관환자의 후유증이 줄어드는지 검증하기 위한 통제 실험</li>
+<li>1985년부터 시작된 <strong>테네시주 STAR 프로젝트</strong> 학급당 학생수와 학습의 관계 규명하고자하는 노력</li>
+<li><strong>비동질통제</strong> 실험집단과 통제집단을 무작위로 배정하지 않고, 자연 상태에서 구분한 뒤 사전·사후 검사를 통해 효과를 비교하는 설계</li>
+<li>2008년 payscale.com 조사에 따르면 디트머스와 프린스턴 졸업생 급여 중간값은 각각 $134,000와 $131,000</li>
+<li>The New York Times에 실린 Stacy Dale과 Alan Krueger의 연구 요약 <strong>&ldquo;성공여부를 결정하는 것은 졸업장에 적힌 대학 이름이 아니라 자신의 동기, 포부, 능력에 대한 인식이다.&rdquo;</strong></li>
+<li><strong>이중차이법</strong> 정책이나 제도 변화의 ‘순수한 효과’를 추정하기 위해 사용하는 준실험적 통계 기법</li>
+<li><strong>불연속분석</strong> 특정 기준점(cutoff)을 기준으로 집단을 나누어 그 경계에서 발생하는 ‘불연속적인 변화’를 분석하는 기법</li>
+<li>Randi Hjalmarson은 감옥행이 미래범죄행동에 주는 영향 관찰 연구를 위해 엄격하게 적용되는 워싱턴주 범죄자 판결 가이드라인 활용</li>
+</ul>
+<h2 id="맺음말-통계로-답할-수-있는-다섯-가지-질문">맺음말 통계로 답할 수 있는 다섯 가지 질문</h2>
+<ul>
+<li>뉴요커에 글래드웰의 기사 <strong>NFL과 투견은 얼마나 다른가?</strong></li>
+<li>2012년 미CDC는 미 아동 1/88명이 자폐스텍트럼장애 진단을 받았다고 보고</li>
+<li>2012년 뉴욕시는 부가가치평가에 근거하여 공립학교 교사 18,000명의 교원평가 평가등급을 공개했고, LA타임스 또한 유사한 평가등급을 발표
+<ul>
+<li>다트머스대학 경제학 교수 Dough Staiger는 &ldquo;교사의 성과를 평가하기 위한 과정에 쓰이는 하나의 도구일뿐&rdquo;</li>
+</ul>
+</li>
+<li>캘리포니아대학 교수 Scott Carrell과 공군사관학교 교수 James West의 미 공군사관학교 교수평가에 관한 연구
+<ul>
+<li>경험이 별로 없고 유명 대학교 학위가 적은 교수가 가르친 학생은 기초과목 표준시험에서 좋은 성적을 보인 경우가 있는데 이는 시험을 위한 강의를 할 가능성이 높음을 의미</li>
+<li>경험이 많고 유명대학 학위도 많은 교수에게 배운 학생은 다음에 배울 관련 필수 과목에서 더 좋은 성적을 보인 경우가 있는데 이는 다음에 배울 과목과 사관학교 졸업후 인생에서의 중요한 개념의 강의를 할 가능성이 높음</li>
+</ul>
+</li>
+<li>프랑스 경제학자 Esther Duflo는 무작위 통제 실험을 활용하여 개도국 빈곤층의 삶을 개선하기 위한 여러 조치에 대한 실험 진행
+<ul>
+<li>인도 학교 교사의 잦은 결근에 대한 실험</li>
+<li>캐냐 농부가 추수 후 비료 구매 지원 실험</li>
+<li>코트디부아르에서는 강우량에 따라 남성은 코코아와 커피를, 여성은 플랜틴바나나와 코코넛을 주로 재배하는데 여성이 기르는 작물이 풍년인 경우 수익 일부를 가족을 위한 식료품 구입에 지출</li>
+</ul>
+</li>
+<li>The New York Times Magazine의 한 기자가 임신한 소비자를 찾아내어 유인하기 위해 애쓰는 소매점 Target의 예측분석팀 취재
+<ul>
+<li>META의 CPRO인 Cris Cox는 The New York Times에 &ldquo;정보화 사회가 풀어야 할 난제는 이 정보를 사용해 무슨일을 하는가 이다.&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li>찰스 윌런(Charles J. Wheelan), 벌거벗은 통계학(Naked Statistics), 책읽는수요일, 2013-10-25</li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/note/probability-statistics-fundamental-summary/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">기초 통계 요약</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/note/frequent-special-chars-collection/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">자주 사용하는 특수문자 모음</p>
+					</a>
+				</div>
+		</nav> 
+        </div>
+        <aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/note/frequent-special-chars-collection/">자주 사용하는 특수문자 모음</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-multi-language-activation/">Hugo multi language 기능 활성화 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/linux-installation-for-learning/">학습을 위한 Ubuntu Linux 설치</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-ad-sense-setting/">Google 광고 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-analytics-setting-guide/">Google 분석 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/naked-statistics-presented-examples/">벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/probability-statistics-fundamental-summary/">기초 통계 요약</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/type-script-fundamental-guide/">TypeScript 언어 기초 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/governup-dailydigest-build-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/system-architecture-diagram-summary/">시스템 아키택쳐를 위한 다이어그램 요약</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/08">2026/08 (1)</option>
+      
+      <option value="/archives/2026/07">2026/07 (2)</option>
+      
+      <option value="/archives/2026/06">2026/06 (4)</option>
+      
+      <option value="/archives/2026/05">2026/05 (7)</option>
+      
+      <option value="/archives/2026/04">2026/04 (4)</option>
+      
+      <option value="/archives/2026/03">2026/03 (6)</option>
+      
+      <option value="/archives/2026/02">2026/02 (2)</option>
+      
+      <option value="/archives/2026/01">2026/01 (11)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/data-science/" title="data-science">data-science (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/db/" title="db">db (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/paas/" title="paas">paas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (5)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+      </div>
+      <footer><footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+</footer>
+    </div></body>
+</html>

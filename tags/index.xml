@@ -6,20 +6,48 @@
     <description>Recent content in Tags on Insight of Public.re.kr</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 31 May 2026 03:15:01 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 08:58:00 +0900</lastBuildDate>
     <atom:link href="https://insight.public.re.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fundamental</title>
-      <link>https://insight.public.re.kr/tags/fundamental/</link>
-      <pubDate>Sun, 31 May 2026 03:15:01 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/fundamental/</guid>
+      <title>Writing</title>
+      <link>https://insight.public.re.kr/tags/writing/</link>
+      <pubDate>Thu, 06 Aug 2026 08:58:00 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/writing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Framework</title>
+      <link>https://insight.public.re.kr/tags/framework/</link>
+      <pubDate>Fri, 03 Jul 2026 14:18:54 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/framework/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
       <link>https://insight.public.re.kr/tags/architecture/</link>
-      <pubDate>Fri, 29 May 2026 14:47:59 +0900</pubDate>
+      <pubDate>Thu, 02 Jul 2026 10:37:06 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Saas</title>
+      <link>https://insight.public.re.kr/tags/saas/</link>
+      <pubDate>Sun, 28 Jun 2026 23:08:59 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/saas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Science</title>
+      <link>https://insight.public.re.kr/tags/data-science/</link>
+      <pubDate>Thu, 25 Jun 2026 14:32:26 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fundamental</title>
+      <link>https://insight.public.re.kr/tags/fundamental/</link>
+      <pubDate>Wed, 10 Jun 2026 15:58:37 +0900</pubDate>
+      <guid>https://insight.public.re.kr/tags/fundamental/</guid>
       <description></description>
     </item>
     <item>
@@ -44,31 +72,10 @@
       <description></description>
     </item>
     <item>
-      <title>Saas</title>
-      <link>https://insight.public.re.kr/tags/saas/</link>
-      <pubDate>Fri, 01 May 2026 18:10:37 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/saas/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Framework</title>
-      <link>https://insight.public.re.kr/tags/framework/</link>
-      <pubDate>Wed, 22 Apr 2026 21:33:13 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/framework/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Law</title>
       <link>https://insight.public.re.kr/tags/law/</link>
       <pubDate>Wed, 25 Mar 2026 14:27:11 +0900</pubDate>
       <guid>https://insight.public.re.kr/tags/law/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Writing</title>
-      <link>https://insight.public.re.kr/tags/writing/</link>
-      <pubDate>Tue, 10 Mar 2026 14:48:36 +0900</pubDate>
-      <guid>https://insight.public.re.kr/tags/writing/</guid>
       <description></description>
     </item>
     <item>

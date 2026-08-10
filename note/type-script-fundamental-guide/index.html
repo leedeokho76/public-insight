@@ -1,0 +1,499 @@
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    TypeScript 언어 기초 가이드 - Insight of Public.re.kr
+  
+</title>
+<meta name="description" content="TypeScript 언어 학습 및 개발을 위한 기초 가이드">
+
+
+<link rel="stylesheet" href="/scss/style.min.891f9af35158e3d67de6f524523bb2bea8e8357fc7f8bca1ed71e049092d2159.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public.re.kr" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public.re.kr</div>
+          
+            <div class="logo__subtitle">경험을 기록하고, 지식을 이어가는 통찰💡</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+      
+      
+<nav class="breadcrumbs" aria-label="breadcrumb" style="font-size: 0.9rem; margin-bottom: 1rem; color: #666;">
+  <a href="/">Home</a>
+  
+  
+  
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note">Note</a>
+      
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note/type-script-fundamental-guide">Type script fundamental guide</a>
+      
+    
+  
+    
+  
+</nav>
+
+      
+			<h1 class="post__title">TypeScript 언어 기초 가이드</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="TypeScript 공식사이트의 패키지 검색 페이지 화면">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-05-31T03:15:01&#43;09:00">2026-05-31</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/fundamental/" rel="tag">fundamental</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-typescript의-이론적-기초">1. TypeScript의 이론적 기초</a>
+      <ul>
+        <li><a href="#11-ts가-좋은-이유">1.1. TS가 좋은 이유</a></li>
+        <li><a href="#12-ts-앱-개발과정">1.2. TS 앱 개발과정</a></li>
+        <li><a href="#13-typescript-컴파일러">1.3. TypeScript 컴파일러</a></li>
+        <li><a href="#14-vscode-익스텐션">1.4. VSCode 익스텐션</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-기본-및-커스텀-타입">2. 기본 및 커스텀 타입</a>
+      <ul>
+        <li><a href="#21-변수타입-선언">2.1. 변수타입 선언</a></li>
+        <li><a href="#211-기본적인-타입표기">2.1.1. 기본적인 타입표기</a></li>
+        <li><a href="#212-함수-본문-내-타입-선언">2.1.2. 함수 본문 내 타입 선언</a></li>
+      </ul>
+    </li>
+    <li><a href="#참고자료">【참고자료】</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-typescript의-이론적-기초">1. TypeScript의 이론적 기초</h2>
+<h3 id="11-ts가-좋은-이유">1.1. TS가 좋은 이유</h3>
+<ol>
+<li>TS는 JS의 상위 집합으로 모든 ECMA 버전의 JS파일 사용 가능</li>
+<li>TS는 정적타이핑을 지원하는 반면 JS는 동적타이핑만을 지원</li>
+<li>정적타입 프로그래밍 언어는 변수 사용 전 타입을 할당해야 하며, 타입선언 후 변경시 컴파일 오류</li>
+<li>TS는 ECMA스크립트 표준을 따르며, 웹 브라우저보다 훨씬 더 빠르게 JS의 기능을 실행가능</li>
+<li>TS에서 최신 JS문법을 지원하며 모든 브라우저 사양을 지원하는 버전으로 컴파일 가능</li>
+<li>TS를 컴파일한 JS코드는 사람이 작성한 것처럼 읽기 용이</li>
+</ol>
+<h3 id="12-ts-앱-개발과정">1.2. TS 앱 개발과정</h3>
+<ol>
+<li>TS 앱의 배포 과정<br>
+<img src="./1-2-1.webp" alt="TS 앱의 배포 과정"></li>
+<li>TS와 JS가 함께 사용된 앱의 배포 과정<br>
+<img src="./1-2-2.webp" alt="TS와 JS가 함께 사용된 앱의 배포 과정"></li>
+</ol>
+<h3 id="13-typescript-컴파일러">1.3. TypeScript 컴파일러</h3>
+<ol>
+<li>
+<p>컴파일러의 설치</p>
+<pre tabindex="0"><code>$ node -v  //node 설치확인
+$ mpm -v  //npm 설치확인
+$ npm install -g typescript  //typescript 컴파일러 전역 설치
+$ tsc -v  //설치확인
+</code></pre></li>
+<li>
+<p>폴더구조</p>
+<pre tabindex="0"><code>typescript/
+├── basics/          # 문법 연습 (변수, 타입, 인터페이스 등)
+├── api-examples/    # API 연동 실습 (fetch, axios 등)
+├── powerfx/         # Power Fx와 연계 실습
+├── projects/        # 작은 프로젝트 단위 (Todo, Chatbot 등)
+├── node_modules/    # (지역) 패키지 설치 시 자동 생성
+├── package.json     # (지역) 프로젝트 설정 파일
+└── tsconfig.json    # (지역) TypeScript 설정 파일
+</code></pre></li>
+<li>
+<p>컴파일 테스트</p>
+<pre tabindex="0"><code>####### main.ts
+function getFinalPrice(price: number, discount: number) {
+  return price - price / discount;
+}
+
+console.log(getFinalPrice(100, 100));
+console.log(getFinalPrice(100, &#34;100&#34;));
+</code></pre><pre tabindex="0"><code>$ tsc main
+main.ts:6:32 - error TS2345: Argument of type &#39;string&#39; is not assignable to parameter of type &#39;number&#39;.
+
+6 console.log(getFinalPrice(100, &#34;100&#34;));
+                                ~~~~~
+
+Found 1 error in 1-3-main.ts:6
+//컴파일 오류가 발생해도 js 컴파일 수행
+</code></pre></li>
+<li>
+<p>tsc 옵션</p>
+<ul>
+<li><strong>(-noEmitOnError)</strong> 오류가 수정되기 전까지 js파일 생성 유보</li>
+<li><strong>(-t ES5)</strong> 특정 JS 버전</li>
+</ul>
+</li>
+<li>
+<p>JSON파일을 통한 옵션 저장</p>
+<ul>
+<li>
+<p>tsconfig.json 이 있는 상태에서 tsc 명령어 입력시 tsconfig.json 내 모든 옵션 적용</p>
+<pre tabindex="0"><code>####### tsconfig.json
+{
+  &#34;compilerOptions&#34;: {
+    &#34;noEmitOnError&#34;: true,
+    &#34;target&#34;: &#34;es6&#34;
+  }
+}
+</code></pre></li>
+<li>
+<p>tsconfig.json으로 저장할 수 있는 옵션</p>
+<ul>
+<li>컴파일러 옵션 (compilerOptions): target, module, strict, outDir, esModuleInterop 등</li>
+<li>파일 포함/제외 규칙 (include, exclude, files)</li>
+<li>프로젝트 참조 (references)</li>
+</ul>
+</li>
+<li>
+<p>tsconfig.json으로 저장할 수 없는 옵션: &ndash;watch, &ndash;help, &ndash;version</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="14-vscode-익스텐션">1.4. VSCode 익스텐션</h3>
+<ul>
+<li><strong>(ESLint)</strong> 린터를 통합, 코드의 가독성과 보전성 확인</li>
+<li><strong>(Prettier)</strong> 코드 파싱 후 자체 규칙에 따라 자동 수정하여 일관된 규칙 적용</li>
+<li><strong>(Path Intelligence)</strong> 자동으로 파일경로 수정</li>
+</ul>
+<h2 id="2-기본-및-커스텀-타입">2. 기본 및 커스텀 타입</h2>
+<h3 id="21-변수타입-선언">2.1. 변수타입 선언</h3>
+<ul>
+<li><strong>(타입의 명시적 선언)</strong> 코드에 직접 구체적으로 표현</li>
+<li><strong>(타입의 암시적 선언)</strong> let variable = 1; 처럼 컴파일러가 알아서 처리</li>
+</ul>
+<h3 id="211-기본적인-타입표기">2.1.1. 기본적인 타입표기</h3>
+<ul>
+<li>주요 타입
+<ul>
+<li><strong>(string)</strong></li>
+<li><strong>(boolean)</strong></li>
+<li><strong>(number)</strong></li>
+<li><strong>(symbol)</strong> ES6에 추가된 변경 불가능한 원시 타입으로 객체 프로퍼티 생성 가능</li>
+<li><strong>(any)</strong> 모든 타입을 허용하는 타입. 타입체크의 장점 및 코드 가독성 상실</li>
+<li><strong>(unknown)</strong> any와 비슷하나 먼저 타입을 지정하거나 좁히지 않으면 조작 불허</li>
+<li><strong>(never)</strong> 절대 반환을 하지 않는 함수로, 절대로 실행이 종료되지 않는 함수나 오류를 발생시키기 위해서만 존재하는 함수</li>
+<li><strong>(void)</strong> 값을 반환하지 않는 함수로, never와 다르게 실행은 완료</li>
+</ul>
+</li>
+</ul>
+<h3 id="212-함수-본문-내-타입-선언">2.1.2. 함수 본문 내 타입 선언</h3>
+<h2 id="참고자료">【참고자료】</h2>
+<ul>
+<li>야코프 페인·안톤 모이세예프, 단숨에 배우는 타입스크립트, 영진닷컴, 2021.</li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+              <li class="related__item"><a href="/note/probability-statistics-fundamental-summary/">기초 통계 요약</a></li>
+            
+          
+            
+          
+            
+              <li class="related__item"><a href="/note/python-data-science-summary/">데이터과학을 위한 파이썬 컴퓨팅 요약</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/data-structure-introduction-summary/">자료구조(Data Structure) 요약</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/note/system-architecture-diagram-summary/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">시스템 아키택쳐를 위한 다이어그램 요약</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/note/probability-statistics-fundamental-summary/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">기초 통계 요약</p>
+					</a>
+				</div>
+		</nav> 
+        </div>
+        <aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/note/frequent-special-chars-collection/">자주 사용하는 특수문자 모음</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-multi-language-activation/">Hugo multi language 기능 활성화 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/linux-installation-for-learning/">학습을 위한 Ubuntu Linux 설치</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-ad-sense-setting/">Google 광고 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-analytics-setting-guide/">Google 분석 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/naked-statistics-presented-examples/">벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/probability-statistics-fundamental-summary/">기초 통계 요약</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/type-script-fundamental-guide/">TypeScript 언어 기초 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/governup-dailydigest-build-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/system-architecture-diagram-summary/">시스템 아키택쳐를 위한 다이어그램 요약</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/08">2026/08 (1)</option>
+      
+      <option value="/archives/2026/07">2026/07 (2)</option>
+      
+      <option value="/archives/2026/06">2026/06 (4)</option>
+      
+      <option value="/archives/2026/05">2026/05 (7)</option>
+      
+      <option value="/archives/2026/04">2026/04 (4)</option>
+      
+      <option value="/archives/2026/03">2026/03 (6)</option>
+      
+      <option value="/archives/2026/02">2026/02 (2)</option>
+      
+      <option value="/archives/2026/01">2026/01 (11)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/data-science/" title="data-science">data-science (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/db/" title="db">db (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/paas/" title="paas">paas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (5)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+      </div>
+      <footer><footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+</footer>
+    </div></body>
+</html>

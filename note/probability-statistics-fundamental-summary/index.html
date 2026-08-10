@@ -1,0 +1,1214 @@
+<!doctype html>
+<html
+  lang="ko-KR"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  
+    기초 통계 요약 - Insight of Public.re.kr
+  
+</title>
+<meta name="description" content="정책 검토를 위해 도구로서 확률과 통계에 대한 기초 개념 요약">
+
+
+<link rel="stylesheet" href="/scss/style.min.891f9af35158e3d67de6f524523bb2bea8e8357fc7f8bca1ed71e049092d2159.css">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+
+
+<link rel="stylesheet" href="/scss/bootstrap.css">
+
+  </head>
+  <body class="body">
+    <div class="container container--outer">
+       <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="/" title="Insight of Public.re.kr" rel="home">
+        
+          
+          <img src="/images/logo-mobile.svg" alt="Insight of Public.re.kr" class="logo__img" />
+        
+        
+        <div class="logo__item logo__text">
+          <div class="logo__title">Insight of Public.re.kr</div>
+          
+            <div class="logo__subtitle">경험을 기록하고, 지식을 이어가는 통찰💡</div>
+          
+        </div>
+      </a>
+    </div>
+		<nav class="menu">
+			<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="/">
+								
+								<span class="menu__text">Home</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/essay/">
+								
+								<span class="menu__text">Essay</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/guide/">
+								
+								<span class="menu__text">Guide</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/note/">
+								
+								<span class="menu__text">Note</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/planning/">
+								
+								<span class="menu__text">Planning</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/report/">
+								
+								<span class="menu__text">Report</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="/review/">
+								
+								<span class="menu__text">Review</span>
+								
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="https://public.re.kr">
+								
+								<span class="menu__text">Public&#39;s Portal</span>
+								
+							</a>
+						</li>
+			</ul>
+		</nav>
+</header> 
+      <div class="wrapper flex">
+        <div class="primary">
+          
+<main class="main" role="main">
+  <article class="post">
+    <header class="post__header">
+      
+      
+<nav class="breadcrumbs" aria-label="breadcrumb" style="font-size: 0.9rem; margin-bottom: 1rem; color: #666;">
+  <a href="/">Home</a>
+  
+  
+  
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note">Note</a>
+      
+    
+  
+    
+      
+      
+      
+       <span style="margin: 0 5px;">&gt;</span>
+        <a href="/note/probability-statistics-fundamental-summary">Probability statistics fundamental summary</a>
+      
+    
+  
+    
+  
+</nav>
+
+      
+			<h1 class="post__title">기초 통계 요약</h1>
+      
+        <figure class="post__cover">
+          <img src="cover.webp" alt="확률과 통계를 상징하는 일러스트레이션">
+        </figure>
+      
+      <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2026-06-10T15:58:37&#43;09:00">2026-06-10</time></div><div class="meta__item-tags meta__item"><svg class="meta__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg><span class="meta__text">
+        <a class="meta__link btn" href="/tags/fundamental/" rel="tag">fundamental</a>
+  </span>
+</div></div>
+    </header>
+    
+		<div class="post__toc toc">
+			<div class="toc__title"></div>
+			<div class="toc__menu">
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-확률분포표">1. 확률분포표</a></li>
+    <li><a href="#2-평균-분산-표준편차1">2. 평균, 분산, 표준편차(1)</a></li>
+    <li><a href="#3-연속-확률-분포">3. 연속 확률 분포</a></li>
+    <li><a href="#4-이항분포">4. 이항분포</a></li>
+    <li><a href="#5-정규분포">5. 정규분포</a></li>
+    <li><a href="#6-표준정규분포의-이해">6. 표준정규분포의 이해</a></li>
+    <li><a href="#7-표본평균의-분포">7. 표본평균의 분포</a></li>
+    <li><a href="#8-모평균의-추정">8. 모평균의 추정</a></li>
+    <li><a href="#평균분산표준편차z점수기여도상관계수-계산">평균·분산·표준편차·Z점수·기여도·상관계수 계산</a></li>
+    <li><a href="#참고자료">참고자료</a></li>
+  </ul>
+</nav>
+			</div>
+		</div><div class="content post__content clearfix"><h2 id="1-확률분포표">1. 확률분포표</h2>
+<ol>
+<li>경우의 수: 1회의 시행으로 일어날 수 있는 사건의 가짓수</li>
+<li>확률: 특정 사건이 일어날 경우의 수 / 모든 사건 경우의 수</li>
+<li>확률분포: 확률변수(Random Variable)가 취할 수 있는 모든 값과, 그 값이 나타날 확률을 표 형태로 짝지어 나타낸 것
+<blockquote>
+<p>1~10중 3개를 선택하는 경우</p>
+<ul>
+<li>짝수 1개를 선택하는 <strong>경우의 수</strong> 50 = 5×10 = <sub>5</sub>C<sub>1</sub>(짝수조합) × <sub>5</sub>C<sub>2</sub>(홀수조합)</li>
+<li>짝수 1개를 선택할 <strong>확률</strong> 6.94% = 50 / 720 = (<sub>5</sub>C<sub>1</sub> × <sub>5</sub>C<sub>2</sub>) / <sub>10</sub>C<sub>3</sub></li>
+<li>짝수의 개수를 X라고 했을 때 <strong>확률분포</strong>
+<ul>
+<li>P(0) = X가 0일 확률</li>
+<li>P(1) = X가 1일 확률</li>
+<li>P(2) = X가 2일 확률</li>
+<li>P(3) = X가 3일 확률</li>
+</ul>
+</li>
+<li>확률분포료
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">P(0)</td>
+          <td style="text-align: center">P(1)</td>
+          <td style="text-align: center">P(2)</td>
+          <td style="text-align: center">P(3)</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>확률분포표의 작성순서
+<ol>
+<li>행렬의 구획</li>
+<li>A열1행에 X, A열2행에 P(X) 작성</li>
+<li>1행에 변수 X가 가질 수 있는 모든 값 나열</li>
+<li>1행 마지막 열에 &ldquo;합계&quot;와 2행 마지막 열에 값 1 작성</li>
+<li>2행에 각 변수일 때의 확률 작성</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X의 확률분포를 나타낸 표가 다음과 같을 때, 상수 a의 값</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">4</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">a<sup>2</sup></td>
+          <td style="text-align: center">(1/3)a</td>
+          <td style="text-align: center">1/6</td>
+          <td style="text-align: center">1/6</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<p>a<sup>2</sup>+(1/3)a+1/6+1/6=1<br>
+→ a<sup>2</sup>+(1/3)a-2/3=0<br>
+→ (3a-2)(a+1)=0<br>
+→ a = 2/3, <del>-1</del></p>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 이산확률변수 X의 확률분포가 다음과 같을 경우 P(X≤2)의 값</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">a</td>
+          <td style="text-align: center">a+1/9</td>
+          <td style="text-align: center">a+1/3</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>3a+4/9=1</li>
+<li>a=5/27</li>
+<li>P(X≤2) = 13/27</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X의 확률질량함수가 P(X=x) = k(x-2) (x=3,6,9) 일때 상수 k의 값은?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">6</th>
+          <th style="text-align: center">9</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">k</td>
+          <td style="text-align: center">4k</td>
+          <td style="text-align: center">7k</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>k=1/12</li>
+</ul>
+</blockquote>
+<h2 id="2-평균-분산-표준편차1">2. 평균, 분산, 표준편차(1)</h2>
+<ol>
+<li>
+<p>평균 E(X)</p>
+<ul>
+<li><strong>(의미)</strong> 확률분포의 중심을 나타내는 값으로 결과들이 평균적으로 수렴하는 값</li>
+<li><strong>(산출)</strong> 각 변수값과 그에 따른 확률을 곱한 값의 합</li>
+</ul>
+</li>
+<li>
+<p>분산 V(X)</p>
+<ul>
+<li><strong>(의미)</strong> 값이 평균으로부터 얼마나 떨어져 있는지를 제곱해서 평균낸 값</li>
+<li><strong>(산출)</strong> E(X<sup>2</sup>)(제곱의 평균) - {E(X)}<sup>2</sup>(평균의 제곱)</li>
+</ul>
+</li>
+<li>
+<p>표준편차 σ(X)</p>
+<ul>
+<li><strong>(의미)</strong> 분산을 제곱근으로 되돌려 원래 단위로 표현한 값</li>
+<li><strong>(산출)</strong> √V(X)
+<blockquote>
+<p>확률변수 X의 확률분포가 다음과 같을 때 평균, 분산, 표준편차는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">1/4</td>
+          <td style="text-align: center">1/4</td>
+          <td style="text-align: center">1/2</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>E(X) = 1.25 = (0×1/4)+(1×1/4)+(2×1/2)</li>
+<li>V(X) = 11/16 = 9/4 - 25/16 = {(1×1/4) + (4×1/2)} - (5/4)<sup>2<sup></li>
+<li>σ(X) = √11/4</li>
+</ul>
+<p>확률변수 X의 확률분포가 다음과 같을 때 σ(X)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">4</th>
+          <th style="text-align: center">6</th>
+          <th style="text-align: center">8</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">1/4</td>
+          <td style="text-align: center">1/2</td>
+          <td style="text-align: center">1/4</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>E(X) = 6 = (4×1/4)+(6×1/2)+(8×1/4)</li>
+<li>V(X) = 2 = 38 - 36 = (4+18+16) - 6<sup>2</sup></li>
+<li>σ(X) = √2</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>변수 변경시 평균과 분산 구하는 법</p>
+<ul>
+<li>E(aX+b) = aE(X)+b</li>
+<li>V(aX+b) = a<sup>2</sup>V(X)</li>
+<li>σ(aX+b) = |a|σ(X) = |a|√{V(X)} = √{a<sup>2</sup>V(X)} = √{V(aX+b)}</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X의 평균이 5, 분산이 2일 때 확률변수 -3X+2의 E(X)와 σ(X)는?</p>
+<ul>
+<li>E(-3X+2) = -13 = -3E(X)+2</li>
+<li>σ(-3X+2) = 3√2 = 3σ(X)</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X의 확률분포가 다음과 같을 때 확률변수 2X+5의 평균은?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">7/30</td>
+          <td style="text-align: center">4/15</td>
+          <td style="text-align: center">4/15</td>
+          <td style="text-align: center">7/30</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>E(2X+5) = 8 = 2E(X)+5</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X의 평균이 9, 표준편차가 2일 때 확률변수 Y=3X<sup>2</sup>-5X의 평균은?</p>
+<ul>
+<li>E(X<sup>2</sup>) = 85
+<ul>
+<li>V(E) = E(X<sup>2</sup>) - {E(X)}<sup>2</sup> → 4 = E(X<sup>2</sup>) - 81</li>
+</ul>
+</li>
+<li>3E(X<sup>2</sup>) - 5E(X) = E(3X<sup>2</sup>-5X)
+<ul>
+<li>E(Y) = 210 = 255 - 45</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="3-연속-확률-분포">3. 연속 확률 분포</h2>
+<ol>
+<li>이산확률분포와 연속확률분포의 비교
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">이산확률분포</th>
+          <th style="text-align: center">연속확률분포</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">떨어져 있는</td>
+          <td style="text-align: center">이어져 있는</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">갯수, 횟수, 주사위눈 등</td>
+          <td style="text-align: center">길이, 무게, 시간 등</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">확률질량함수</td>
+          <td style="text-align: center">확률밀도함수</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">확률분포표</td>
+          <td style="text-align: center">그래프(넓이 = 확률)</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>연속 확률 분포에서 확률은 넓이이며, 전체넓이 즉 전체 확률은 1</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 0 ≤ x ≤ 6 에서 정의된 연속확률변수 X의 확률밀도함수 f(X)=kx의 그래프가 다음과 같을 때, P(0 ≤ x ≤ 3)의 확률은?<br>
+<img src="./03--chart01.jpg" alt="f(X)=kx 그래프"></p>
+<ul>
+<li><strong>(x=6일 때 함수값 확인)</strong> x = 6일때 f(X) = 6k</li>
+<li><strong>(전체 확률 조건으로 k 산출)</strong> k = 1/18, 1(전체확률=전체넓이) = 가로×세로/2 = (6×6k)/2</li>
+<li><strong>(k값이 적용된 확률밀도함수 확정)</strong> 확률밀도함수 f(X)=(1/18)x</li>
+<li><strong>(x=3일 때 함수값 확인)</strong> x = 3일때 f(x) = 1/6</li>
+<li><strong>(0 ≤ x ≤ 3 구간 확률 계산)</strong> P(0 ≤ x ≤ 3) = 1/4 = 3×(1/6)/2</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 연속확률변수 X의 확률밀도함수 y = f(x)의 그래프가 다음과 같을 때 P(2 ≤ x ≤ 3)의 확률은?
+<img src="./03--chart02.jpg" alt="y=f(X)의 그래프"></p>
+<ul>
+<li><strong>(전체 확률 조건으로 a 산출)</strong> a = 2/3, 1 = (3·a)/2</li>
+<li><strong>(점-기울기 공식)</strong> y - y<sub>1</sub> = {(y<sub>2</sub> - y<sub>1</sub>)/(x<sub>2</sub> - x<sub>1</sub>)}·(x - x<sub>1</sub>)</li>
+<li><strong>(x=2일 때 함수값 확인)</strong> f(x) = -1/3·(x - 3) = {(2/3 - 0) / (1 - 3)}·(x - 3)</li>
+<li><strong>(2 ≤ x ≤ 3 구간 확률 계산)</strong> P(2 ≤ x ≤ 3) = 1/6 = {1·1/3}/2</li>
+</ul>
+</blockquote>
+<h2 id="4-이항분포">4. 이항분포</h2>
+<ol>
+<li>
+<p>독립시행: 어떤 시행의 결과가 다른 시행의 결과에 영향을 주지 않을 때</p>
+<blockquote>
+<p>주사위를 3번 던질 때,<br>
+1의 눈이 0번 나올 확률 <sub>3</sub>C<sub>0</sub>·(1/6)<sup>0</sup>·(5/6)<sup>3</sup><br>
+1의 눈이 1번 나올 확률 <sub>3</sub>C<sub>1</sub>·(1/6)<sup>1</sup>·(5/6)<sup>2</sup><br>
+1의 눈이 2번 나올 확률 <sub>3</sub>C<sub>2</sub>·(1/6)<sup>2</sup>·(5/6)<sup>1</sup><br>
+1의 눈이 3번 나올 확률 <sub>3</sub>C<sub>3</sub>·(1/6)<sup>3</sup>·(5/6)<sup>0</sup></p>
+</blockquote>
+</li>
+<li>
+<p>이항분포: 독립시행으로 이루어진 확률분포</p>
+<ul>
+<li>주사위를 3번 던질 때, 1의 눈이 나오는 횟수 X
+<blockquote>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center">125/216</td>
+          <td style="text-align: center">25/216</td>
+          <td style="text-align: center">5/216</td>
+          <td style="text-align: center">1/216</td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+</blockquote>
+</li>
+<li>이항분포 B(3,1/6) n=시행횟수, p=확률
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 이항분포 B(4, 3/4)을 따를 때, P(X=2)는? 9/256</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">4</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"><sub>4</sub>C<sub>2</sub>·(3/4)<sup>2</sup>·(1/4)<sup>2</sup></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>(예제)</strong> 이항분포 B(5, 1/3)을 따르는 확률변수 X에 대하여 P(X≥4)는? 11/243</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">X</th>
+          <th style="text-align: center">0</th>
+          <th style="text-align: center">1</th>
+          <th style="text-align: center">2</th>
+          <th style="text-align: center">3</th>
+          <th style="text-align: center">4</th>
+          <th style="text-align: center">5</th>
+          <th style="text-align: center">합계</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">P(X)</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"><sub>5</sub>C<sub>4</sub>·(1/3)<sup>4</sup>·(2/3)<sup>1</sup></td>
+          <td style="text-align: center"><sub>5</sub>C<sub>5</sub>·(1/3)<sup>5</sup>·(2/3)<sup>0</sup></td>
+          <td style="text-align: center">1</td>
+      </tr>
+  </tbody>
+</table>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>이항분포에서 E(X), V(X), σ(X) 구하는 공식</p>
+<ul>
+<li>E(X) = n·p</li>
+<li>V(X) = n·p·q, q=(1-p)</li>
+<li>σ(X) = √V(X)
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 이항분포 B(16, 1/4)을 따를 때, E(X), V(X), σ(X)는?</p>
+<ul>
+<li>E(X) = 4 = 16·1/4</li>
+<li>V(X) = 3 = 16·1/4·3/4</li>
+<li>σ(X) = √3</li>
+</ul>
+<p><strong>(예제)</strong> 확률변수 X가 이항분포 B(242, 9/11)을 따를 때, E(X), V(X), σ(X)는?</p>
+<ul>
+<li>E(X) = 198 = 242·9/11</li>
+<li>V(X) = 36 = 242·9/11·2/11</li>
+<li>σ(X) = 6 = √36</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-정규분포">5. 정규분포</h2>
+<ol>
+<li>표현식: N(m,σ<sup>2</sup>) N(평균, 분산)</li>
+<li>정규분포곡선의 작성
+<ol>
+<li>수평의 x축 생성</li>
+<li>평균 m을 기준으로 삼아</li>
+<li>좌우 대칭인 종 모양 그래프 작성
+<img src="./05--chart01.jpg" alt="정규분포곡선 그래프"></li>
+</ol>
+</li>
+<li>확률 산출: 정규분포곡선에서 제시된 구간에 해당하는 넓이</li>
+<li>표준정규분포표의 해석
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3.0</td>
+          <td style="text-align: center">0.4987</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li><strong>(걸음 수)</strong> Z = X - m(거리)/σ(보폭)</li>
+<li><strong>(거리)</strong> X - m</li>
+<li><strong>(보폭)</strong> σ</li>
+<li><strong>(해석)</strong> 가운데(평균)부터 1걸음까지 걸었을 때의 넓이는 0.3413</li>
+<li><strong>(표준화)</strong> X → Z</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 정규분포 N(30, 4<sup>2</sup>)을 따를 때, 다음 표준정규분포표를 이용하여 P(22≤X≤42)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3.0</td>
+          <td style="text-align: center">0.4987</td>
+      </tr>
+  </tbody>
+</table>
+<p>0.9759 = 0.4772(P(22≤평균)구간) + 0.4987(P(평균≤42)구간)</p>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 정규분포 N(30, 5<sup>2</sup>)을 따를 때, 다음 표준정규분포표를 이용하여 P(25≤X≤40)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3.0</td>
+          <td style="text-align: center">0.4987</td>
+      </tr>
+  </tbody>
+</table>
+<p>0.8185 = 0.3413(P(25≤평균)구간) + 0.4772(P(평균≤40)구간)</p>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 정규분포 N(20, 4<sup>2</sup>)을 따를 때, 다음 표준정규분포표를 이용하여 P(18≤X≤24)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0.5</td>
+          <td style="text-align: center">0.1915</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center">0.4332</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+  </tbody>
+</table>
+<p>0.5328 = 0.1915(P(18≤평균)구간) + 0.3413(P(평균≤24)구간)</p>
+</blockquote>
+<h2 id="6-표준정규분포의-이해">6. 표준정규분포의 이해</h2>
+<ol>
+<li>표준정규분포표: 정규분포표의 표준</li>
+<li>표준화(X → Z)의 이론적 배경
+<ol>
+<li>Z(걸음 수) 구하기 = 걸음 수가 같으면 확률도 동일
+<ul>
+<li>확률변수 X가 정규분포 N(5, 1<sup>2</sup>)을 따를 때, P(5≤X≤6)</li>
+<li>확률변수 X가 정규분포 N(100, 5<sup>2</sup>)을 따를 때, P(100≤X≤105)</li>
+<li>확률변수 X가 정규분포 N(70, 3<sup>2</sup>)을 따를 때, P(70≤X≤73)</li>
+<li>확률변수 X가 정규분포 N(45, 5<sup>2</sup>)을 따를 때, P(45≤X≤50)</li>
+</ul>
+</li>
+<li>표준정규분포: N(0, 1<sup>2</sup>)</li>
+</ol>
+</li>
+<li>표준화 공식
+<ul>
+<li>P(a≤X≤b) = P{(a-m)/σ≤Z≤(b-m)/σ}</li>
+</ul>
+</li>
+<li>결론
+<img src="./06--chart01.jpg" alt="동일한 넓이"></li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 확률변수 X가 정규분포 N(30, 4<sup>2</sup>)을 따를 때, 다음 표준정규분포표를 이용하여 P(22≤X≤42)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3.0</td>
+          <td style="text-align: center">0.4987</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>(풀이)</strong> P(22≤X≤42) = P{(30-22)/4≤Z≤(42-30)/4}<br>
+= P(-2≤Z≤3) = P(-2≤Z≤0) + P(0≤Z≤3) = P(0≤Z≤2) + P(0≤Z≤3)
+= 0.4772 + 0.4987 = 0.9759</p>
+</blockquote>
+<h2 id="7-표본평균의-분포">7. 표본평균의 분포</h2>
+<ol>
+<li>정규분포 N(m,σ<sup>2</sup>)는 <strong>통계적 추정</strong>에 필요</li>
+<li>통계적 추정이란 <strong>모평균의 추청</strong></li>
+<li>모평균과 모분산은 모집단의 평균과 분산인데, 실생활에서는 모집단의 값을 알기란 불가능</li>
+<li>그래서 n개의 표본을 임의 추출하여 구해진 평균, 즉 표본평균(x̄)들이 어떻게 분포하고 있는지 알아보는 것을 <strong>표본평균의 분포</strong>로 이해</li>
+<li>표본평균의 분포식 X̄~N(m,(σ/√n)<sup>2</sup>)에서,
+<ul>
+<li>표본평균의 평균은 모평균과 동일</li>
+<li>표본평균 x̄의 분포는, 모집단이 정규분포를 따르거나 표본 크기가 충분히 크면, 중심극한정리에 의해 정규분포를 따름.</li>
+<li>표본평균의 분산은 모집단의 분산을 표본 크기로 나눈 값</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 모평균이 10, 모분산이 16인 모집단에서 크기가 100인 표본을 임의추출할 때,</p>
+<ul>
+<li>E(x̄) = 10</li>
+<li>V(x̄) = 4/25 = (√16/√100)<sup>2</sup></li>
+<li>σ(x̄) = 2/5 = √(4/25)</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 정규분포 N(40, 6<sup>2</sup>)을 따르는 모집단에서 크기가 9인 표본을 임의추출한 표본평균을 x̄라 할때, P(38≤X≤44)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center">0.4332</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.5</td>
+          <td style="text-align: center">0.4938</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>X̄의 분포 = X̄<del>N(40, 2<sup>2</sup>) = X̄</del>N(40, (6/√9)<sup>2</sup>)</li>
+<li>P(38≤X≤44) = 0.8185 = 0.3413+0.4772 = P{1≤X≤2} = P{(40-38)/2≤X≤(44-40)/2}</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 정규분포 N(45, 6<sup>2</sup>)을 따르는 모집단에서 크기가 4인 표본을 임의추출한 표본평균을 x̄라 할때, P(42≤X≤51)는?</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">z</th>
+          <th style="text-align: center">P(0≤Z≤z)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0.5</td>
+          <td style="text-align: center">0.1915</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1.0</td>
+          <td style="text-align: center">0.3413</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center">0.4332</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2.0</td>
+          <td style="text-align: center">0.4772</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>X̄의 분포 = X̄<del>N(45, 3<sup>2</sup>) = X̄</del>N(45, (6/√4)<sup>2</sup>)</li>
+<li>P(38≤X≤44) = 0.8185 = 0.3413+0.4772 = P{1≤X≤2} = P{(45-42)/3≤X≤(51-45)/3}</li>
+</ul>
+</blockquote>
+<h2 id="8-모평균의-추정">8. 모평균의 추정</h2>
+<ol>
+<li>95%의 신뢰수준: 동일한 방법으로 표본을 무수히 반복 추출해 신뢰구간을 계산했을 때, 그 구간이 실제 모집단 평균을 포함할 확률이 95%</li>
+<li>±1.96의 구간: 모집단이 정규분포를 따른다고 가정할 때, 표준정규분포에서 양쪽 꼬리 확률이 각각 2.5%인 지점</li>
+<li>정규분포에서 95%의 데이터가 평균으로부터 ±1.96 표준편차 범위 안에 들어온다는 결론</li>
+<li>참고로 99% 신뢰수준은 2.58</li>
+</ol>
+<blockquote>
+<p><strong>(예제)</strong> 정규분포 N(m, 10<sup>2</sup>)을 따르는 모집단에서 크기가 400인 표본을 임의추출 하였더니 표본평균이 112였다. 신뢰도 95%로 추정한 모평균 m의 신뢰구간(단, P(|Z|≤1.96)=0.95)</p>
+<ul>
+<li>모집단 N(m, 10<sup>2</sup>)</li>
+<li>표본평균의 분포 X̄<del>N(112, 1/2<sup>2</sup>) = X̄</del>N(112, (10/√400)<sup>2</sup>)</li>
+<li>P(|Z| ≤ 1.96) = 0.95 = P{-1.96 ≤ X ≤ 1.96}</li>
+<li>m의 신뢰구간 111.02 ≤ 112.98 = 112 ± 0.98 = 112 ±(1.96·1/2)</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>(예제)</strong> 정규분포 N(m, 5<sup>2</sup>)을 따르는 모집단에서 크기가 100인 표본을 임의추출 하였더니 표본평균이 71였다. 신뢰도 99%로 추정한 모평균 m의 신뢰구간(단, P(|Z| ≤ 2.58) = 0.99)</p>
+<ul>
+<li>모집단 N(m, 5<sup>2</sup>)</li>
+<li>표본평균의 분포 X̄<del>N{71, (1 / 2)<sup>2</sup>} = X̄</del>N{71, (5 / √100)<sup>2</sup>}</li>
+<li>m의 신뢰구간 69.71 ≤ 72.29 = 71 ±1.29 = 71 ±(2.58·1/2)</li>
+</ul>
+</blockquote>
+<h2 id="평균분산표준편차z점수기여도상관계수-계산">평균·분산·표준편차·Z점수·기여도·상관계수 계산</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">직원</th>
+          <th style="text-align: center">업무시간</th>
+          <th style="text-align: center">분산</th>
+          <th style="text-align: center">Z점수</th>
+          <th style="text-align: center">생산량</th>
+          <th style="text-align: center">분산</th>
+          <th style="text-align: center">Z점수</th>
+          <th style="text-align: center">기여도</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">평균</td>
+          <td style="text-align: center">3.5</td>
+          <td style="text-align: center">2.916666</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">5.5</td>
+          <td style="text-align: center">4.916666</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">0.946255</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">표준편차</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">1.707825</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">2.217355</td>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">6.25</td>
+          <td style="text-align: center">-1.463850</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">12.25</td>
+          <td style="text-align: center">-1.578456</td>
+          <td style="text-align: center">2.310623</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2.25</td>
+          <td style="text-align: center">-0.878310</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">2.25</td>
+          <td style="text-align: center">-0.676481</td>
+          <td style="text-align: center">0.594160</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">0.25</td>
+          <td style="text-align: center">-0.292770</td>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">0.25</td>
+          <td style="text-align: center">0.225493</td>
+          <td style="text-align: center">-0.066017</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">0.25</td>
+          <td style="text-align: center">0.292770</td>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">0.25</td>
+          <td style="text-align: center">-0.225493</td>
+          <td style="text-align: center">-0.066017</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">2.25</td>
+          <td style="text-align: center">0.878310</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">2.25</td>
+          <td style="text-align: center">0.676481</td>
+          <td style="text-align: center">0.594160</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">6.25</td>
+          <td style="text-align: center">1.463850</td>
+          <td style="text-align: center">9</td>
+          <td style="text-align: center">12.25</td>
+          <td style="text-align: center">1.578456</td>
+          <td style="text-align: center">2.310623</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=v_ahuwho0nU">사오수학 - [확통 개념정리 100분만에 끝내기] 통계 모든 개념 총정리! (개념, 대표유형, 확통 공식 모두 포함)</a></li>
+</ul>
+</div>
+  </article>
+</main>
+
+
+
+
+
+  
+  
+  
+    
+    
+  
+  
+  
+    
+      <div class="related">
+        <h4 class="related__title">Related Posts</h4>
+        <ul class="related__list">
+          
+            
+          
+            
+              <li class="related__item"><a href="/note/type-script-fundamental-guide/">TypeScript 언어 기초 가이드</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/python-data-science-summary/">데이터과학을 위한 파이썬 컴퓨팅 요약</a></li>
+            
+          
+            
+              <li class="related__item"><a href="/note/data-structure-introduction-summary/">자료구조(Data Structure) 요약</a></li>
+            
+          
+        </ul>
+      </div>
+    
+  
+
+
+
+
+
+ 
+		<nav class="pager flex">
+				<div class="pager__item pager__item--prev">
+					<a class="pager__link" href="/note/type-script-fundamental-guide/" rel="prev">
+						<span class="pager__subtitle">«&thinsp;Previous</span>
+						<p class="pager__title">TypeScript 언어 기초 가이드</p>
+					</a>
+				</div>
+				<div class="pager__item pager__item--next">
+					<a class="pager__link" href="/note/naked-statistics-presented-examples/" rel="next">
+						<span class="pager__subtitle">Next&thinsp;»</span>
+						<p class="pager__title">벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례</p>
+					</a>
+				</div>
+		</nav> 
+        </div>
+        <aside class="sidebar"><div class="widget-search widget">
+    <h2 class="widget__title">Search</h2>
+    <form action="/search" class="widget__content">
+        <input name="keyword" size="15" autocomplete="off" required placeholder="Search..." />
+    </form>
+</div>
+<div class="widget-recent widget">
+	<h2 class="widget__title">Recent</h2>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/note/frequent-special-chars-collection/">자주 사용하는 특수문자 모음</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/hugo-multi-language-activation/">Hugo multi language 기능 활성화 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/linux-installation-for-learning/">학습을 위한 Ubuntu Linux 설치</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-ad-sense-setting/">Google 광고 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/guide/google-analytics-setting-guide/">Google 분석 도구 설정 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/naked-statistics-presented-examples/">벌거벗은 통계학(Naked Statistics)에서 제시된 통계 사례</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/probability-statistics-fundamental-summary/">기초 통계 요약</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/type-script-fundamental-guide/">TypeScript 언어 기초 가이드</a></li>
+			<li class="widget__item"><a class="widget__link" href="/report/governup-dailydigest-build-result/">일일 공공 정책 요약 서비스 거번업(GovernUp) 구축 결과</a></li>
+			<li class="widget__item"><a class="widget__link" href="/note/system-architecture-diagram-summary/">시스템 아키택쳐를 위한 다이어그램 요약</a></li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+  <h2 class="widget__title">Archives</h2>
+  <div class="widget__content">
+    <select onChange="location.href=value;">
+      <option>Select Month</option>
+      
+      <option value="/archives/2026/08">2026/08 (1)</option>
+      
+      <option value="/archives/2026/07">2026/07 (2)</option>
+      
+      <option value="/archives/2026/06">2026/06 (4)</option>
+      
+      <option value="/archives/2026/05">2026/05 (7)</option>
+      
+      <option value="/archives/2026/04">2026/04 (4)</option>
+      
+      <option value="/archives/2026/03">2026/03 (6)</option>
+      
+      <option value="/archives/2026/02">2026/02 (2)</option>
+      
+      <option value="/archives/2026/01">2026/01 (11)</option>
+      
+      <option value="/archives/2025/12">2025/12 (4)</option>
+      
+      <option value="/archives/2025/11">2025/11 (3)</option>
+      
+      <option value="/archives/2025/10">2025/10 (3)</option>
+      
+      <option value="/archives/2025/09">2025/09 (4)</option>
+      
+      <option value="/archives/2025/08">2025/08 (1)</option>
+      
+      <option value="/archives/2025/07">2025/07 (1)</option>
+      
+      <option value="/archives/2024/09">2024/09 (3)</option>
+      
+      <option value="/archives/2024/08">2024/08 (14)</option>
+      
+      <option value="/archives/2023/04">2023/04 (1)</option>
+      
+      <option value="/archives/2023/03">2023/03 (2)</option>
+      
+      <option value="/archives/2023/02">2023/02 (1)</option>
+      
+      <option value="/archives/2023/01">2023/01 (1)</option>
+      
+    </select>
+  </div>
+</div>
+<div class="widget-taglist widget">
+	<h2 class="widget__title">Tags</h2>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/accessibility/" title="accessibility">accessibility (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ai/" title="ai">ai (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/application/" title="application">application (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/architecture/" title="architecture">architecture (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/compiler/" title="compiler">compiler (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/data-science/" title="data-science">data-science (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/db/" title="db">db (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/device/" title="device">device (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/framework/" title="framework">framework (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fundamental/" title="fundamental">fundamental (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/governance/" title="governance">governance (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iaas/" title="iaas">iaas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/law/" title="law">law (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multimedia/" title="multimedia">multimedia (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/paas/" title="paas">paas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/public.re.kr/" title="public.re.kr">public.re.kr (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/saas/" title="saas">saas (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spirituality/" title="spirituality">spirituality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/util/" title="util">util (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webapp/" title="webapp">webapp (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wellbeing/" title="wellbeing">wellbeing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (5)</a>
+	</div>
+</div>
+<div class="widget-favorites widget">
+  <h2 class="widget__title">Favorites</h2>
+  <div class="widget__content">
+    <ul class="widget__list">
+        <li class="widget__item">
+          <a class="widget__link" href="https://public.re.kr" target="_blank">Public Portal</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="https://naver.me/FutOTYIP" target="_blank">Contact Form</a>
+        </li>
+        <li class="widget__item">
+          <a class="widget__link" href="mailto:info@public.re.kr?subject=%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%eb%ac%b8%ec%9d%98&amp;body=%ec%95%88%eb%85%95%ed%95%98%ec%84%b8%ec%9a%94%2C%20%ed%8f%ac%ed%8a%b8%ed%8f%b4%eb%a6%ac%ec%98%a4%20%ea%b4%80%eb%a0%a8%ed%95%b4%ec%84%9c..." target="_blank">Send Mail</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+  </aside>
+      </div>
+      <footer><footer class="footer">
+	<div class="container footer__container flex">
+		
+<div class="footer__links">
+	Supported by
+	<a class="footer__link" href="https://github.com/" target="_blank">Github</a> | <a class="footer__link" href="https://gohugo.io/" target="_blank">HUGO</a> | <a class="footer__link" href="https://github.com/Dim0000/simple-frame" target="_blank">Simple Frame</a> | <a class="footer__link" href="https://copilot.microsoft.com/" target="_blank">Copilot</a>
+</div>
+		<div class="footer__copyright">
+			&copy; 2026 <a href='https://public.re.kr/about/' target='_blank'>Lee Deokho.</a> All rights reserved. <a href='https://public.re.kr/contact/' target='_blank'>Contact Us</a>.
+			<span class="footer__copyright-credits"></span>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-..."
+        crossorigin="anonymous"></script>
+</footer>
+    </div></body>
+</html>
